@@ -1,0 +1,6 @@
+.vs
+/x64
+/pepecontroller/x64
+/pepecontroller/Debug
+*.user
+*.sqlite3
