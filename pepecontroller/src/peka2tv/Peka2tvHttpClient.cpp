@@ -8,21 +8,20 @@
 #include <boost/asio/ssl/error.hpp>
 #include <boost/asio/ssl/stream.hpp>
 #include <boost/asio/buffer.hpp>
-#include <network/uri.hpp>
+#include <boost/network/uri.hpp>
 
 #include <cstdlib>
 #include <string_view>
-
 namespace peka2tv
 {
 
 Peka2tvHttpClient::Peka2tvHttpClient(std::string entry)
 {
-	network::uri uri(entry);
-	host = uri.host().to_string();
+	boost::network::uri::uri uri(entry);
+	host = uri.host();
 	port = uri.port().empty() ?
-		(uri.scheme() == network::uri::string_view("http") ? "80" : "443")
-		: uri.port().to_string();
+		(uri.scheme() == std::string_view("http") ? "80" : "443")
+		: uri.port();
 }
 
 std::string Peka2tvHttpClient::Call(std::string method, std::string data)

@@ -66,14 +66,14 @@ int Main(int argc, char * argv[])
 	sioClient.Connect();
 
 	App app(sioClient.Join("stream/"s + argv[1]), &storage, &httpClient);
-
+	
 	App::CommandSet allCommands
 	{
-		{u8"skip", std::make_shared<commands::SkipConstructor>() },
-		{u8"vote", std::make_shared<commands::VoteConstructor>() },
-		{u8"ban", std::make_shared<commands::BanConstructor>() }
+		{"skip"s, std::make_shared<commands::SkipConstructor>() },
+		{"vote"s, std::make_shared<commands::VoteConstructor>() },
+		{"ban"s, std::make_shared<commands::BanConstructor>() },
 	};
-
+	
 	app.SetCommands(allCommands);
 
 	io.run();

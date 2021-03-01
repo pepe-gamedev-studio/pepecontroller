@@ -4,7 +4,7 @@
 namespace commands
 {
 
-class Skip: public Command
+class Skip : public Command // inheritance from base class
 {
 public:
 	Skip();

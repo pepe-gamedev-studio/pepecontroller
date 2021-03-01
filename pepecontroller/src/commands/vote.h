@@ -6,7 +6,7 @@
 namespace commands
 {
 
-class Vote: public commands::Command
+class Vote : public Command
 {
 public:
 	Vote(uint32_t num);

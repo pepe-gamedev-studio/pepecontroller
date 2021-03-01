@@ -9,7 +9,7 @@
 namespace commands
 {
 
-class Ban : public Command
+class Ban : public Command // inheritance from base class
 {
 public:
 	Ban(std::string name);

@@ -7,7 +7,7 @@
 namespace commands
 {
 
-struct CommandConstructor
+struct CommandConstructor // base class
 {
 	virtual std::unique_ptr<Command> Construct(const peka2tv::Peka2tvSIOClient::ChatMessage& msg) = 0;
 	virtual ~CommandConstructor() = default;

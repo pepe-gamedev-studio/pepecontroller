@@ -1,5 +1,5 @@
 #pragma once
-#include <sio_client.h>
+#include <socketio/sio_client.h>
 
 #include <boost/signals2.hpp>
 

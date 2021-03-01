@@ -9,7 +9,7 @@ namespace commands
 std::unique_ptr<Command> VoteConstructor::Construct(const peka2tv::Peka2tvSIOClient::ChatMessage& msg)
 {
 	std::stringstream ss(msg.text);
-	ss.ignore(std::numeric_limits<std::streamsize>::max(), ' ');
+	ss.ignore(std::numeric_limits<std::streamsize>::max(), ' '); // ignore text before space
 
 	uint32_t num;
 	ss >> num;

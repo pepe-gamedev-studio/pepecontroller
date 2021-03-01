@@ -15,7 +15,7 @@ struct Context
 	AppApi* api;
 };
 
-struct Command
+struct Command // base class
 {
 	virtual void Execute(Context* ctx) = 0;
 	virtual ~Command() = default;
