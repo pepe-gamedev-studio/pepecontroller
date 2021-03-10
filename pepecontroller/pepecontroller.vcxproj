@@ -132,6 +132,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\commands\unban.cpp" />
+    <ClCompile Include="src\commands\unbanConstructor.cpp" />
     <ClCompile Include="src\helper.cpp" />
     <ClCompile Include="src\commands\skipConstructor.cpp" />
     <ClCompile Include="src\commands\banConstructor.cpp" />
@@ -151,6 +153,8 @@
     <ClCompile Include="src\commands\voteConstructor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\commands\unban.h" />
+    <ClInclude Include="src\commands\unbanConstructor.h" />
     <ClInclude Include="src\helper.h" />
     <ClInclude Include="src\commands\skipConstructor.h" />
     <ClInclude Include="src\commands\banConstructor.h" />

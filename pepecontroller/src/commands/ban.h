@@ -12,7 +12,7 @@ namespace commands
 class Ban : public Command // inheritance from base class
 {
 public:
-	Ban(std::string name);
+	Ban(const std::string& name);
 	void Execute(Context* ctx) override;
 private:
 	std::string name;

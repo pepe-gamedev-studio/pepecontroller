@@ -9,7 +9,6 @@ namespace storage::models::user
 {
 
 enum UserGroup : uint8_t { Ignored, Viewer, Moderator, Admin };
-
 struct User
 {
 	uint64_t id;

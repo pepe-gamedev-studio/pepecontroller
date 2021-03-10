@@ -3,6 +3,7 @@
 #include "storage.h"
 #include "storage/models/user.h"
 #include "commands/banConstructor.h"
+#include "commands/unbanConstructor.h"
 #include "commands/skipConstructor.h"
 #include "commands/voteConstructor.h"
 #include "app.h"
@@ -72,6 +73,10 @@ int Main(int argc, char * argv[])
 		{"skip"s, std::make_shared<commands::SkipConstructor>() },
 		{"vote"s, std::make_shared<commands::VoteConstructor>() },
 		{"ban"s, std::make_shared<commands::BanConstructor>() },
+		{"unban"s, std::make_shared<commands::UnbanConstructor>() },
+		/*{"like"s, std::make_shared<commands::LikeConstructor>() },
+		{"dislike"s, std::make_shared<commands::DislikeConstructor>() },*/
+
 	};
 	
 	app.SetCommands(allCommands);
