@@ -1,5 +1,4 @@
 #include "app.h"
-
 #include <boost/log/trivial.hpp>
 
 #include <functional>
@@ -20,6 +19,7 @@ App::App(
 App::~App()
 {
 	msgSource->disconnect_all_slots();
+	logFile.close();
 }
 
 void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
@@ -27,11 +27,12 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
 	if (!(IsCommand(x.text) && CanExecute(x)))
 		return;
 
-	auto ctr = commands.find(ExtractCommand(x.text));
-	if (ctr != commands.end())
+	auto ctr = this->commands.find(ExtractCommand(x.text));
+	if (ctr != this->commands.end())
 	{
 		commands::Context ctx{ &x, storage, httpClient, &appApi };
 		ctr->second->Construct(x)->Execute(&ctx);
+		peka2tv::LogChatCommands(x, logFile);
 	}
 }
 
@@ -60,7 +61,7 @@ bool App::CanExecute(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
 
 void App::SetCommands(const CommandSet & set)
 {
-	commands = set;
+	this->commands = set;
 }
 
 bool App::IsOwner(const peka2tv::Peka2tvSIOClient::ChatMessage & msg)

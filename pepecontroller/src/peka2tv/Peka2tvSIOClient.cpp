@@ -2,7 +2,9 @@
 
 #include <iostream>
 #include <functional>
-
+#include <nlohmann/json.hpp>
+#include <fstream>
+#include <boost/date_time/posix_time/posix_time.hpp>
 namespace peka2tv
 {
 
@@ -96,6 +98,14 @@ void Peka2tvSIOClient::RemoveDanglingListeners()
 	allChatListeners.erase(rit, allChatListeners.end());
 }
 
+void LogChatCommands(const Peka2tvSIOClient::ChatMessage& m, std::ofstream& f)
+{	
+	boost::posix_time::ptime date_time = boost::posix_time::microsec_clock::local_time();
+	if(!f.is_open())
+		f.open("log.txt", std::ios::app);
+	f << "[" << date_time << "] " << m.from.name << "#" << m.from.id << ": " << m.text << std::endl;
+}
+
 Peka2tvSIOClient::ChatMessage Peka2tvSIOClient::ParseChatMessage(std::map<std::string, sio::message::ptr>& obj)
 {
 	ChatMessage m;
@@ -116,7 +126,6 @@ Peka2tvSIOClient::ChatMessage Peka2tvSIOClient::ParseChatMessage(std::map<std::s
 	m.timestamp = obj["time"]->get_int();
 	m.anonymous = obj["anonymous"]->get_bool();
 	m.channel = obj["channel"]->get_string();
-
 	return m;
 }
 

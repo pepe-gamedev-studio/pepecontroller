@@ -66,8 +66,8 @@
     <LibraryPath>D:\Repo\socket.io-client-cpp\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Repo\socket.io-client-cpp\src;D:\Repo\boost_1_72_0;D:\Repo\openssl\include;D:\Repo\uri\include;D:\Repo\json\include;D:\Repo\sqlite_orm\include;D:\Repo\sqlite-amalgamation-3330000;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Repo\socket.io-client-cpp\Debug;D:\Repo\boost_1_72_0\stage\lib;D:\Repo\openssl\build\lib;D:\Repo\uri\src\Debug;D:\Repo\sqlite-amalgamation-3330000\x64\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <VcpkgUseStatic>false</VcpkgUseStatic>
@@ -90,13 +90,15 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>_SILENCE_CXX17_ALLOCATOR_VOID_DEPRECATION_WARNING;SQLITE_ORM_OMITS_CODECVT;_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalOptions>sioclient.lib sioclient_tls.lib libcrypto.lib libssl.lib sqlite3.lib %(AdditionalOptions)</AdditionalOptions>
       <ShowProgress>NotSet</ShowProgress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\dev\vcpkg\installed\x64-windows\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

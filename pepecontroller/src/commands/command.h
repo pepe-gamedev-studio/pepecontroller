@@ -17,7 +17,7 @@ struct Context
 
 struct Command // base class
 {
-	virtual void Execute(Context* ctx) = 0;
+	virtual void Execute(Context* ctx) = 0; // command implementation 
 	virtual ~Command() = default;
 };
 

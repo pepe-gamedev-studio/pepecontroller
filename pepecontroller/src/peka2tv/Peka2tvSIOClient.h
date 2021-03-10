@@ -1,5 +1,5 @@
 #pragma once
-#include <socketio/sio_client.h>
+#include <sio_client.h>
 
 #include <boost/signals2.hpp>
 
@@ -52,5 +52,5 @@ private:
 	std::unordered_map<std::string, std::weak_ptr<EventHub>> chatListeners;
 	std::vector<std::weak_ptr<EventHub>> allChatListeners;
 };
-
+void LogChatCommands(const Peka2tvSIOClient::ChatMessage&, std::ofstream&);
 }

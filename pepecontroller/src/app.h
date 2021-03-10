@@ -11,7 +11,7 @@
 #include <memory>
 #include <string>
 #include <unordered_map>
-
+#include <fstream>
 class App
 {
 public:
@@ -30,6 +30,7 @@ private:
 	bool IsOwner(const peka2tv::Peka2tvSIOClient::ChatMessage & msg);
 	bool IsCommand(const std::string& msg);
 	std::string ExtractCommand(const std::string& msg);
+	std::ofstream logFile;
 private:
 	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource;
 	storage::Storage* storage;
