@@ -12,6 +12,16 @@
 #include <boost/multi_index/member.hpp>
 #include <boost/multi_index/mem_fun.hpp>
 
+struct NameHash
+{
+	size_t operator()(std::string str) const;
+};
+
+struct NameComp
+{
+	bool operator()(std::string a, std::string b) const;
+};
+
 class UserCache
 {
 public:
@@ -38,7 +48,7 @@ private:
 		UserInfoIndex,
 		boost::multi_index::indexed_by<
 		boost::multi_index::hashed_unique<boost::multi_index::const_mem_fun<UserInfoIndex, uint64_t, &UserInfoIndex::Id>>,
-		boost::multi_index::hashed_unique<boost::multi_index::const_mem_fun<UserInfoIndex, std::string, &UserInfoIndex::Name>>>> index;
+		boost::multi_index::hashed_unique<boost::multi_index::const_mem_fun<UserInfoIndex, std::string, &UserInfoIndex::Name>, NameHash, NameComp>>> index;
 
 	LRU lru;
 };

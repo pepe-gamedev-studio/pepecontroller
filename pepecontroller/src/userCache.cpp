@@ -1,7 +1,32 @@
 #include "UserCache.h"
 #include "helper.h"
 
+#include <algorithm>
 #include <boost/log/trivial.hpp>
+
+void ToLowercase(std::string& str)
+{
+	// TODO: utf8 support
+	std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c)
+	{
+		return std::tolower(c);
+	});
+}
+
+size_t NameHash::operator()(std::string str) const
+{
+	ToLowercase(str);
+
+	return boost::hash<std::string>()(str);
+}
+
+bool NameComp::operator()(std::string a, std::string b) const
+{
+	ToLowercase(a);
+	ToLowercase(b);
+
+	return a == b;
+}
 
 UserCache::UserCache(size_t capacity) : capacity(capacity) {}
 
