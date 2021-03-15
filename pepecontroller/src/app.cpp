@@ -22,7 +22,7 @@ App::~App()
 	logFile.close();
 }
 
-void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
+void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 {
 	if (!(IsCommand(x.text) && CanExecute(x)))
 		return;
@@ -35,7 +35,7 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
 	}
 }
 
-bool App::CanExecute(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
+bool App::CanExecute(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 {
 	using namespace storage::models::user;
 

@@ -5,29 +5,24 @@
 namespace commands
 {
 
-Vote::Vote(uint32_t num) : num(num) {}
+//Vote::Vote(uint32_t num) : num(num) {}
 
-const size_t counter_size = 10;
-std::vector<size_t> counter(counter_size, 0);
+Vote::Vote(VotePhase* ph, uint8_t num) : phase(ph), num(num) {}
 
-void Vote::resetCache()
-{
-	this->voteCache.erase(this->voteCache.begin(), this->voteCache.end());
-}
+//const size_t counter_size = 10;
+//std::vector<size_t> counter(counter_size, 0);
+
+//void Vote::resetCache()
+//{
+//	this->voteCache.erase(this->voteCache.begin(), this->voteCache.end());
+//}
 
 void Vote::Execute(Context* ctx)
 {
-	auto it = find(this->voteCache.begin(), this->voteCache.end(), ctx->message->from.id);
-	if ((num < counter_size) && (it == this->voteCache.end()))
-	{
-		++counter[num];
-		voteCache.insert(ctx->message->from.id);
+	if(this->phase->Vote(ctx->message->from.id, num))
 		BOOST_LOG_TRIVIAL(debug) << "[Vote::Execute] " << num;
-	}
-	else 
-	{
+	else
 		BOOST_LOG_TRIVIAL(debug) << "[Vote::Execute] " << "wrong";
-	}
 }
 
 }

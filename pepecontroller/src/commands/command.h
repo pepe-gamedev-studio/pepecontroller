@@ -7,7 +7,7 @@
 
 namespace commands
 {
-static backend::Instance Inst;
+inline backend::Instance Inst;
 
 struct Context
 {
