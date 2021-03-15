@@ -103,7 +103,7 @@ void LogChatCommands(const Peka2tvSIOClient::ChatMessage& m, std::ofstream& f)
 	boost::posix_time::ptime date_time = boost::posix_time::microsec_clock::local_time();
 	if(!f.is_open())
 		f.open("log.txt", std::ios::app);
-	f << "[" << date_time << "] " << m.from.name << "#" << m.from.id << ": " << m.text << std::endl;
+	f << "[" << date_time << "] " << m.timestamp << " " << m.from.name << "#" << m.from.id << ": " << m.text << std::endl;
 }
 
 Peka2tvSIOClient::ChatMessage Peka2tvSIOClient::ParseChatMessage(std::map<std::string, sio::message::ptr>& obj)

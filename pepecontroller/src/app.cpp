@@ -26,9 +26,8 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
 {
 	if (!(IsCommand(x.text) && CanExecute(x)))
 		return;
-
-	auto ctr = this->commands.find(ExtractCommand(x.text));
-	if (ctr != this->commands.end())
+	auto ctr = this->phase->GetCommands().find(ExtractCommand(x.text));
+	if (ctr != this->phase->GetCommands().end())
 	{
 		commands::Context ctx{ &x, storage, httpClient, &appApi };
 		ctr->second->Construct(x)->Execute(&ctx);
@@ -59,10 +58,10 @@ bool App::CanExecute(const peka2tv::Peka2tvSIOClient::ChatMessage & x)
 	return ret;
 }
 
-void App::SetCommands(const CommandSet & set)
-{
-	this->commands = set;
-}
+//void App::SetCommands(const CommandSet & set)
+//{
+//	this->commands = set;
+//}
 
 bool App::IsOwner(const peka2tv::Peka2tvSIOClient::ChatMessage & msg)
 {

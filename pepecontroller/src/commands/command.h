@@ -3,9 +3,11 @@
 #include "../peka2tv/peka2tvSIOClient.h"
 #include "../storage/sqliteStorage.h"
 #include "../appApi.h"
+#include "../controller/backend.h"
 
 namespace commands
 {
+static backend::Instance Inst;
 
 struct Context
 {

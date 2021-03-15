@@ -2,12 +2,8 @@
 #include "peka2tv/peka2tvHttpClient.h"
 #include "storage.h"
 #include "storage/models/user.h"
-#include "commands/banConstructor.h"
-#include "commands/unbanConstructor.h"
-#include "commands/skipConstructor.h"
-#include "commands/voteConstructor.h"
+#include "commands/Constructors.h"
 #include "app.h"
-
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -68,18 +64,8 @@ int Main(int argc, char * argv[])
 
 	App app(sioClient.Join("stream/"s + argv[1]), &storage, &httpClient);
 	
-	App::CommandSet allCommands
-	{
-		{"skip"s, std::make_shared<commands::SkipConstructor>() },
-		{"vote"s, std::make_shared<commands::VoteConstructor>() },
-		{"ban"s, std::make_shared<commands::BanConstructor>() },
-		{"unban"s, std::make_shared<commands::UnbanConstructor>() },
-		/*{"like"s, std::make_shared<commands::LikeConstructor>() },
-		{"dislike"s, std::make_shared<commands::DislikeConstructor>() },*/
 
-	};
-	
-	app.SetCommands(allCommands);
+	app.SetPhase<commands::VotePhase>();
 
 	io.run();
 	return 0;
