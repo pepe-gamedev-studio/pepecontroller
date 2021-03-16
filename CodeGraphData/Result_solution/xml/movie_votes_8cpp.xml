@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="movie_votes_8cpp" kind="file">
+    <compoundname>movieVotes.cpp</compoundname>
+    <includes refid="movie_votes_8h" local="yes">movieVotes.h</includes>
+    <incdepgraph>
+      <node id="2376">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="2374">
+        <label>movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2376" relation="include">
+        </childnode>
+      </node>
+      <node id="2373">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.cpp</label>
+        <link refid="movieVotes.cpp"/>
+        <childnode refid="2374" relation="include">
+        </childnode>
+      </node>
+      <node id="2375">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="2376" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestorage_1_1models_1_1movie_votes">storage::models::movieVotes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="movie_votes_8h" kindref="compound">movieVotes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespacestorage_1_1models_1_1movie_votes" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">storage::models::movieVotes</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" refkind="member"><highlight class="normal"><ref refid="namespacestorage_1_1models_1_1movie_votes_1ad885cbaf4caee8c267b0b9471adfbab4" kindref="member">TableType</ref><sp/><ref refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" kindref="member">MakeTable</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">sqlite_orm;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_table(</highlight><highlight class="stringliteral">&quot;movieVotes&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a78d48c40bc5a2e3509b3972658e64364" kindref="member">MovieVotes::id</ref>),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;userId&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a1af1b2f92def5d926c45db9e32aac837" kindref="member">MovieVotes::userId</ref>),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;vote&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a39b5b786032914449fa2aca4cfafb3d4" kindref="member">MovieVotes::vote</ref>));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ban_8cpp" kind="file">
+    <compoundname>ban.cpp</compoundname>
+    <includes refid="ban_8h" local="yes">ban.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xstring</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/iosfwd</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstdio</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdio.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstring</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cwchar</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/wchar.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/corecrt.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/sys/types.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xstddef</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstddef</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stddef.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xtr1common</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstdlib</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/math.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/initializer_list</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xmemory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstdint</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/stdint.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/limits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cfloat</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/float.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/climits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/limits.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/intrin0.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/isa_availability.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/new</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/exception</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/type_traits</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/malloc.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vcruntime_exception.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vcruntime_new.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xatomic.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xutility</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/utility</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cctype</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/ctype.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xhash</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cmath</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/list</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/tuple</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vector</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xbit_ops.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/typeinfo</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vcruntime_typeinfo.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/istream</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/ostream</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/ios</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocnum</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/iterator</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/streambuf</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xiosbase</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/share.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/system_error</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/__msvc_system_error_abi.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cerrno</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/errno.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/stdexcept</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xcall_once.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xerrc.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/atomic</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xthreads.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/time.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocale</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/memory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xfacet</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocinfo</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocinfo.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/locale.h</includes>
+    <includes local="no">boost/log/trivial.hpp</includes>
+    <incdepgraph>
+      <node id="218">
+        <label>models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>list</label>
+      </node>
+      <node id="228">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="229">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="221">
+        <label>models/movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/stdexcept</label>
+      </node>
+      <node id="269">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/type_traits</label>
+      </node>
+      <node id="220">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="223">
+        <label>../appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vector</label>
+      </node>
+      <node id="302">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xthreads.h</label>
+      </node>
+      <node id="290">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/iterator</label>
+      </node>
+      <node id="222">
+        <label>models/movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/utility</label>
+      </node>
+      <node id="246">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/wchar.h</label>
+      </node>
+      <node id="280">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/list</label>
+      </node>
+      <node id="260">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/limits</label>
+      </node>
+      <node id="252">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xtr1common</label>
+      </node>
+      <node id="213">
+        <label>boost/signals2.hpp</label>
+      </node>
+      <node id="266">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/isa_availability.h</label>
+      </node>
+      <node id="307">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocinfo</label>
+      </node>
+      <node id="250">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstddef</label>
+      </node>
+      <node id="288">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/ios</label>
+      </node>
+      <node id="211">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+        <link refid="_peka2tv_s_i_o_client_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/exception</label>
+      </node>
+      <node id="296">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cerrno</label>
+      </node>
+      <node id="202">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.cpp</label>
+        <link refid="ban.cpp"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>string</label>
+      </node>
+      <node id="264">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/limits.h</label>
+      </node>
+      <node id="300">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xerrc.h</label>
+      </node>
+      <node id="305">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/memory</label>
+      </node>
+      <node id="253">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstdlib</label>
+      </node>
+      <node id="291">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/streambuf</label>
+      </node>
+      <node id="285">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vcruntime_typeinfo.h</label>
+      </node>
+      <node id="235">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="279">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cmath</label>
+      </node>
+      <node id="208">
+        <label>exception</label>
+      </node>
+      <node id="249">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xstddef</label>
+      </node>
+      <node id="205">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+        <link refid="_peka2tv_http_client_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocnum</label>
+      </node>
+      <node id="301">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/atomic</label>
+      </node>
+      <node id="240">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals.h</label>
+      </node>
+      <node id="254">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/math.h</label>
+      </node>
+      <node id="297">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/errno.h</label>
+      </node>
+      <node id="284">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/typeinfo</label>
+      </node>
+      <node id="233">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/share.h</label>
+      </node>
+      <node id="237">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h</label>
+      </node>
+      <node id="272">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vcruntime_new.h</label>
+      </node>
+      <node id="295">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/__msvc_system_error_abi.hpp</label>
+      </node>
+      <node id="257">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xmemory</label>
+      </node>
+      <node id="255">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h</label>
+      </node>
+      <node id="303">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/time.h</label>
+      </node>
+      <node id="263">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/climits</label>
+      </node>
+      <node id="277">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/ctype.h</label>
+      </node>
+      <node id="262">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/float.h</label>
+      </node>
+      <node id="242">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdio.h</label>
+      </node>
+      <node id="281">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/tuple</label>
+      </node>
+      <node id="209">
+        <label>optional</label>
+      </node>
+      <node id="287">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/ostream</label>
+      </node>
+      <node id="299">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xcall_once.h</label>
+      </node>
+      <node id="247">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/corecrt.h</label>
+      </node>
+      <node id="236">
+        <label>../controller/backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xbit_ops.h</label>
+      </node>
+      <node id="214">
+        <label>vector</label>
+      </node>
+      <node id="232">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>../storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xiosbase</label>
+      </node>
+      <node id="212">
+        <label>sio_client.h</label>
+      </node>
+      <node id="204">
+        <label>command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstring</label>
+      </node>
+      <node id="244">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h</label>
+      </node>
+      <node id="258">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstdint</label>
+      </node>
+      <node id="227">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="286">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/istream</label>
+      </node>
+      <node id="248">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/sys/types.h</label>
+      </node>
+      <node id="308">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocinfo.h</label>
+      </node>
+      <node id="265">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/intrin0.h</label>
+      </node>
+      <node id="238">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xstring</label>
+      </node>
+      <node id="234">
+        <label>iostream</label>
+      </node>
+      <node id="274">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xutility</label>
+      </node>
+      <node id="256">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/initializer_list</label>
+      </node>
+      <node id="276">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cctype</label>
+      </node>
+      <node id="215">
+        <label>unordered_map</label>
+      </node>
+      <node id="230">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="226">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="306">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xfacet</label>
+      </node>
+      <node id="309">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/locale.h</label>
+      </node>
+      <node id="241">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cstdio</label>
+      </node>
+      <node id="219">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/iosfwd</label>
+      </node>
+      <node id="210">
+        <label>type_traits</label>
+      </node>
+      <node id="203">
+        <label>ban.h</label>
+        <link refid="ban_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/system_error</label>
+      </node>
+      <node id="206">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="278">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xhash</label>
+      </node>
+      <node id="273">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xatomic.h</label>
+      </node>
+      <node id="259">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/stdint.h</label>
+      </node>
+      <node id="245">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cwchar</label>
+      </node>
+      <node id="267">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/new</label>
+      </node>
+      <node id="231">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="261">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/cfloat</label>
+      </node>
+      <node id="224">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vcruntime_exception.h</label>
+      </node>
+      <node id="270">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/malloc.h</label>
+      </node>
+      <node id="304">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xlocale</label>
+      </node>
+      <node id="251">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stddef.h</label>
+      </node>
+      <node id="216">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecommands">commands</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ban_8h" kindref="compound">ban.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/trivial.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespacecommands" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">commands</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classcommands_1_1_ban_1aafe809a62c74ef886b1e84236fee45fc" refkind="member"><highlight class="normal"><ref refid="classcommands_1_1_ban_1aafe809a62c74ef886b1e84236fee45fc" kindref="member">Ban::Ban</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/>:<sp/>name(name)<sp/>{}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classcommands_1_1_ban_1ab07ebdd9c88c782fd35cf25dd5d2fc18" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_ban_1ab07ebdd9c88c782fd35cf25dd5d2fc18" kindref="member">Ban::Execute</ref>(<ref refid="structcommands_1_1_context" kindref="compound">Context</ref>*<sp/>ctx)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">storage::models::user;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>ctx-&gt;<ref refid="structcommands_1_1_context_1ace987495615c434f77ce5932c720db79" kindref="member">api</ref>-&gt;<ref refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" kindref="member">FindUser</ref>(&amp;User::name,<sp/><ref refid="classcommands_1_1_ban_1acc846a73ce1212b8fd9324a2863879ff" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(u<sp/>&amp;&amp;<sp/>u-&gt;group<sp/>!=<sp/><ref refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ada23a7c310ca1197e698622929e01ca209" kindref="member">UserGroup::Ignored</ref>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structcommands_1_1_context_1ace987495615c434f77ce5932c720db79" kindref="member">api</ref>-&gt;<ref refid="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" kindref="member">UpdateUser</ref>({<sp/>u-&gt;id,<sp/>u-&gt;name,<sp/>u-&gt;voteWeight,<sp/><ref refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ada23a7c310ca1197e698622929e01ca209" kindref="member">UserGroup::Ignored</ref><sp/>});</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(debug)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[Ban::Execute]<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classcommands_1_1_ban_1acc846a73ce1212b8fd9324a2863879ff" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(u<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;FOUND&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;UNKNOWN&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/ban.cpp"/>
+  </compounddef>
+</doxygen>

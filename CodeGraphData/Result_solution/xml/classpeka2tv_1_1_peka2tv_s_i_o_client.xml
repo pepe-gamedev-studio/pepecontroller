@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classpeka2tv_1_1_peka2tv_s_i_o_client" kind="class" prot="public">
+    <compoundname>peka2tv::Peka2tvSIOClient</compoundname>
+    <includes refid="_peka2tv_s_i_o_client_8h" local="no">Peka2tvSIOClient.h</includes>
+    <innerclass refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" prot="public">peka2tv::Peka2tvSIOClient::ChatMessage</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a97c25d564cbaa44115121a28bb11eb9c" prot="public" static="no">
+        <type>int</type>
+        <definition>using peka2tv::Peka2tvSIOClient::ms =  int</definition>
+        <argsstring></argsstring>
+        <name>ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="34" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1aa2c4fb106d838754c390b715a3c02dd8" prot="public" static="no">
+        <type>boost::signals2::signal&lt; void(const <ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">ChatMessage</ref> &amp;)&gt;</type>
+        <definition>using peka2tv::Peka2tvSIOClient::EventHub =  boost::signals2::signal&lt;void(const ChatMessage&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>EventHub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="35" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1af5a6a357823784158c02516fc4a5d28e" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aa2c4fb106d838754c390b715a3c02dd8" kindref="member">EventHub</ref> &gt;</type>
+        <definition>using peka2tv::Peka2tvSIOClient::EventHubPtr =  std::shared_ptr&lt;EventHub&gt;</definition>
+        <argsstring></argsstring>
+        <name>EventHubPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="36" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1ad421f57d210a073f2b216f7563c33ab2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string peka2tv::Peka2tvSIOClient::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="48" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a84ccefee79b91249e70ce9f7f9f671ce" compoundref="_peka2tv_s_i_o_client_8cpp" startline="11" endline="15">Connect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" prot="private" static="no" mutable="no">
+        <type>sio::client</type>
+        <definition>sio::client peka2tv::Peka2tvSIOClient::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="49" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a84ccefee79b91249e70ce9f7f9f671ce" compoundref="_peka2tv_s_i_o_client_8cpp" startline="11" endline="15">Connect</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" compoundref="_peka2tv_s_i_o_client_8cpp" startline="17" endline="38">Join</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a5bcc8cd807247f87bedb195131da87d9" compoundref="_peka2tv_s_i_o_client_8cpp" startline="40" endline="47">Leave</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a4df0ed097cd1ad306e55ecc50bf3083b" compoundref="_peka2tv_s_i_o_client_8cpp" startline="49" endline="52">~Peka2tvSIOClient</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1ab6cfe6a0d5f4bd7401787d12c76fed06" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool peka2tv::Peka2tvSIOClient::isChatListen</definition>
+        <argsstring></argsstring>
+        <name>isChatListen</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="51" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" compoundref="_peka2tv_s_i_o_client_8cpp" startline="17" endline="38">Join</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a188dfe271dcba2d78035e54baa19309d" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::weak_ptr&lt; <ref refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aa2c4fb106d838754c390b715a3c02dd8" kindref="member">EventHub</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::weak_ptr&lt;EventHub&gt; &gt; peka2tv::Peka2tvSIOClient::chatListeners</definition>
+        <argsstring></argsstring>
+        <name>chatListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="52" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" compoundref="_peka2tv_s_i_o_client_8cpp" startline="17" endline="38">Join</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" compoundref="_peka2tv_s_i_o_client_8cpp" startline="54" endline="89">OnMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a315e41d2b85390716e7ddcaf622a6100" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::weak_ptr&lt; <ref refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aa2c4fb106d838754c390b715a3c02dd8" kindref="member">EventHub</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::weak_ptr&lt;EventHub&gt; &gt; peka2tv::Peka2tvSIOClient::allChatListeners</definition>
+        <argsstring></argsstring>
+        <name>allChatListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="53" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" compoundref="_peka2tv_s_i_o_client_8cpp" startline="17" endline="38">Join</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" compoundref="_peka2tv_s_i_o_client_8cpp" startline="54" endline="89">OnMessage</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a217fdb387e15adbc368a80ff09c5bd76" compoundref="_peka2tv_s_i_o_client_8cpp" startline="91" endline="99">RemoveDanglingListeners</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a84ccefee79b91249e70ce9f7f9f671ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void peka2tv::Peka2tvSIOClient::Connect</definition>
+        <argsstring>(std::string host=&quot;http://chat.sc2tv.ru/&quot;)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type>std::string</type>
+          <declname>host</declname>
+          <defval>&quot;http://chat.sc2tv.ru/&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="38" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="11" bodyend="15"/>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" compoundref="_peka2tv_s_i_o_client_8h" startline="49">client</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1ad421f57d210a073f2b216f7563c33ab2" compoundref="_peka2tv_s_i_o_client_8h" startline="48">host</references>
+        <referencedby refid="main_8cpp_1abdc885af21a5223701dc216930d3b899" compoundref="main_8cpp" startline="42" endline="70">Main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1af5a6a357823784158c02516fc4a5d28e" kindref="member">EventHubPtr</ref></type>
+        <definition>Peka2tvSIOClient::EventHubPtr peka2tv::Peka2tvSIOClient::Join</definition>
+        <argsstring>(std::string channel)</argsstring>
+        <name>Join</name>
+        <param>
+          <type>std::string</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="39" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="17" bodyend="38"/>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a315e41d2b85390716e7ddcaf622a6100" compoundref="_peka2tv_s_i_o_client_8h" startline="53">allChatListeners</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a188dfe271dcba2d78035e54baa19309d" compoundref="_peka2tv_s_i_o_client_8h" startline="52">chatListeners</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" compoundref="_peka2tv_s_i_o_client_8h" startline="49">client</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1ab6cfe6a0d5f4bd7401787d12c76fed06" compoundref="_peka2tv_s_i_o_client_8h" startline="51">isChatListen</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" compoundref="_peka2tv_s_i_o_client_8cpp" startline="54" endline="89">OnMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a5bcc8cd807247f87bedb195131da87d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void peka2tv::Peka2tvSIOClient::Leave</definition>
+        <argsstring>(std::string channel)</argsstring>
+        <name>Leave</name>
+        <param>
+          <type>std::string</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="40" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="40" bodyend="47"/>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" compoundref="_peka2tv_s_i_o_client_8h" startline="49">client</references>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" compoundref="_peka2tv_s_i_o_client_8cpp" startline="54" endline="89">OnMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a4df0ed097cd1ad306e55ecc50bf3083b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>peka2tv::Peka2tvSIOClient::~Peka2tvSIOClient</definition>
+        <argsstring>()</argsstring>
+        <name>~Peka2tvSIOClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="41" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="49" bodyend="52"/>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" compoundref="_peka2tv_s_i_o_client_8h" startline="49">client</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void peka2tv::Peka2tvSIOClient::OnMessage</definition>
+        <argsstring>(sio::event &amp;e)</argsstring>
+        <name>OnMessage</name>
+        <param>
+          <type>sio::event &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="43" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="54" bodyend="89"/>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a315e41d2b85390716e7ddcaf622a6100" compoundref="_peka2tv_s_i_o_client_8h" startline="53">allChatListeners</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a188dfe271dcba2d78035e54baa19309d" compoundref="_peka2tv_s_i_o_client_8h" startline="52">chatListeners</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a5bcc8cd807247f87bedb195131da87d9" compoundref="_peka2tv_s_i_o_client_8cpp" startline="40" endline="47">Leave</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" compoundref="_peka2tv_s_i_o_client_8cpp" startline="109" endline="130">ParseChatMessage</references>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a217fdb387e15adbc368a80ff09c5bd76" compoundref="_peka2tv_s_i_o_client_8cpp" startline="91" endline="99">RemoveDanglingListeners</references>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" compoundref="_peka2tv_s_i_o_client_8cpp" startline="17" endline="38">Join</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a217fdb387e15adbc368a80ff09c5bd76" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void peka2tv::Peka2tvSIOClient::RemoveDanglingListeners</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveDanglingListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="44" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="91" bodyend="99"/>
+        <references refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a315e41d2b85390716e7ddcaf622a6100" compoundref="_peka2tv_s_i_o_client_8h" startline="53">allChatListeners</references>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" compoundref="_peka2tv_s_i_o_client_8cpp" startline="54" endline="89">OnMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">ChatMessage</ref></type>
+        <definition>Peka2tvSIOClient::ChatMessage peka2tv::Peka2tvSIOClient::ParseChatMessage</definition>
+        <argsstring>(std::map&lt; std::string, sio::message::ptr &gt; &amp;obj)</argsstring>
+        <name>ParseChatMessage</name>
+        <param>
+          <type>std::map&lt; std::string, sio::message::ptr &gt; &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="46" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.cpp" bodystart="109" bodyend="130"/>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a40b0048fe227fc422a7d6cd2481add0c" compoundref="_peka2tv_s_i_o_client_8h" startline="31">peka2tv::Peka2tvSIOClient::ChatMessage::anonymous</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a918fe393bf2879d6bff9b14cceb2a125" compoundref="_peka2tv_s_i_o_client_8h" startline="32">peka2tv::Peka2tvSIOClient::ChatMessage::channel</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a614cc2cad9f9c62f5d356cae59c954fd" compoundref="_peka2tv_s_i_o_client_8h" startline="22">peka2tv::Peka2tvSIOClient::ChatMessage::User::color</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a2b4f1d185a77a442d74f20f3627beb37" compoundref="_peka2tv_s_i_o_client_8h" startline="27">peka2tv::Peka2tvSIOClient::ChatMessage::from</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" compoundref="_peka2tv_s_i_o_client_8h" startline="23">peka2tv::Peka2tvSIOClient::ChatMessage::User::id</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a128fbc9914de261f5c8b62255caf82e1" compoundref="_peka2tv_s_i_o_client_8h" startline="24">peka2tv::Peka2tvSIOClient::ChatMessage::User::name</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1ac554bf9609f74e8f3f13bf55ed555e1e" compoundref="_peka2tv_s_i_o_client_8h" startline="29">peka2tv::Peka2tvSIOClient::ChatMessage::text</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a9c6b72091bd9f18ffbbc886929d093b7" compoundref="_peka2tv_s_i_o_client_8h" startline="30">peka2tv::Peka2tvSIOClient::ChatMessage::timestamp</references>
+        <references refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1abf25260a270fb9c91b8ccbe1804855de" compoundref="_peka2tv_s_i_o_client_8h" startline="28">peka2tv::Peka2tvSIOClient::ChatMessage::to</references>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" compoundref="_peka2tv_s_i_o_client_8cpp" startline="54" endline="89">OnMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="109">
+        <label>peka2tv::Peka2tvSIOClient</label>
+        <link refid="classpeka2tv_1_1_peka2tv_s_i_o_client"/>
+        <childnode refid="110" relation="usage">
+          <edgelabel>chatListeners</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>allChatListeners</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>host</edgelabel>
+        </childnode>
+      </node>
+      <node id="114">
+        <label>std::vector&lt; std::weak_ptr&lt; EventHub &gt; &gt;</label>
+        <childnode refid="113" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="110">
+        <label>std::unordered_map&lt; std::string, std::weak_ptr&lt; EventHub &gt; &gt;</label>
+        <childnode refid="111" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="113" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>std::weak_ptr&lt; EventHub &gt;</label>
+      </node>
+      <node id="111">
+        <label>std::string</label>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="16" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="15" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a315e41d2b85390716e7ddcaf622a6100" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>allChatListeners</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a188dfe271dcba2d78035e54baa19309d" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>chatListeners</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>client</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a84ccefee79b91249e70ce9f7f9f671ce" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>Connect</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aa2c4fb106d838754c390b715a3c02dd8" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>EventHub</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1af5a6a357823784158c02516fc4a5d28e" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>EventHubPtr</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1ad421f57d210a073f2b216f7563c33ab2" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>host</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1ab6cfe6a0d5f4bd7401787d12c76fed06" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>isChatListen</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>Join</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a5bcc8cd807247f87bedb195131da87d9" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>Leave</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a97c25d564cbaa44115121a28bb11eb9c" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>ms</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>OnMessage</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>ParseChatMessage</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a217fdb387e15adbc368a80ff09c5bd76" prot="private" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>RemoveDanglingListeners</name></member>
+      <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a4df0ed097cd1ad306e55ecc50bf3083b" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient</scope><name>~Peka2tvSIOClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacestorage_1_1models_1_1user" kind="namespace">
+    <compoundname>storage::models::user</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacestorage_1_1models_1_1user_1a27b854e9f72e5657d28c47cf8ff1cc56" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; storage::models::user::groups</definition>
+        <argsstring></argsstring>
+        <name>groups</name>
+        <initializer>{ &quot;Ignored&quot;, &quot;Viewer&quot;, &quot;Moderator&quot;, &quot;Admin&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/helper.cpp" line="6" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/helper.cpp" bodystart="6" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" compoundref="helper_8cpp" startline="8" endline="11">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; storage::models::user::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const storage::models::user::User &amp;x)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const storage::models::user::User &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/helper.cpp" line="8" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/helper.cpp" bodystart="8" bodyend="11"/>
+        <references refid="namespacestorage_1_1models_1_1user_1a27b854e9f72e5657d28c47cf8ff1cc56" compoundref="helper_8cpp" startline="6">groups</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/helper.cpp" line="4" column="1"/>
+  </compounddef>
+</doxygen>

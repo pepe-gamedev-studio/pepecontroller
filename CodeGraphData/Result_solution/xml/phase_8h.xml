@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="phase_8h" kind="file">
+    <compoundname>phase.h</compoundname>
+    <includes refid="_constructors_8h" local="yes">Constructors.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">unordered_set</includes>
+    <includedby refid="vote_phase_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.h</includedby>
+    <includedby refid="movie_phase_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h</includedby>
+    <includedby refid="phase_8cpp" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp</includedby>
+    <includedby refid="skip_phase_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.h</includedby>
+    <includedby refid="app_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/app.h</includedby>
+    <incdepgraph>
+      <node id="1129">
+        <label>models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1136">
+        <label>list</label>
+      </node>
+      <node id="1139">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="1140">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="1132">
+        <label>models/movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="1134">
+        <label>../appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1143" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1144" relation="include">
+        </childnode>
+        <childnode refid="1146" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1133">
+        <label>models/movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+      </node>
+      <node id="1151">
+        <label>votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="1111" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.h</label>
+        <link refid="phase.h"/>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1145" relation="include">
+        </childnode>
+        <childnode refid="1156" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>boost/signals2.hpp</label>
+      </node>
+      <node id="1115">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+        <link refid="_peka2tv_s_i_o_client_8h"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>string</label>
+      </node>
+      <node id="1149">
+        <label>skipConstructor.h</label>
+        <link refid="skip_constructor_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1156">
+        <label>unordered_set</label>
+      </node>
+      <node id="1146">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="1126">
+        <label>exception</label>
+      </node>
+      <node id="1124">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+        <link refid="_peka2tv_http_client_8h"/>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1144">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1145" relation="include">
+        </childnode>
+      </node>
+      <node id="1152">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h</label>
+      </node>
+      <node id="1154">
+        <label>likeConstructor.h</label>
+        <link refid="like_constructor_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1148" relation="include">
+        </childnode>
+        <childnode refid="1149" relation="include">
+        </childnode>
+        <childnode refid="1150" relation="include">
+        </childnode>
+        <childnode refid="1152" relation="include">
+        </childnode>
+        <childnode refid="1153" relation="include">
+        </childnode>
+        <childnode refid="1154" relation="include">
+        </childnode>
+        <childnode refid="1155" relation="include">
+        </childnode>
+      </node>
+      <node id="1122">
+        <label>optional</label>
+      </node>
+      <node id="1147">
+        <label>../controller/backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="1145" relation="include">
+        </childnode>
+      </node>
+      <node id="1119">
+        <label>vector</label>
+      </node>
+      <node id="1143">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="1128" relation="include">
+        </childnode>
+      </node>
+      <node id="1128">
+        <label>../storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>sio_client.h</label>
+      </node>
+      <node id="1123">
+        <label>command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1147" relation="include">
+        </childnode>
+      </node>
+      <node id="1138">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="1148">
+        <label>unbanConstructor.h</label>
+        <link refid="unban_constructor_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1145">
+        <label>iostream</label>
+      </node>
+      <node id="1120">
+        <label>unordered_map</label>
+      </node>
+      <node id="1141">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="1137">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="1155">
+        <label>dislikeConstructor.h</label>
+        <link refid="dislike_constructor_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1130">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="1131" relation="include">
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>type_traits</label>
+      </node>
+      <node id="1150">
+        <label>voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1151" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="1113">
+        <label>banConstructor.h</label>
+        <link refid="ban_constructor_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1153">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xhash</label>
+      </node>
+      <node id="1142">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="1135">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1139" relation="include">
+        </childnode>
+        <childnode refid="1140" relation="include">
+        </childnode>
+        <childnode refid="1141" relation="include">
+        </childnode>
+        <childnode refid="1142" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1164">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.cpp</label>
+        <link refid="vote_phase_8cpp"/>
+      </node>
+      <node id="1169">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.cpp</label>
+        <link refid="skip_phase_8cpp"/>
+      </node>
+      <node id="1170">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.h</label>
+        <link refid="app_8h"/>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1162" relation="include">
+        </childnode>
+        <childnode refid="1164" relation="include">
+        </childnode>
+      </node>
+      <node id="1157">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.h</label>
+        <link refid="phase.h"/>
+        <childnode refid="1158" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+      </node>
+      <node id="1162">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.h</label>
+        <link refid="vote_8h"/>
+        <childnode refid="1163" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+      </node>
+      <node id="1163">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.cpp</label>
+        <link refid="vote_8cpp"/>
+      </node>
+      <node id="1167">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp</label>
+        <link refid="phase_8cpp"/>
+      </node>
+      <node id="1166">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp</label>
+        <link refid="movie_phase_8cpp"/>
+      </node>
+      <node id="1160">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="1157" relation="include">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.cpp</label>
+        <link refid="app_8cpp"/>
+      </node>
+      <node id="1168">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.h</label>
+        <link refid="skip_phase_8h"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1172">
+        <label>F:/projects/pepecontroller/pepecontroller/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1159">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="1160" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h</label>
+        <link refid="movie_phase_8h"/>
+        <childnode refid="1166" relation="include">
+        </childnode>
+      </node>
+      <node id="1161">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.cpp</label>
+        <link refid="vote_constructor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcommands_1_1_phase" prot="public">commands::Phase</innerclass>
+    <innernamespace refid="namespacecommands">commands</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="phase_8h_1a580484a0c9287d6e278ae1288f4a1bf2" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="8" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_constructors_8h" kindref="compound">Constructors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="phase_8h_1a580484a0c9287d6e278ae1288f4a1bf2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="phase_8h_1a580484a0c9287d6e278ae1288f4a1bf2" kindref="member">user_id</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">commands<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="classcommands_1_1_phase" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcommands_1_1_phase" kindref="compound">Phase</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcommands_1_1_phase_1ad31b1798aa4bbd946d405cf31e7a9880" kindref="member">Phase</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_phase_1a70a3d9f3986bedbd970c018253c349dc" kindref="member">~Phase</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17" refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref><sp/>=<sp/>std::unordered_map&lt;std::string,<sp/>std::shared_ptr&lt;commands::CommandConstructor&gt;&gt;;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref>&amp;<sp/><ref refid="classcommands_1_1_phase_1a0475ec92faf62efd2c785097f5060812" kindref="member">GetCommands</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref><sp/><ref refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" kindref="member">basicCommands</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;ban&quot;</highlight><highlight class="normal">,<sp/>std::make_shared&lt;commands::BanConstructor&gt;()<sp/>},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;unban&quot;</highlight><highlight class="normal">,<sp/>std::make_shared&lt;commands::UnbanConstructor&gt;()<sp/>},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" kindref="member">mergeCommands</ref>(<ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref>&amp;<sp/>cs);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T,<sp/>typename<sp/>std::enable_if&lt;std::is_base_of&lt;Phase,<sp/>T&gt;::value,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;::type<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_phase_1a1b4c4d02e3a1127ef2a3349913acb4df" kindref="member">SetPhase</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h"/>
+  </compounddef>
+</doxygen>

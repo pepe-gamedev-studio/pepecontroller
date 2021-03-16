@@ -5,7 +5,7 @@ namespace commands
 	{
 		mergeCommands(this->skipCommands);
 	}
-	const Phase::CommandSet& SkipPhase::GetCommands()
+	const CommandSet& SkipPhase::GetCommands()
 	{
 		return this->skipCommands;
 	}

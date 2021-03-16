@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="backend_8cpp" kind="file">
+    <compoundname>backend.cpp</compoundname>
+    <includes refid="backend_8h" local="yes">backend.h</includes>
+    <incdepgraph>
+      <node id="1925">
+        <label>backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="1926" relation="include">
+        </childnode>
+      </node>
+      <node id="1926">
+        <label>iostream</label>
+      </node>
+      <node id="1924">
+        <label>F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp</label>
+        <link refid="backend.cpp"/>
+        <childnode refid="1925" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacebackend">backend</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="backend_8h" kindref="compound">backend.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="namespacebackend" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">backend</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4" refid="classbackend_1_1_instance_1a57a24862dbe8d058dc5851e23f2f586b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbackend_1_1_instance_1a57a24862dbe8d058dc5851e23f2f586b" kindref="member">Instance::Instance</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="7" refid="classbackend_1_1_instance_1abf228d5f379d37c5211443631bab5d7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbackend_1_1_instance_1abf228d5f379d37c5211443631bab5d7e" kindref="member">Instance::~Instance</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10" refid="classbackend_1_1_instance_1a796914017a9fdfdee37a71dece7d4282" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1a796914017a9fdfdee37a71dece7d4282" kindref="member">Instance::Connect</ref>(<ref refid="structbackend_1_1_u_r_i" kindref="compound">URI</ref>&amp;<sp/>StreamURL)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13" refid="classbackend_1_1_instance_1ab5caf1734298286b9673c083c5dc3469" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1ab5caf1734298286b9673c083c5dc3469" kindref="member">Instance::Disconnect</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16" refid="classbackend_1_1_instance_1af7718f20d1c7fb09f64df9319ceabb07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Text&gt;<sp/><ref refid="classbackend_1_1_instance_1af7718f20d1c7fb09f64df9319ceabb07" kindref="member">Instance::DrawText</ref>(uint16_t<sp/>x,<sp/>uint16_t<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structbackend_1_1_text" kindref="compound">Text</ref>&amp;<sp/>text)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_shared&lt;Text&gt;(text);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20" refid="classbackend_1_1_instance_1a4233e50a03a7fff80eb67eca24bd5288" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Image&gt;<sp/><ref refid="classbackend_1_1_instance_1a4233e50a03a7fff80eb67eca24bd5288" kindref="member">Instance::DrawImage</ref>(uint16_t<sp/>x,<sp/>uint16_t<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structbackend_1_1_image" kindref="compound">Image</ref>&amp;<sp/>image)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_shared&lt;Image&gt;(image);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24" refid="classbackend_1_1_instance_1aeb0ab763aabe5ece10dc21f747acdfcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1aeb0ab763aabe5ece10dc21f747acdfcb" kindref="member">Instance::Play</ref>(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27" refid="classbackend_1_1_instance_1a11a5dc3f5270f7deded0f7dae31698e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1aeb0ab763aabe5ece10dc21f747acdfcb" kindref="member">Instance::Play</ref>(std::string&amp;<sp/>name)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30" refid="classbackend_1_1_instance_1a91b52590823413210b0c29a2cea77b3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1a91b52590823413210b0c29a2cea77b3b" kindref="member">Instance::Volume</ref>(uint8_t<sp/>n)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="classbackend_1_1_instance_1ad3be49a5999dd35aed3041fc099b138e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1ad3be49a5999dd35aed3041fc099b138e" kindref="member">Instance::Stop</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36" refid="classbackend_1_1_instance_1a6ded13456365b24c1a23ea1224abd9d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbackend_1_1_instance_1a6ded13456365b24c1a23ea1224abd9d0" kindref="member">Instance::callOverlay</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp"/>
+  </compounddef>
+</doxygen>

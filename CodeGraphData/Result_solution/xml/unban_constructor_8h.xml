@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="unban_constructor_8h" kind="file">
+    <compoundname>unbanConstructor.h</compoundname>
+    <includes refid="command_constructor_8h" local="yes">commandConstructor.h</includes>
+    <includedby refid="_constructors_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/Constructors.h</includedby>
+    <includedby refid="unban_constructor_8cpp" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.cpp</includedby>
+    <incdepgraph>
+      <node id="1562">
+        <label>models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+      </node>
+      <node id="1569">
+        <label>list</label>
+      </node>
+      <node id="1572">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="1573">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="1565">
+        <label>models/movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+      </node>
+      <node id="1564">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="1567">
+        <label>../appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="1568" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1577" relation="include">
+        </childnode>
+        <childnode refid="1579" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1547">
+        <label>commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1566">
+        <label>models/movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>boost/signals2.hpp</label>
+      </node>
+      <node id="1548">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+        <link refid="_peka2tv_s_i_o_client_8h"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>string</label>
+      </node>
+      <node id="1579">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="1559">
+        <label>exception</label>
+      </node>
+      <node id="1557">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+        <link refid="_peka2tv_http_client_8h"/>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1578" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>optional</label>
+      </node>
+      <node id="1580">
+        <label>../controller/backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="1578" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>vector</label>
+      </node>
+      <node id="1576">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="1561" relation="include">
+        </childnode>
+      </node>
+      <node id="1561">
+        <label>../storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1565" relation="include">
+        </childnode>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1549">
+        <label>sio_client.h</label>
+      </node>
+      <node id="1556">
+        <label>command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+        <childnode refid="1580" relation="include">
+        </childnode>
+      </node>
+      <node id="1571">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="1546">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.h</label>
+        <link refid="unbanConstructor.h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1578">
+        <label>iostream</label>
+      </node>
+      <node id="1553">
+        <label>unordered_map</label>
+      </node>
+      <node id="1574">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="1570">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="1563">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="1564" relation="include">
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>type_traits</label>
+      </node>
+      <node id="1558">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="1575">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="1568">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1569" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1570" relation="include">
+        </childnode>
+        <childnode refid="1571" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1573" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1589">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.cpp</label>
+        <link refid="vote_phase_8cpp"/>
+      </node>
+      <node id="1594">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.cpp</label>
+        <link refid="skip_phase_8cpp"/>
+      </node>
+      <node id="1595">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.h</label>
+        <link refid="app_8h"/>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1589" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.h</label>
+        <link refid="phase_8h"/>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+      </node>
+      <node id="1587">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.h</label>
+        <link refid="vote_8h"/>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+      </node>
+      <node id="1588">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.cpp</label>
+        <link refid="vote_8cpp"/>
+      </node>
+      <node id="1592">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp</label>
+        <link refid="phase_8cpp"/>
+      </node>
+      <node id="1598">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.cpp</label>
+        <link refid="unban_constructor_8cpp"/>
+      </node>
+      <node id="1591">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp</label>
+        <link refid="movie_phase_8cpp"/>
+      </node>
+      <node id="1582">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="1583" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.cpp</label>
+        <link refid="app_8cpp"/>
+      </node>
+      <node id="1593">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.h</label>
+        <link refid="skip_phase_8h"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+      </node>
+      <node id="1581">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.h</label>
+        <link refid="unbanConstructor.h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>F:/projects/pepecontroller/pepecontroller/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1585">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+      </node>
+      <node id="1590">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h</label>
+        <link refid="movie_phase_8h"/>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.cpp</label>
+        <link refid="vote_constructor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcommands_1_1_unban_constructor" prot="public">commands::UnbanConstructor</innerclass>
+    <innernamespace refid="namespacecommands">commands</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="command_constructor_8h" kindref="compound">commandConstructor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">commands</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="classcommands_1_1_unban_constructor" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcommands_1_1_unban_constructor" kindref="compound">UnbanConstructor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structcommands_1_1_command_constructor" kindref="compound">CommandConstructor</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Command&gt;<sp/><ref refid="classcommands_1_1_unban_constructor_1a54826e473f8faf18611fa90b373d23f9" kindref="member">Construct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">peka2tv::Peka2tvSIOClient::ChatMessage</ref>&amp;<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.h"/>
+  </compounddef>
+</doxygen>

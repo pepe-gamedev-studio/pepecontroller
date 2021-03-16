@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structbackend_1_1_u_r_i" kind="struct" prot="public">
+    <compoundname>backend::URI</compoundname>
+    <includes refid="backend_8h" local="no">backend.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbackend_1_1_u_r_i_1a17bd9b2a9bf060cb059619a2dbaef29b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string backend::URI::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="7" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="148">
+        <label>backend::URI</label>
+        <link refid="structbackend_1_1_u_r_i"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="150">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="149">
+        <label>std::string</label>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="6" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="structbackend_1_1_u_r_i_1a17bd9b2a9bf060cb059619a2dbaef29b" prot="public" virt="non-virtual"><scope>backend::URI</scope><name>address</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

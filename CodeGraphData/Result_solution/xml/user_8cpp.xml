@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="user_8cpp" kind="file">
+    <compoundname>user.cpp</compoundname>
+    <includes refid="user_8h" local="yes">user.h</includes>
+    <incdepgraph>
+      <node id="2427">
+        <label>user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="2428" relation="include">
+        </childnode>
+        <childnode refid="2429" relation="include">
+        </childnode>
+        <childnode refid="2430" relation="include">
+        </childnode>
+      </node>
+      <node id="2429">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="2430">
+        <label>string</label>
+      </node>
+      <node id="2426">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/models/user.cpp</label>
+        <link refid="user.cpp"/>
+        <childnode refid="2427" relation="include">
+        </childnode>
+      </node>
+      <node id="2428">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="2429" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestorage_1_1models_1_1user">storage::models::user</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="user_8h" kindref="compound">user.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">storage::models::user</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" refkind="member"><highlight class="normal"><ref refid="namespacestorage_1_1models_1_1user_1ab1c41d80cfecca6e920648c621f658ee" kindref="member">TableType</ref><sp/><ref refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" kindref="member">MakeTable</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">sqlite_orm;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_table(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1user_1_1_user_1a5ad4ea26e0da403edaf17afe311a5838" kindref="member">User::id</ref>,<sp/>primary_key()),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1user_1_1_user_1a538fe98bffaaa412799dc64d2f57335b" kindref="member">User::name</ref>),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;vote_weight&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1user_1_1_user_1a11a235b44cf2d19ad1c9b9fb375d4035" kindref="member">User::voteWeight</ref>),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;group&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1user_1_1_user_1a480a497b32d53cd2ff18798c8638b671" kindref="member">User::group</ref>));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.cpp"/>
+  </compounddef>
+</doxygen>

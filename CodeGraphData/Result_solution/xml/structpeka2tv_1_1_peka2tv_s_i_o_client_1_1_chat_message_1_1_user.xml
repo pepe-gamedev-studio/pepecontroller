@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user" kind="struct" prot="public">
+    <compoundname>peka2tv::Peka2tvSIOClient::ChatMessage::User</compoundname>
+    <includes refid="_peka2tv_s_i_o_client_8h" local="no">Peka2tvSIOClient.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a614cc2cad9f9c62f5d356cae59c954fd" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t peka2tv::Peka2tvSIOClient::ChatMessage::User::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="22" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" compoundref="_peka2tv_s_i_o_client_8cpp" startline="109" endline="130">peka2tv::Peka2tvSIOClient::ParseChatMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t peka2tv::Peka2tvSIOClient::ChatMessage::User::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="23" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_app_1a143bbdc3436eed6724778b581a87f887" compoundref="app_8cpp" startline="38" endline="59">App::CanExecute</referencedby>
+        <referencedby refid="classcommands_1_1_vote_1a579815716afa4a158bb67b28d4adc5f8" compoundref="vote_8cpp" startline="19" endline="25">commands::Vote::Execute</referencedby>
+        <referencedby refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" compoundref="app_8cpp" startline="66" endline="70">App::IsOwner</referencedby>
+        <referencedby refid="namespacepeka2tv_1a15abb4cac0e2dd20bfcc3d225fa1cc59" compoundref="_peka2tv_s_i_o_client_8cpp" startline="101" endline="107">peka2tv::LogChatCommands</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" compoundref="_peka2tv_s_i_o_client_8cpp" startline="109" endline="130">peka2tv::Peka2tvSIOClient::ParseChatMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a128fbc9914de261f5c8b62255caf82e1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string peka2tv::Peka2tvSIOClient::ChatMessage::User::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="24" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="namespacepeka2tv_1a15abb4cac0e2dd20bfcc3d225fa1cc59" compoundref="_peka2tv_s_i_o_client_8cpp" startline="101" endline="107">peka2tv::LogChatCommands</referencedby>
+        <referencedby refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" compoundref="_peka2tv_s_i_o_client_8cpp" startline="109" endline="130">peka2tv::Peka2tvSIOClient::ParseChatMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="154">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="152">
+        <label>peka2tv::Peka2tvSIOClient::ChatMessage::User</label>
+        <link refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user"/>
+        <childnode refid="153" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="153">
+        <label>std::string</label>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" line="21" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvSIOClient.h" bodystart="20" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a614cc2cad9f9c62f5d356cae59c954fd" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient::ChatMessage::User</scope><name>color</name></member>
+      <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient::ChatMessage::User</scope><name>id</name></member>
+      <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a128fbc9914de261f5c8b62255caf82e1" prot="public" virt="non-virtual"><scope>peka2tv::Peka2tvSIOClient::ChatMessage::User</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

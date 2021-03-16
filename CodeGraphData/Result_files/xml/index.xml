@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classcommands_1_1_ban" kind="class"><name>commands::Ban</name>
+    <member refid="classcommands_1_1_ban_1acc846a73ce1212b8fd9324a2863879ff" kind="variable"><name>name</name></member>
+    <member refid="classcommands_1_1_ban_1aafe809a62c74ef886b1e84236fee45fc" kind="function"><name>Ban</name></member>
+    <member refid="classcommands_1_1_ban_1ab07ebdd9c88c782fd35cf25dd5d2fc18" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_ban_constructor" kind="class"><name>commands::BanConstructor</name>
+    <member refid="classcommands_1_1_ban_constructor_1a4e1ddc24c8c3796f6b9ef31329ead511" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="structcommands_1_1_command" kind="struct"><name>commands::Command</name>
+    <member refid="structcommands_1_1_command_1a8a39fceff7fb297cad37fa99d415dc29" kind="function"><name>Execute</name></member>
+    <member refid="structcommands_1_1_command_1a24f4be511cc5724fefd8e2b320ffbcf8" kind="function"><name>~Command</name></member>
+  </compound>
+  <compound refid="structcommands_1_1_command_constructor" kind="struct"><name>commands::CommandConstructor</name>
+    <member refid="structcommands_1_1_command_constructor_1a3c99c8e4132a16619554dcea18cc6d81" kind="function"><name>Construct</name></member>
+    <member refid="structcommands_1_1_command_constructor_1a49fa2e650c1d65fb74eb4fb5a857f869" kind="function"><name>~CommandConstructor</name></member>
+  </compound>
+  <compound refid="structcommands_1_1_context" kind="struct"><name>commands::Context</name>
+    <member refid="structcommands_1_1_context_1adc3b4bb4b926b63a7838adfbe674b564" kind="variable"><name>message</name></member>
+    <member refid="structcommands_1_1_context_1a95a21e883274b6943f84155da4e1e457" kind="variable"><name>storage</name></member>
+    <member refid="structcommands_1_1_context_1ab9a8f3c1cef1299fd40a03e76f6b7da4" kind="variable"><name>httpClient</name></member>
+    <member refid="structcommands_1_1_context_1ace987495615c434f77ce5932c720db79" kind="variable"><name>api</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_dislike" kind="class"><name>commands::Dislike</name>
+    <member refid="classcommands_1_1_dislike_1a82371e6f6373a76ec00d98d96e4e4cc6" kind="function"><name>Dislike</name></member>
+    <member refid="classcommands_1_1_dislike_1a35ef5fbcbb5f2189d44a949adb4ec9fc" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_dislike_constructor" kind="class"><name>commands::DislikeConstructor</name>
+    <member refid="classcommands_1_1_dislike_constructor_1af816d8582032b2a69fd061e26b262f52" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_like" kind="class"><name>commands::Like</name>
+    <member refid="classcommands_1_1_like_1af22842cdfd9f723eeeb8019f4ecab39e" kind="function"><name>Like</name></member>
+    <member refid="classcommands_1_1_like_1a92d291c1ce8c9cd07148e79bf884cf31" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_like_constructor" kind="class"><name>commands::LikeConstructor</name>
+    <member refid="classcommands_1_1_like_constructor_1a8ab65d62d9ca6fc7c28333a48295e8e9" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_movie_phase" kind="class"><name>commands::MoviePhase</name>
+    <member refid="classcommands_1_1_movie_phase_1acfacdd34cfdc99ba765dd2dd6a9203e9" kind="variable"><name>movieCommands</name></member>
+    <member refid="classcommands_1_1_movie_phase_1a660d1fbdbb7a20c85753e36567259613" kind="function"><name>MoviePhase</name></member>
+    <member refid="classcommands_1_1_movie_phase_1a7b0cc1db99be03e7fb9f1c4a401ddbcd" kind="function"><name>GetCommands</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_phase" kind="class"><name>commands::Phase</name>
+    <member refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kind="typedef"><name>CommandSet</name></member>
+    <member refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" kind="variable"><name>basicCommands</name></member>
+    <member refid="classcommands_1_1_phase_1ad31b1798aa4bbd946d405cf31e7a9880" kind="function"><name>Phase</name></member>
+    <member refid="classcommands_1_1_phase_1a70a3d9f3986bedbd970c018253c349dc" kind="function"><name>~Phase</name></member>
+    <member refid="classcommands_1_1_phase_1a0475ec92faf62efd2c785097f5060812" kind="function"><name>GetCommands</name></member>
+    <member refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" kind="function"><name>mergeCommands</name></member>
+    <member refid="classcommands_1_1_phase_1a1b4c4d02e3a1127ef2a3349913acb4df" kind="function"><name>SetPhase</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_skip" kind="class"><name>commands::Skip</name>
+    <member refid="classcommands_1_1_skip_1ac287c4d8eaaa7b7b37e6ccacbf25bf0d" kind="function"><name>Skip</name></member>
+    <member refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_skip_constructor" kind="class"><name>commands::SkipConstructor</name>
+    <member refid="classcommands_1_1_skip_constructor_1ae89c86a714260b7f07dc9d1492d2b09b" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_skip_phase" kind="class"><name>commands::SkipPhase</name>
+    <member refid="classcommands_1_1_skip_phase_1ae31f91be64f506cb42be6f51c33c7235" kind="variable"><name>skipCommands</name></member>
+    <member refid="classcommands_1_1_skip_phase_1a1de5dc1953129813289c23e09b9ba2f0" kind="function"><name>SkipPhase</name></member>
+    <member refid="classcommands_1_1_skip_phase_1aed8319d835e8195df1c7829cab40618a" kind="function"><name>GetCommands</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_unban" kind="class"><name>commands::Unban</name>
+    <member refid="classcommands_1_1_unban_1a42fda21653bd5a5d62cc9140a4272bd0" kind="variable"><name>name</name></member>
+    <member refid="classcommands_1_1_unban_1a00a583e7532c78bd122816cf61d7104d" kind="function"><name>Unban</name></member>
+    <member refid="classcommands_1_1_unban_1a756423ed0f77abb233c7e7549632f41a" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_unban_constructor" kind="class"><name>commands::UnbanConstructor</name>
+    <member refid="classcommands_1_1_unban_constructor_1a54826e473f8faf18611fa90b373d23f9" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_vote" kind="class"><name>commands::Vote</name>
+    <member refid="classcommands_1_1_vote_1acb0c6ebb7dd9d6181677268dbc532623" kind="variable"><name>phase</name></member>
+    <member refid="classcommands_1_1_vote_1a646708d1a08eb8ecd0f74a3cac09e259" kind="variable"><name>num</name></member>
+    <member refid="classcommands_1_1_vote_1af8fec810b9f7ed7955463622cff115de" kind="function"><name>Vote</name></member>
+    <member refid="classcommands_1_1_vote_1a579815716afa4a158bb67b28d4adc5f8" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_vote_constructor" kind="class"><name>commands::VoteConstructor</name>
+    <member refid="classcommands_1_1_vote_constructor_1aa090fb8742ffa46e78069e3185a2905c" kind="variable"><name>phase</name></member>
+    <member refid="classcommands_1_1_vote_constructor_1ae273a5f87b9db30b7427d674cdf70a3c" kind="function"><name>VoteConstructor</name></member>
+    <member refid="classcommands_1_1_vote_constructor_1a61f39a8be10c3be35dc8bdfdcf930a17" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_vote_phase" kind="class"><name>commands::VotePhase</name>
+    <member refid="classcommands_1_1_vote_phase_1aca21e83bffa73556321f4a35107eca29" kind="variable"><name>voteCommands</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a8ce3a3062a979852c703ae90c9312619" kind="variable"><name>VoteCache</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a902a51f232a2d3c223ea1f648a83e8e4" kind="variable"><name>counter_size</name></member>
+    <member refid="classcommands_1_1_vote_phase_1abb744bd902282d757a3ba5c1e759b1da" kind="variable"><name>VotesCounter</name></member>
+    <member refid="classcommands_1_1_vote_phase_1ad3cb579a4d909ae4ced79c26ceb0b495" kind="function"><name>VotePhase</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a3c2d2b903067f38df5918edcfe067def" kind="function"><name>GetCommands</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a254c29f14d50f736e885381df1eba9a7" kind="function"><name>Vote</name></member>
+  </compound>
+  <compound refid="namespacecommands" kind="namespace"><name>commands</name>
+    <member refid="namespacecommands_1a0f0de67ae085c3d33eea93b370978f7f" kind="variable"><name>Inst</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="ban_8cpp" kind="file"><name>ban.cpp</name>
+  </compound>
+  <compound refid="ban_8h" kind="file"><name>ban.h</name>
+  </compound>
+  <compound refid="ban_constructor_8cpp" kind="file"><name>banConstructor.cpp</name>
+  </compound>
+  <compound refid="ban_constructor_8h" kind="file"><name>banConstructor.h</name>
+  </compound>
+  <compound refid="command_8h" kind="file"><name>command.h</name>
+  </compound>
+  <compound refid="command_constructor_8h" kind="file"><name>commandConstructor.h</name>
+  </compound>
+  <compound refid="_constructors_8h" kind="file"><name>Constructors.h</name>
+  </compound>
+  <compound refid="dislike_8cpp" kind="file"><name>dislike.cpp</name>
+  </compound>
+  <compound refid="dislike_8h" kind="file"><name>dislike.h</name>
+  </compound>
+  <compound refid="dislike_constructor_8cpp" kind="file"><name>dislikeConstructor.cpp</name>
+  </compound>
+  <compound refid="dislike_constructor_8h" kind="file"><name>dislikeConstructor.h</name>
+  </compound>
+  <compound refid="like_8cpp" kind="file"><name>like.cpp</name>
+  </compound>
+  <compound refid="like_8h" kind="file"><name>like.h</name>
+  </compound>
+  <compound refid="like_constructor_8cpp" kind="file"><name>likeConstructor.cpp</name>
+  </compound>
+  <compound refid="like_constructor_8h" kind="file"><name>likeConstructor.h</name>
+  </compound>
+  <compound refid="movie_phase_8cpp" kind="file"><name>moviePhase.cpp</name>
+  </compound>
+  <compound refid="movie_phase_8h" kind="file"><name>moviePhase.h</name>
+  </compound>
+  <compound refid="phase_8cpp" kind="file"><name>phase.cpp</name>
+  </compound>
+  <compound refid="phase_8h" kind="file"><name>phase.h</name>
+    <member refid="phase_8h_1a580484a0c9287d6e278ae1288f4a1bf2" kind="typedef"><name>user_id</name></member>
+  </compound>
+  <compound refid="skip_8cpp" kind="file"><name>skip.cpp</name>
+  </compound>
+  <compound refid="skip_8h" kind="file"><name>skip.h</name>
+  </compound>
+  <compound refid="skip_constructor_8cpp" kind="file"><name>skipConstructor.cpp</name>
+  </compound>
+  <compound refid="skip_constructor_8h" kind="file"><name>skipConstructor.h</name>
+  </compound>
+  <compound refid="skip_phase_8cpp" kind="file"><name>skipPhase.cpp</name>
+  </compound>
+  <compound refid="skip_phase_8h" kind="file"><name>skipPhase.h</name>
+  </compound>
+  <compound refid="unban_8cpp" kind="file"><name>unban.cpp</name>
+  </compound>
+  <compound refid="unban_8h" kind="file"><name>unban.h</name>
+  </compound>
+  <compound refid="unban_constructor_8cpp" kind="file"><name>unbanConstructor.cpp</name>
+  </compound>
+  <compound refid="unban_constructor_8h" kind="file"><name>unbanConstructor.h</name>
+  </compound>
+  <compound refid="vote_8cpp" kind="file"><name>vote.cpp</name>
+  </compound>
+  <compound refid="vote_8h" kind="file"><name>vote.h</name>
+  </compound>
+  <compound refid="vote_constructor_8cpp" kind="file"><name>voteConstructor.cpp</name>
+  </compound>
+  <compound refid="vote_constructor_8h" kind="file"><name>voteConstructor.h</name>
+  </compound>
+  <compound refid="vote_phase_8cpp" kind="file"><name>votePhase.cpp</name>
+  </compound>
+  <compound refid="vote_phase_8h" kind="file"><name>votePhase.h</name>
+  </compound>
+  <compound refid="dir_36508a952b047b15ffa124412f7a6d5d" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src/commands</name>
+  </compound>
+  <compound refid="dir_3a581ba30d25676e4b797b1f96d53b45" kind="dir"><name>F:</name>
+  </compound>
+  <compound refid="dir_78ed6230150c4375130eb30be56fc2b8" kind="dir"><name>F:/projects/pepecontroller/pepecontroller</name>
+  </compound>
+  <compound refid="dir_832eef67a1f42af4fc2f2094bc5802d4" kind="dir"><name>F:/projects/pepecontroller</name>
+  </compound>
+  <compound refid="dir_7e2327c2d513de17d54c84550c38f872" kind="dir"><name>F:/projects</name>
+  </compound>
+  <compound refid="dir_636b7955e88f4a8debe0a150bdb672bb" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="user_cache_8h" kind="file">
+    <compoundname>userCache.h</compoundname>
+    <includes refid="user_8h" local="yes">storage/models/user.h</includes>
+    <includes local="no">list</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">boost/multi_index_container.hpp</includes>
+    <includes local="no">boost/multi_index/hashed_index.hpp</includes>
+    <includes local="no">boost/multi_index/ordered_index.hpp</includes>
+    <includes local="no">boost/multi_index/identity.hpp</includes>
+    <includes local="no">boost/multi_index/member.hpp</includes>
+    <includes local="no">boost/multi_index/mem_fun.hpp</includes>
+    <includedby refid="app_api_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/appApi.h</includedby>
+    <includedby refid="app_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/app.h</includedby>
+    <includedby refid="user_cache_8cpp" local="yes">F:/projects/pepecontroller/pepecontroller/src/userCache.cpp</includedby>
+    <incdepgraph>
+      <node id="2567">
+        <label>storage/models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="2568" relation="include">
+        </childnode>
+        <childnode refid="2569" relation="include">
+        </childnode>
+        <childnode refid="2570" relation="include">
+        </childnode>
+      </node>
+      <node id="2571">
+        <label>list</label>
+      </node>
+      <node id="2575">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="2576">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="2569">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="2570">
+        <label>string</label>
+      </node>
+      <node id="2574">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="2577">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="2573">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="2568">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="2569" relation="include">
+        </childnode>
+      </node>
+      <node id="2578">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="2566">
+        <label>F:/projects/pepecontroller/pepecontroller/src/userCache.h</label>
+        <link refid="userCache.h"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2571" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2570" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2575" relation="include">
+        </childnode>
+        <childnode refid="2576" relation="include">
+        </childnode>
+        <childnode refid="2577" relation="include">
+        </childnode>
+        <childnode refid="2578" relation="include">
+        </childnode>
+      </node>
+      <node id="2572">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2594">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.cpp</label>
+        <link refid="vote_phase_8cpp"/>
+      </node>
+      <node id="2599">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.cpp</label>
+        <link refid="skip_phase_8cpp"/>
+      </node>
+      <node id="2616">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp</label>
+        <link refid="skip_8cpp"/>
+      </node>
+      <node id="2580">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="2581" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+        <childnode refid="2619" relation="include">
+        </childnode>
+      </node>
+      <node id="2585">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="2586" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2590" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+      <node id="2606">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipConstructor.cpp</label>
+        <link refid="skip_constructor_8cpp"/>
+      </node>
+      <node id="2600">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.h</label>
+        <link refid="app_8h"/>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2602" relation="include">
+        </childnode>
+      </node>
+      <node id="2589">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="2590" relation="include">
+        </childnode>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2594" relation="include">
+        </childnode>
+      </node>
+      <node id="2588">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.h</label>
+        <link refid="phase_8h"/>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2595" relation="include">
+        </childnode>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+      <node id="2614">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/like.cpp</label>
+        <link refid="like_8cpp"/>
+      </node>
+      <node id="2592">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.h</label>
+        <link refid="vote_8h"/>
+        <childnode refid="2593" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+      </node>
+      <node id="2583">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.cpp</label>
+        <link refid="ban_8cpp"/>
+      </node>
+      <node id="2620">
+        <label>F:/projects/pepecontroller/pepecontroller/src/userCache.cpp</label>
+        <link refid="user_cache_8cpp"/>
+      </node>
+      <node id="2605">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipConstructor.h</label>
+        <link refid="skip_constructor_8h"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2606" relation="include">
+        </childnode>
+      </node>
+      <node id="2611">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.h</label>
+        <link refid="dislike_8h"/>
+        <childnode refid="2612" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+      </node>
+      <node id="2593">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.cpp</label>
+        <link refid="vote_8cpp"/>
+      </node>
+      <node id="2597">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp</label>
+        <link refid="phase_8cpp"/>
+      </node>
+      <node id="2604">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.cpp</label>
+        <link refid="unban_constructor_8cpp"/>
+      </node>
+      <node id="2617">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unban.h</label>
+        <link refid="unban_8h"/>
+        <childnode refid="2618" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+      </node>
+      <node id="2612">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.cpp</label>
+        <link refid="dislike_8cpp"/>
+      </node>
+      <node id="2615">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.h</label>
+        <link refid="skip_8h"/>
+        <childnode refid="2616" relation="include">
+        </childnode>
+        <childnode refid="2606" relation="include">
+        </childnode>
+      </node>
+      <node id="2613">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/like.h</label>
+        <link refid="like_8h"/>
+        <childnode refid="2614" relation="include">
+        </childnode>
+        <childnode refid="2608" relation="include">
+        </childnode>
+      </node>
+      <node id="2607">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.h</label>
+        <link refid="like_constructor_8h"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2608" relation="include">
+        </childnode>
+      </node>
+      <node id="2596">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp</label>
+        <link refid="movie_phase_8cpp"/>
+      </node>
+      <node id="2587">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="2588" relation="include">
+        </childnode>
+      </node>
+      <node id="2601">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.cpp</label>
+        <link refid="app_8cpp"/>
+      </node>
+      <node id="2598">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.h</label>
+        <link refid="skip_phase_8h"/>
+        <childnode refid="2599" relation="include">
+        </childnode>
+      </node>
+      <node id="2581">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="2582" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+        <childnode refid="2615" relation="include">
+        </childnode>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+      <node id="2618">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unban.cpp</label>
+        <link refid="unban_8cpp"/>
+      </node>
+      <node id="2608">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.cpp</label>
+        <link refid="like_constructor_8cpp"/>
+      </node>
+      <node id="2603">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.h</label>
+        <link refid="unban_constructor_8h"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+      </node>
+      <node id="2584">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/banConstructor.cpp</label>
+        <link refid="ban_constructor_8cpp"/>
+      </node>
+      <node id="2609">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislikeConstructor.h</label>
+        <link refid="dislike_constructor_8h"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+      </node>
+      <node id="2619">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.cpp</label>
+        <link refid="app_api_8cpp"/>
+      </node>
+      <node id="2582">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.h</label>
+        <link refid="ban_8h"/>
+        <childnode refid="2583" relation="include">
+        </childnode>
+        <childnode refid="2584" relation="include">
+        </childnode>
+      </node>
+      <node id="2602">
+        <label>F:/projects/pepecontroller/pepecontroller/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2590">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+      </node>
+      <node id="2586">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/banConstructor.h</label>
+        <link refid="ban_constructor_8h"/>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2579">
+        <label>F:/projects/pepecontroller/pepecontroller/src/userCache.h</label>
+        <link refid="userCache.h"/>
+        <childnode refid="2580" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+        <childnode refid="2620" relation="include">
+        </childnode>
+      </node>
+      <node id="2595">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h</label>
+        <link refid="movie_phase_8h"/>
+        <childnode refid="2596" relation="include">
+        </childnode>
+      </node>
+      <node id="2591">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.cpp</label>
+        <link refid="vote_constructor_8cpp"/>
+      </node>
+      <node id="2610">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislikeConstructor.cpp</label>
+        <link refid="dislike_constructor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_name_hash" prot="public">NameHash</innerclass>
+    <innerclass refid="struct_name_comp" prot="public">NameComp</innerclass>
+    <innerclass refid="class_user_cache" prot="public">UserCache</innerclass>
+    <innerclass refid="struct_user_cache_1_1_user_info_index" prot="public">UserCache::UserInfoIndex</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="user_8h" kindref="compound">storage/models/user.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/multi_index_container.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/multi_index/hashed_index.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/multi_index/ordered_index.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/multi_index/identity.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/multi_index/member.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/multi_index/mem_fun.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_name_hash" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_name_hash" kindref="compound">NameHash</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_name_hash_1a274b87d1bfba09ac83fe9f6ea0bbb2a6" kindref="member">operator()</ref>(std::string<sp/>str)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="struct_name_comp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_name_comp" kindref="compound">NameComp</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_name_comp_1a058535d86123cb1ea8c21183fda32092" kindref="member">operator()</ref>(std::string<sp/>a,<sp/>std::string<sp/>b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_user_cache" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_user_cache" kindref="compound">UserCache</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="class_user_cache_1a884cbcb3ee6a15b17e8db8d0213f9abd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structstorage_1_1models_1_1user_1_1_user" kindref="compound">User</ref><sp/>=<sp/><ref refid="structstorage_1_1models_1_1user_1_1_user" kindref="compound">storage::models::user::User</ref>;</highlight></codeline>
+<codeline lineno="30" refid="class_user_cache_1a08a125ffb52a2eac20c7e59ae9ebfc90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1a08a125ffb52a2eac20c7e59ae9ebfc90" kindref="member">UserPtr</ref><sp/>=<sp/>std::shared_ptr&lt;User&gt;;</highlight></codeline>
+<codeline lineno="31" refid="class_user_cache_1acd5eb8233b4473b37ba83e5a02a48afe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1acd5eb8233b4473b37ba83e5a02a48afe" kindref="member">LRU</ref><sp/>=<sp/>std::list&lt;std::shared_ptr&lt;User&gt;&gt;;</highlight></codeline>
+<codeline lineno="32" refid="struct_user_cache_1_1_user_info_index" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_user_cache_1_1_user_info_index" kindref="compound">UserInfoIndex</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="struct_user_cache_1_1_user_info_index_1abd5db0929350ed4b71a6e4e0d93d0737" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;User&gt;<sp/><ref refid="struct_user_cache_1_1_user_info_index_1abd5db0929350ed4b71a6e4e0d93d0737" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="35" refid="struct_user_cache_1_1_user_info_index_1a70593254e3a49f45d1462885f4e06e07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>LRU::iterator<sp/><ref refid="struct_user_cache_1_1_user_info_index_1a70593254e3a49f45d1462885f4e06e07" kindref="member">it</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_user_cache_1_1_user_info_index_1a77f5bf86d92801322322c5f93d0c2d39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_user_cache_1_1_user_info_index_1a77f5bf86d92801322322c5f93d0c2d39" kindref="member">Id</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_user_cache_1_1_user_info_index_1abd5db0929350ed4b71a6e4e0d93d0737" kindref="member">data</ref>-&gt;id;<sp/>}</highlight></codeline>
+<codeline lineno="38" refid="struct_user_cache_1_1_user_info_index_1a3c6cce0cc9a33f6abf12af836bb6020a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_user_cache_1_1_user_info_index_1a3c6cce0cc9a33f6abf12af836bb6020a" kindref="member">Name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_user_cache_1_1_user_info_index_1abd5db0929350ed4b71a6e4e0d93d0737" kindref="member">data</ref>-&gt;name;<sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1ad6567d3487f29061874410ff3225a2d7" kindref="member">UserCache</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1a0d0066241fa578a8ea5f152be3e38b44" kindref="member">capacity</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" kindref="member">Insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1a884cbcb3ee6a15b17e8db8d0213f9abd" kindref="member">User</ref>&amp;<sp/>val);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_cache_1a08a125ffb52a2eac20c7e59ae9ebfc90" kindref="member">UserPtr</ref><sp/><ref refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" kindref="member">Get</ref>(uint64_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_cache_1a08a125ffb52a2eac20c7e59ae9ebfc90" kindref="member">UserPtr</ref><sp/><ref refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" kindref="member">Get</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="class_user_cache_1a0d0066241fa578a8ea5f152be3e38b44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_user_cache_1a0d0066241fa578a8ea5f152be3e38b44" kindref="member">capacity</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::multi_index_container<sp/>&lt;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_user_cache_1_1_user_info_index" kindref="compound">UserInfoIndex</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::multi_index::indexed_by&lt;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::multi_index::hashed_unique&lt;boost::multi_index::const_mem_fun&lt;UserInfoIndex,<sp/>uint64_t,<sp/>&amp;UserInfoIndex::Id&gt;&gt;,</highlight></codeline>
+<codeline lineno="52" refid="class_user_cache_1a37b74e1a34360ab00f08a85ef37b92ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::multi_index::hashed_unique&lt;boost::multi_index::const_mem_fun&lt;UserInfoIndex,<sp/>std::string,<sp/>&amp;UserInfoIndex::Name&gt;,<sp/><ref refid="struct_name_hash" kindref="compound">NameHash</ref>,<sp/><ref refid="struct_name_comp" kindref="compound">NameComp</ref>&gt;&gt;&gt;<sp/><ref refid="class_user_cache_1a37b74e1a34360ab00f08a85ef37b92ce" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_user_cache_1a31e8a8f527d2b4c7452cfbc01e83fb9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_cache_1acd5eb8233b4473b37ba83e5a02a48afe" kindref="member">LRU</ref><sp/><ref refid="class_user_cache_1a31e8a8f527d2b4c7452cfbc01e83fb9e" kindref="member">lru</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/userCache.h"/>
+  </compounddef>
+</doxygen>

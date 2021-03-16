@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="skip_8cpp" kind="file">
+    <compoundname>skip.cpp</compoundname>
+    <includes refid="skip_8h" local="yes">skip.h</includes>
+    <includes local="no">boost/log/trivial.hpp</includes>
+    <incdepgraph>
+      <node id="1189">
+        <label>models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+      </node>
+      <node id="1196">
+        <label>list</label>
+      </node>
+      <node id="1199">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="1200">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="1192">
+        <label>models/movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="1194">
+        <label>../appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="1195" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1173">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp</label>
+        <link refid="skip.cpp"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+      </node>
+      <node id="1193">
+        <label>models/movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1184">
+        <label>boost/signals2.hpp</label>
+      </node>
+      <node id="1182">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+        <link refid="_peka2tv_s_i_o_client_8h"/>
+        <childnode refid="1183" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1178">
+        <label>string</label>
+      </node>
+      <node id="1206">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="1179">
+        <label>exception</label>
+      </node>
+      <node id="1176">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+        <link refid="_peka2tv_http_client_8h"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+      </node>
+      <node id="1174">
+        <label>skip.h</label>
+        <link refid="skip_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+      </node>
+      <node id="1204">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+      </node>
+      <node id="1180">
+        <label>optional</label>
+      </node>
+      <node id="1207">
+        <label>../controller/backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="1205" relation="include">
+        </childnode>
+      </node>
+      <node id="1185">
+        <label>vector</label>
+      </node>
+      <node id="1203">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="1188" relation="include">
+        </childnode>
+      </node>
+      <node id="1188">
+        <label>../storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1183">
+        <label>sio_client.h</label>
+      </node>
+      <node id="1175">
+        <label>command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+      </node>
+      <node id="1198">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="1205">
+        <label>iostream</label>
+      </node>
+      <node id="1186">
+        <label>unordered_map</label>
+      </node>
+      <node id="1201">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="1197">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="1190">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>type_traits</label>
+      </node>
+      <node id="1177">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="1202">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="1195">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1187">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecommands">commands</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="skip_8h" kindref="compound">skip.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/trivial.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">commands</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classcommands_1_1_skip_1ac287c4d8eaaa7b7b37e6ccacbf25bf0d" refkind="member"><highlight class="normal"><ref refid="classcommands_1_1_skip_1ac287c4d8eaaa7b7b37e6ccacbf25bf0d" kindref="member">Skip::Skip</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" kindref="member">Skip::Execute</ref>(<ref refid="structcommands_1_1_context" kindref="compound">Context</ref>*<sp/>ctx)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecommands_1a0f0de67ae085c3d33eea93b370978f7f" kindref="member">Inst</ref>.<ref refid="classbackend_1_1_instance_1ad3be49a5999dd35aed3041fc099b138e" kindref="member">Stop</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecommands_1a0f0de67ae085c3d33eea93b370978f7f" kindref="member">Inst</ref>.<ref refid="classbackend_1_1_instance_1a6ded13456365b24c1a23ea1224abd9d0" kindref="member">callOverlay</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(debug)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[Skip::Execute]<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp"/>
+  </compounddef>
+</doxygen>

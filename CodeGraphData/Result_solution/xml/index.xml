@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_app" kind="class"><name>App</name>
+    <member refid="class_app_1a6ac75ac38ac822c998746432333e3abe" kind="typedef"><name>CommandSet</name></member>
+    <member refid="class_app_1ab0b2fc13be4d2a0c43d6412c8e8a79c9" kind="variable"><name>msgSource</name></member>
+    <member refid="class_app_1ac96dd943634afd82c41bd3453481fcc4" kind="variable"><name>storage</name></member>
+    <member refid="class_app_1a33af10692a0b2c754ee24409cbc44810" kind="variable"><name>httpClient</name></member>
+    <member refid="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" kind="variable"><name>logFile</name></member>
+    <member refid="class_app_1af900a5327bd3a74182e49f0b2db9dd23" kind="variable"><name>userCache</name></member>
+    <member refid="class_app_1a9da37495e760367710197b198b4db4e4" kind="variable"><name>appApi</name></member>
+    <member refid="class_app_1a19b3ed4d9785816ebe168b46947ba096" kind="variable"><name>phase</name></member>
+    <member refid="class_app_1a668121b596b12dc7aee47d798bf167d0" kind="function"><name>App</name></member>
+    <member refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" kind="function"><name>~App</name></member>
+    <member refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" kind="function"><name>HandleMessage</name></member>
+    <member refid="class_app_1a7aceead54c1c080acc13785cc02f2ec7" kind="function"><name>SetPhase</name></member>
+    <member refid="class_app_1a143bbdc3436eed6724778b581a87f887" kind="function"><name>CanExecute</name></member>
+    <member refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" kind="function"><name>IsOwner</name></member>
+    <member refid="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" kind="function"><name>IsCommand</name></member>
+    <member refid="class_app_1ae19ecdc075a50663483758bd38621a10" kind="function"><name>ExtractCommand</name></member>
+  </compound>
+  <compound refid="class_app_api" kind="class"><name>AppApi</name>
+    <member refid="class_app_api_1afb097a3ce985ffe94c636e8c4e80ccf8" kind="typedef"><name>User</name></member>
+    <member refid="class_app_api_1a6429adbc5ae5b1cd2bca345bacb00da2" kind="variable"><name>userCache</name></member>
+    <member refid="class_app_api_1a92adc27fb8acd40e9d910e9e4b63cc3e" kind="variable"><name>storage</name></member>
+    <member refid="class_app_api_1a0174efe7bc3d24dfb8eab0ad970158a2" kind="variable"><name>httpClient</name></member>
+    <member refid="class_app_api_1a12f62a9aa4f33dffe6524d662d5b6130" kind="function"><name>AppApi</name></member>
+    <member refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" kind="function"><name>FindUser</name></member>
+    <member refid="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" kind="function"><name>UpdateUser</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_ban" kind="class"><name>commands::Ban</name>
+    <member refid="classcommands_1_1_ban_1acc846a73ce1212b8fd9324a2863879ff" kind="variable"><name>name</name></member>
+    <member refid="classcommands_1_1_ban_1aafe809a62c74ef886b1e84236fee45fc" kind="function"><name>Ban</name></member>
+    <member refid="classcommands_1_1_ban_1ab07ebdd9c88c782fd35cf25dd5d2fc18" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_ban_constructor" kind="class"><name>commands::BanConstructor</name>
+    <member refid="classcommands_1_1_ban_constructor_1a4e1ddc24c8c3796f6b9ef31329ead511" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kind="struct"><name>peka2tv::Peka2tvSIOClient::ChatMessage</name>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a2b4f1d185a77a442d74f20f3627beb37" kind="variable"><name>from</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1abf25260a270fb9c91b8ccbe1804855de" kind="variable"><name>to</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1ac554bf9609f74e8f3f13bf55ed555e1e" kind="variable"><name>text</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a9c6b72091bd9f18ffbbc886929d093b7" kind="variable"><name>timestamp</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a40b0048fe227fc422a7d6cd2481add0c" kind="variable"><name>anonymous</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a918fe393bf2879d6bff9b14cceb2a125" kind="variable"><name>channel</name></member>
+  </compound>
+  <compound refid="structcommands_1_1_command" kind="struct"><name>commands::Command</name>
+    <member refid="structcommands_1_1_command_1a8a39fceff7fb297cad37fa99d415dc29" kind="function"><name>Execute</name></member>
+    <member refid="structcommands_1_1_command_1a24f4be511cc5724fefd8e2b320ffbcf8" kind="function"><name>~Command</name></member>
+  </compound>
+  <compound refid="structcommands_1_1_command_constructor" kind="struct"><name>commands::CommandConstructor</name>
+    <member refid="structcommands_1_1_command_constructor_1a3c99c8e4132a16619554dcea18cc6d81" kind="function"><name>Construct</name></member>
+    <member refid="structcommands_1_1_command_constructor_1a49fa2e650c1d65fb74eb4fb5a857f869" kind="function"><name>~CommandConstructor</name></member>
+  </compound>
+  <compound refid="structcommands_1_1_context" kind="struct"><name>commands::Context</name>
+    <member refid="structcommands_1_1_context_1adc3b4bb4b926b63a7838adfbe674b564" kind="variable"><name>message</name></member>
+    <member refid="structcommands_1_1_context_1a95a21e883274b6943f84155da4e1e457" kind="variable"><name>storage</name></member>
+    <member refid="structcommands_1_1_context_1ab9a8f3c1cef1299fd40a03e76f6b7da4" kind="variable"><name>httpClient</name></member>
+    <member refid="structcommands_1_1_context_1ace987495615c434f77ce5932c720db79" kind="variable"><name>api</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_dislike" kind="class"><name>commands::Dislike</name>
+    <member refid="classcommands_1_1_dislike_1a82371e6f6373a76ec00d98d96e4e4cc6" kind="function"><name>Dislike</name></member>
+    <member refid="classcommands_1_1_dislike_1a35ef5fbcbb5f2189d44a949adb4ec9fc" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_dislike_constructor" kind="class"><name>commands::DislikeConstructor</name>
+    <member refid="classcommands_1_1_dislike_constructor_1af816d8582032b2a69fd061e26b262f52" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="structbackend_1_1_font" kind="struct"><name>backend::Font</name>
+    <member refid="structbackend_1_1_font_1a98dd4b3ef27762f51cc076ff18e93366" kind="variable"><name>fontname</name></member>
+  </compound>
+  <compound refid="structbackend_1_1_image" kind="struct"><name>backend::Image</name>
+    <member refid="structbackend_1_1_image_1a348b16a4f2e8b730ad10d11c7ccc5795" kind="variable"><name>filename</name></member>
+  </compound>
+  <compound refid="classbackend_1_1_instance" kind="class"><name>backend::Instance</name>
+    <member refid="classbackend_1_1_instance_1a57a24862dbe8d058dc5851e23f2f586b" kind="function"><name>Instance</name></member>
+    <member refid="classbackend_1_1_instance_1abf228d5f379d37c5211443631bab5d7e" kind="function"><name>~Instance</name></member>
+    <member refid="classbackend_1_1_instance_1aeb0ab763aabe5ece10dc21f747acdfcb" kind="function"><name>Play</name></member>
+    <member refid="classbackend_1_1_instance_1a11a5dc3f5270f7deded0f7dae31698e9" kind="function"><name>Play</name></member>
+    <member refid="classbackend_1_1_instance_1a91b52590823413210b0c29a2cea77b3b" kind="function"><name>Volume</name></member>
+    <member refid="classbackend_1_1_instance_1ad3be49a5999dd35aed3041fc099b138e" kind="function"><name>Stop</name></member>
+    <member refid="classbackend_1_1_instance_1a6ded13456365b24c1a23ea1224abd9d0" kind="function"><name>callOverlay</name></member>
+    <member refid="classbackend_1_1_instance_1af7718f20d1c7fb09f64df9319ceabb07" kind="function"><name>DrawText</name></member>
+    <member refid="classbackend_1_1_instance_1a796914017a9fdfdee37a71dece7d4282" kind="function"><name>Connect</name></member>
+    <member refid="classbackend_1_1_instance_1ab5caf1734298286b9673c083c5dc3469" kind="function"><name>Disconnect</name></member>
+    <member refid="classbackend_1_1_instance_1a4233e50a03a7fff80eb67eca24bd5288" kind="function"><name>DrawImage</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_like" kind="class"><name>commands::Like</name>
+    <member refid="classcommands_1_1_like_1af22842cdfd9f723eeeb8019f4ecab39e" kind="function"><name>Like</name></member>
+    <member refid="classcommands_1_1_like_1a92d291c1ce8c9cd07148e79bf884cf31" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_like_constructor" kind="class"><name>commands::LikeConstructor</name>
+    <member refid="classcommands_1_1_like_constructor_1a8ab65d62d9ca6fc7c28333a48295e8e9" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="structpeka2tv_1_1_member_type" kind="struct"><name>peka2tv::MemberType</name>
+  </compound>
+  <compound refid="structpeka2tv_1_1_member_type_3_01_t_01_m_1_1_5_01_4" kind="struct"><name>peka2tv::MemberType&lt; T M::* &gt;</name>
+    <member refid="structpeka2tv_1_1_member_type_3_01_t_01_m_1_1_5_01_4_1a43fa8b8eb31b27394c2fce24949d4aeb" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structstorage_1_1models_1_1movie_1_1_movie" kind="struct"><name>storage::models::movie::Movie</name>
+    <member refid="structstorage_1_1models_1_1movie_1_1_movie_1a7e9e2ece5b2ee8cc9a42659d1332c6d8" kind="variable"><name>id</name></member>
+    <member refid="structstorage_1_1models_1_1movie_1_1_movie_1a8646e188d849cf542123e74e9a3317d5" kind="variable"><name>title</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_movie_phase" kind="class"><name>commands::MoviePhase</name>
+    <member refid="classcommands_1_1_movie_phase_1acfacdd34cfdc99ba765dd2dd6a9203e9" kind="variable"><name>movieCommands</name></member>
+    <member refid="classcommands_1_1_movie_phase_1a660d1fbdbb7a20c85753e36567259613" kind="function"><name>MoviePhase</name></member>
+    <member refid="classcommands_1_1_movie_phase_1a7b0cc1db99be03e7fb9f1c4a401ddbcd" kind="function"><name>GetCommands</name></member>
+  </compound>
+  <compound refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes" kind="struct"><name>storage::models::movieVotes::MovieVotes</name>
+    <member refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a78d48c40bc5a2e3509b3972658e64364" kind="variable"><name>id</name></member>
+    <member refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a1af1b2f92def5d926c45db9e32aac837" kind="variable"><name>userId</name></member>
+    <member refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a39b5b786032914449fa2aca4cfafb3d4" kind="variable"><name>vote</name></member>
+  </compound>
+  <compound refid="struct_name_comp" kind="struct"><name>NameComp</name>
+    <member refid="struct_name_comp_1a058535d86123cb1ea8c21183fda32092" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="struct_name_hash" kind="struct"><name>NameHash</name>
+    <member refid="struct_name_hash_1a274b87d1bfba09ac83fe9f6ea0bbb2a6" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classpeka2tv_1_1_peka2tv_http_client" kind="class"><name>peka2tv::Peka2tvHttpClient</name>
+    <member refid="classpeka2tv_1_1_peka2tv_http_client_1a2485d43b32d43067a844c556ab763dd6" kind="variable"><name>host</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_http_client_1ab2a213c7fdd4ba86909cba5b153fd4da" kind="variable"><name>port</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_http_client_1a8e1dd79667b3e3ca989c96493d708b37" kind="function"><name>Peka2tvHttpClient</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_http_client_1aaac6edb177c43ecbbc459d805521d8af" kind="function"><name>FetchUserInfo</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_http_client_1afac5aa60ef03c4e4936ab9aadcc07b4d" kind="function"><name>Call</name></member>
+  </compound>
+  <compound refid="classpeka2tv_1_1_peka2tv_s_i_o_client" kind="class"><name>peka2tv::Peka2tvSIOClient</name>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a97c25d564cbaa44115121a28bb11eb9c" kind="typedef"><name>ms</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aa2c4fb106d838754c390b715a3c02dd8" kind="typedef"><name>EventHub</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1af5a6a357823784158c02516fc4a5d28e" kind="typedef"><name>EventHubPtr</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1ad421f57d210a073f2b216f7563c33ab2" kind="variable"><name>host</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1aaa56e626d6283751dae7e0aac9c03786" kind="variable"><name>client</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1ab6cfe6a0d5f4bd7401787d12c76fed06" kind="variable"><name>isChatListen</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a188dfe271dcba2d78035e54baa19309d" kind="variable"><name>chatListeners</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a315e41d2b85390716e7ddcaf622a6100" kind="variable"><name>allChatListeners</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a84ccefee79b91249e70ce9f7f9f671ce" kind="function"><name>Connect</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a6870fcd9a66a37825c85ec6ca82d70f0" kind="function"><name>Join</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a5bcc8cd807247f87bedb195131da87d9" kind="function"><name>Leave</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a4df0ed097cd1ad306e55ecc50bf3083b" kind="function"><name>~Peka2tvSIOClient</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a8da54490886ea7b4f16cf46a78793933" kind="function"><name>OnMessage</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a217fdb387e15adbc368a80ff09c5bd76" kind="function"><name>RemoveDanglingListeners</name></member>
+    <member refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1a196299278f9ffb5556b5e8ba71e1e2b4" kind="function"><name>ParseChatMessage</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_phase" kind="class"><name>commands::Phase</name>
+    <member refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kind="typedef"><name>CommandSet</name></member>
+    <member refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" kind="variable"><name>basicCommands</name></member>
+    <member refid="classcommands_1_1_phase_1ad31b1798aa4bbd946d405cf31e7a9880" kind="function"><name>Phase</name></member>
+    <member refid="classcommands_1_1_phase_1a70a3d9f3986bedbd970c018253c349dc" kind="function"><name>~Phase</name></member>
+    <member refid="classcommands_1_1_phase_1a0475ec92faf62efd2c785097f5060812" kind="function"><name>GetCommands</name></member>
+    <member refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" kind="function"><name>mergeCommands</name></member>
+    <member refid="classcommands_1_1_phase_1a1b4c4d02e3a1127ef2a3349913acb4df" kind="function"><name>SetPhase</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_skip" kind="class"><name>commands::Skip</name>
+    <member refid="classcommands_1_1_skip_1ac287c4d8eaaa7b7b37e6ccacbf25bf0d" kind="function"><name>Skip</name></member>
+    <member refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_skip_constructor" kind="class"><name>commands::SkipConstructor</name>
+    <member refid="classcommands_1_1_skip_constructor_1ae89c86a714260b7f07dc9d1492d2b09b" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_skip_phase" kind="class"><name>commands::SkipPhase</name>
+    <member refid="classcommands_1_1_skip_phase_1ae31f91be64f506cb42be6f51c33c7235" kind="variable"><name>skipCommands</name></member>
+    <member refid="classcommands_1_1_skip_phase_1a1de5dc1953129813289c23e09b9ba2f0" kind="function"><name>SkipPhase</name></member>
+    <member refid="classcommands_1_1_skip_phase_1aed8319d835e8195df1c7829cab40618a" kind="function"><name>GetCommands</name></member>
+  </compound>
+  <compound refid="structbackend_1_1_text" kind="struct"><name>backend::Text</name>
+    <member refid="structbackend_1_1_text_1a8adb84c7831209976cf428abc87ff0cc" kind="variable"><name>text</name></member>
+    <member refid="structbackend_1_1_text_1a53fdce3d2442612a60a7b1c2588918e4" kind="variable"><name>font</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_unban" kind="class"><name>commands::Unban</name>
+    <member refid="classcommands_1_1_unban_1a42fda21653bd5a5d62cc9140a4272bd0" kind="variable"><name>name</name></member>
+    <member refid="classcommands_1_1_unban_1a00a583e7532c78bd122816cf61d7104d" kind="function"><name>Unban</name></member>
+    <member refid="classcommands_1_1_unban_1a756423ed0f77abb233c7e7549632f41a" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_unban_constructor" kind="class"><name>commands::UnbanConstructor</name>
+    <member refid="classcommands_1_1_unban_constructor_1a54826e473f8faf18611fa90b373d23f9" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="structbackend_1_1_u_r_i" kind="struct"><name>backend::URI</name>
+    <member refid="structbackend_1_1_u_r_i_1a17bd9b2a9bf060cb059619a2dbaef29b" kind="variable"><name>address</name></member>
+  </compound>
+  <compound refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user" kind="struct"><name>peka2tv::Peka2tvSIOClient::ChatMessage::User</name>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a614cc2cad9f9c62f5d356cae59c954fd" kind="variable"><name>color</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" kind="variable"><name>id</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a128fbc9914de261f5c8b62255caf82e1" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="structstorage_1_1models_1_1user_1_1_user" kind="struct"><name>storage::models::user::User</name>
+    <member refid="structstorage_1_1models_1_1user_1_1_user_1a5ad4ea26e0da403edaf17afe311a5838" kind="variable"><name>id</name></member>
+    <member refid="structstorage_1_1models_1_1user_1_1_user_1a538fe98bffaaa412799dc64d2f57335b" kind="variable"><name>name</name></member>
+    <member refid="structstorage_1_1models_1_1user_1_1_user_1a11a235b44cf2d19ad1c9b9fb375d4035" kind="variable"><name>voteWeight</name></member>
+    <member refid="structstorage_1_1models_1_1user_1_1_user_1a480a497b32d53cd2ff18798c8638b671" kind="variable"><name>group</name></member>
+  </compound>
+  <compound refid="class_user_cache" kind="class"><name>UserCache</name>
+    <member refid="class_user_cache_1a884cbcb3ee6a15b17e8db8d0213f9abd" kind="typedef"><name>User</name></member>
+    <member refid="class_user_cache_1a08a125ffb52a2eac20c7e59ae9ebfc90" kind="typedef"><name>UserPtr</name></member>
+    <member refid="class_user_cache_1acd5eb8233b4473b37ba83e5a02a48afe" kind="typedef"><name>LRU</name></member>
+    <member refid="class_user_cache_1a0d0066241fa578a8ea5f152be3e38b44" kind="variable"><name>capacity</name></member>
+    <member refid="class_user_cache_1a37b74e1a34360ab00f08a85ef37b92ce" kind="variable"><name>index</name></member>
+    <member refid="class_user_cache_1a31e8a8f527d2b4c7452cfbc01e83fb9e" kind="variable"><name>lru</name></member>
+    <member refid="class_user_cache_1ad6567d3487f29061874410ff3225a2d7" kind="function"><name>UserCache</name></member>
+    <member refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" kind="function"><name>Insert</name></member>
+    <member refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" kind="function"><name>Get</name></member>
+    <member refid="class_user_cache_1a55013b5ccdfc0c995ecd5404b633c56f" kind="function"><name>Get</name></member>
+  </compound>
+  <compound refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info" kind="struct"><name>peka2tv::Peka2tvHttpClient::UserInfo</name>
+    <member refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a2dc3f9052322437ebe07f71751c2febd" kind="variable"><name>id</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a92f96c94995c615bfa435e4ca726a979" kind="variable"><name>name</name></member>
+    <member refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1ab67bbf5a89ed7128f00b795e1baac322" kind="variable"><name>slug</name></member>
+  </compound>
+  <compound refid="struct_user_cache_1_1_user_info_index" kind="struct"><name>UserCache::UserInfoIndex</name>
+    <member refid="struct_user_cache_1_1_user_info_index_1abd5db0929350ed4b71a6e4e0d93d0737" kind="variable"><name>data</name></member>
+    <member refid="struct_user_cache_1_1_user_info_index_1a70593254e3a49f45d1462885f4e06e07" kind="variable"><name>it</name></member>
+    <member refid="struct_user_cache_1_1_user_info_index_1a77f5bf86d92801322322c5f93d0c2d39" kind="function"><name>Id</name></member>
+    <member refid="struct_user_cache_1_1_user_info_index_1a3c6cce0cc9a33f6abf12af836bb6020a" kind="function"><name>Name</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_vote" kind="class"><name>commands::Vote</name>
+    <member refid="classcommands_1_1_vote_1acb0c6ebb7dd9d6181677268dbc532623" kind="variable"><name>phase</name></member>
+    <member refid="classcommands_1_1_vote_1a646708d1a08eb8ecd0f74a3cac09e259" kind="variable"><name>num</name></member>
+    <member refid="classcommands_1_1_vote_1af8fec810b9f7ed7955463622cff115de" kind="function"><name>Vote</name></member>
+    <member refid="classcommands_1_1_vote_1a579815716afa4a158bb67b28d4adc5f8" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_vote_constructor" kind="class"><name>commands::VoteConstructor</name>
+    <member refid="classcommands_1_1_vote_constructor_1aa090fb8742ffa46e78069e3185a2905c" kind="variable"><name>phase</name></member>
+    <member refid="classcommands_1_1_vote_constructor_1ae273a5f87b9db30b7427d674cdf70a3c" kind="function"><name>VoteConstructor</name></member>
+    <member refid="classcommands_1_1_vote_constructor_1a61f39a8be10c3be35dc8bdfdcf930a17" kind="function"><name>Construct</name></member>
+  </compound>
+  <compound refid="classcommands_1_1_vote_phase" kind="class"><name>commands::VotePhase</name>
+    <member refid="classcommands_1_1_vote_phase_1aca21e83bffa73556321f4a35107eca29" kind="variable"><name>voteCommands</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a8ce3a3062a979852c703ae90c9312619" kind="variable"><name>VoteCache</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a902a51f232a2d3c223ea1f648a83e8e4" kind="variable"><name>counter_size</name></member>
+    <member refid="classcommands_1_1_vote_phase_1abb744bd902282d757a3ba5c1e759b1da" kind="variable"><name>VotesCounter</name></member>
+    <member refid="classcommands_1_1_vote_phase_1ad3cb579a4d909ae4ced79c26ceb0b495" kind="function"><name>VotePhase</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a3c2d2b903067f38df5918edcfe067def" kind="function"><name>GetCommands</name></member>
+    <member refid="classcommands_1_1_vote_phase_1a254c29f14d50f736e885381df1eba9a7" kind="function"><name>Vote</name></member>
+  </compound>
+  <compound refid="namespacebackend" kind="namespace"><name>backend</name>
+  </compound>
+  <compound refid="namespacecommands" kind="namespace"><name>commands</name>
+    <member refid="namespacecommands_1a0f0de67ae085c3d33eea93b370978f7f" kind="variable"><name>Inst</name></member>
+  </compound>
+  <compound refid="namespacepeka2tv" kind="namespace"><name>peka2tv</name>
+    <member refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kind="function"><name>offsetOf</name></member>
+    <member refid="namespacepeka2tv_1a15abb4cac0e2dd20bfcc3d225fa1cc59" kind="function"><name>LogChatCommands</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacestorage" kind="namespace"><name>storage</name>
+    <member refid="namespacestorage_1aa4575809785e6dabbbade496cc3f2969" kind="typedef"><name>Column</name></member>
+    <member refid="namespacestorage_1a0ffb80a91d4790703803d8548f94bd25" kind="typedef"><name>Storage</name></member>
+    <member refid="namespacestorage_1a2b11c7f1bc7ad8b680e0225dfe02dfea" kind="function"><name>InitStorage</name></member>
+  </compound>
+  <compound refid="namespacestorage_1_1models" kind="namespace"><name>storage::models</name>
+  </compound>
+  <compound refid="namespacestorage_1_1models_1_1movie" kind="namespace"><name>storage::models::movie</name>
+    <member refid="namespacestorage_1_1models_1_1movie_1ae9957114abbe038f02ee2e260bf9c988" kind="typedef"><name>TableType</name></member>
+    <member refid="namespacestorage_1_1models_1_1movie_1a10e54382c87f37ce8ea67e8bd1a405c3" kind="function"><name>MakeTable</name></member>
+  </compound>
+  <compound refid="namespacestorage_1_1models_1_1movie_votes" kind="namespace"><name>storage::models::movieVotes</name>
+    <member refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaa" kind="enum"><name>VoteType</name></member>
+    <member refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaaac37d934910cc27f04b9403b5a9f86c53" kind="enumvalue"><name>DISLIKE</name></member>
+    <member refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaaa321c072bade087fbabdb90f5a04a156a" kind="enumvalue"><name>LIKE</name></member>
+    <member refid="namespacestorage_1_1models_1_1movie_votes_1ad885cbaf4caee8c267b0b9471adfbab4" kind="typedef"><name>TableType</name></member>
+    <member refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" kind="function"><name>MakeTable</name></member>
+  </compound>
+  <compound refid="namespacestorage_1_1models_1_1user" kind="namespace"><name>storage::models::user</name>
+    <member refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ad" kind="enum"><name>UserGroup</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ada23a7c310ca1197e698622929e01ca209" kind="enumvalue"><name>Ignored</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ada6f64ed3acf4baa74ef7369024b2c388f" kind="enumvalue"><name>Viewer</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ada8cf28f2f3ca57afb37dbdf7af3a55f95" kind="enumvalue"><name>Moderator</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108adae9f22400d1eb7c7785adce2be814b861" kind="enumvalue"><name>Admin</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1ab1c41d80cfecca6e920648c621f658ee" kind="typedef"><name>TableType</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1a27b854e9f72e5657d28c47cf8ff1cc56" kind="variable"><name>groups</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" kind="function"><name>MakeTable</name></member>
+  </compound>
+  <compound refid="app_8cpp" kind="file"><name>app.cpp</name>
+  </compound>
+  <compound refid="app_8h" kind="file"><name>app.h</name>
+  </compound>
+  <compound refid="app_api_8cpp" kind="file"><name>appApi.cpp</name>
+  </compound>
+  <compound refid="app_api_8h" kind="file"><name>appApi.h</name>
+  </compound>
+  <compound refid="ban_8cpp" kind="file"><name>ban.cpp</name>
+  </compound>
+  <compound refid="ban_8h" kind="file"><name>ban.h</name>
+  </compound>
+  <compound refid="ban_constructor_8cpp" kind="file"><name>banConstructor.cpp</name>
+  </compound>
+  <compound refid="ban_constructor_8h" kind="file"><name>banConstructor.h</name>
+  </compound>
+  <compound refid="command_8h" kind="file"><name>command.h</name>
+  </compound>
+  <compound refid="command_constructor_8h" kind="file"><name>commandConstructor.h</name>
+  </compound>
+  <compound refid="_constructors_8h" kind="file"><name>Constructors.h</name>
+  </compound>
+  <compound refid="dislike_8cpp" kind="file"><name>dislike.cpp</name>
+  </compound>
+  <compound refid="dislike_8h" kind="file"><name>dislike.h</name>
+  </compound>
+  <compound refid="dislike_constructor_8cpp" kind="file"><name>dislikeConstructor.cpp</name>
+  </compound>
+  <compound refid="dislike_constructor_8h" kind="file"><name>dislikeConstructor.h</name>
+  </compound>
+  <compound refid="like_8cpp" kind="file"><name>like.cpp</name>
+  </compound>
+  <compound refid="like_8h" kind="file"><name>like.h</name>
+  </compound>
+  <compound refid="like_constructor_8cpp" kind="file"><name>likeConstructor.cpp</name>
+  </compound>
+  <compound refid="like_constructor_8h" kind="file"><name>likeConstructor.h</name>
+  </compound>
+  <compound refid="movie_phase_8cpp" kind="file"><name>moviePhase.cpp</name>
+  </compound>
+  <compound refid="movie_phase_8h" kind="file"><name>moviePhase.h</name>
+  </compound>
+  <compound refid="phase_8cpp" kind="file"><name>phase.cpp</name>
+  </compound>
+  <compound refid="phase_8h" kind="file"><name>phase.h</name>
+    <member refid="phase_8h_1a580484a0c9287d6e278ae1288f4a1bf2" kind="typedef"><name>user_id</name></member>
+  </compound>
+  <compound refid="skip_8cpp" kind="file"><name>skip.cpp</name>
+  </compound>
+  <compound refid="skip_8h" kind="file"><name>skip.h</name>
+  </compound>
+  <compound refid="skip_constructor_8cpp" kind="file"><name>skipConstructor.cpp</name>
+  </compound>
+  <compound refid="skip_constructor_8h" kind="file"><name>skipConstructor.h</name>
+  </compound>
+  <compound refid="skip_phase_8cpp" kind="file"><name>skipPhase.cpp</name>
+  </compound>
+  <compound refid="skip_phase_8h" kind="file"><name>skipPhase.h</name>
+  </compound>
+  <compound refid="unban_8cpp" kind="file"><name>unban.cpp</name>
+  </compound>
+  <compound refid="unban_8h" kind="file"><name>unban.h</name>
+  </compound>
+  <compound refid="unban_constructor_8cpp" kind="file"><name>unbanConstructor.cpp</name>
+  </compound>
+  <compound refid="unban_constructor_8h" kind="file"><name>unbanConstructor.h</name>
+  </compound>
+  <compound refid="vote_8cpp" kind="file"><name>vote.cpp</name>
+  </compound>
+  <compound refid="vote_8h" kind="file"><name>vote.h</name>
+  </compound>
+  <compound refid="vote_constructor_8cpp" kind="file"><name>voteConstructor.cpp</name>
+  </compound>
+  <compound refid="vote_constructor_8h" kind="file"><name>voteConstructor.h</name>
+  </compound>
+  <compound refid="vote_phase_8cpp" kind="file"><name>votePhase.cpp</name>
+  </compound>
+  <compound refid="vote_phase_8h" kind="file"><name>votePhase.h</name>
+  </compound>
+  <compound refid="backend_8cpp" kind="file"><name>backend.cpp</name>
+  </compound>
+  <compound refid="backend_8h" kind="file"><name>backend.h</name>
+  </compound>
+  <compound refid="helper_8cpp" kind="file"><name>helper.cpp</name>
+  </compound>
+  <compound refid="helper_8h" kind="file"><name>helper.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1abdc885af21a5223701dc216930d3b899" kind="function"><name>Main</name></member>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_peka2tv_http_client_8cpp" kind="file"><name>Peka2tvHttpClient.cpp</name>
+  </compound>
+  <compound refid="_peka2tv_http_client_8h" kind="file"><name>Peka2tvHttpClient.h</name>
+  </compound>
+  <compound refid="_peka2tv_s_i_o_client_8cpp" kind="file"><name>Peka2tvSIOClient.cpp</name>
+  </compound>
+  <compound refid="_peka2tv_s_i_o_client_8h" kind="file"><name>Peka2tvSIOClient.h</name>
+  </compound>
+  <compound refid="storage_8h" kind="file"><name>storage.h</name>
+  </compound>
+  <compound refid="column_8h" kind="file"><name>column.h</name>
+  </compound>
+  <compound refid="movie_8cpp" kind="file"><name>movie.cpp</name>
+  </compound>
+  <compound refid="movie_8h" kind="file"><name>movie.h</name>
+  </compound>
+  <compound refid="movie_votes_8cpp" kind="file"><name>movieVotes.cpp</name>
+  </compound>
+  <compound refid="movie_votes_8h" kind="file"><name>movieVotes.h</name>
+  </compound>
+  <compound refid="user_8cpp" kind="file"><name>user.cpp</name>
+  </compound>
+  <compound refid="user_8h" kind="file"><name>user.h</name>
+  </compound>
+  <compound refid="sqlite_storage_8cpp" kind="file"><name>sqliteStorage.cpp</name>
+  </compound>
+  <compound refid="sqlite_storage_8h" kind="file"><name>sqliteStorage.h</name>
+  </compound>
+  <compound refid="user_cache_8cpp" kind="file"><name>userCache.cpp</name>
+    <member refid="user_cache_8cpp_1abce9c7d46c73610bb799c5c6d1985a82" kind="function"><name>ToLowercase</name></member>
+  </compound>
+  <compound refid="user_cache_8h" kind="file"><name>userCache.h</name>
+  </compound>
+  <compound refid="dir_36508a952b047b15ffa124412f7a6d5d" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src/commands</name>
+  </compound>
+  <compound refid="dir_7b1f9c65aa1d55d6f289f325c2bcbef9" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src/controller</name>
+  </compound>
+  <compound refid="dir_3a581ba30d25676e4b797b1f96d53b45" kind="dir"><name>F:</name>
+  </compound>
+  <compound refid="dir_b94f5c7018fe7fb84f12e1bc0667bd84" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src/storage/models</name>
+  </compound>
+  <compound refid="dir_e99fae2108eb3237fceb8b69da7ada70" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src/peka2tv</name>
+  </compound>
+  <compound refid="dir_78ed6230150c4375130eb30be56fc2b8" kind="dir"><name>F:/projects/pepecontroller/pepecontroller</name>
+  </compound>
+  <compound refid="dir_832eef67a1f42af4fc2f2094bc5802d4" kind="dir"><name>F:/projects/pepecontroller</name>
+  </compound>
+  <compound refid="dir_7e2327c2d513de17d54c84550c38f872" kind="dir"><name>F:/projects</name>
+  </compound>
+  <compound refid="dir_636b7955e88f4a8debe0a150bdb672bb" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src</name>
+  </compound>
+  <compound refid="dir_481bd7b624d1b621e547bdc4fc48d0fb" kind="dir"><name>F:/projects/pepecontroller/pepecontroller/src/storage</name>
+  </compound>
+</doxygenindex>

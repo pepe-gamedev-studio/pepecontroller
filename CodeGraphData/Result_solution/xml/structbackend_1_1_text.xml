@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structbackend_1_1_text" kind="struct" prot="public">
+    <compoundname>backend::Text</compoundname>
+    <includes refid="backend_8h" local="no">backend.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbackend_1_1_text_1a8adb84c7831209976cf428abc87ff0cc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string backend::Text::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="19" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbackend_1_1_text_1a53fdce3d2442612a60a7b1c2588918e4" prot="public" static="no" mutable="no">
+        <type><ref refid="structbackend_1_1_font" kindref="compound">Font</ref></type>
+        <definition>Font backend::Text::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="20" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="134">
+        <label>backend::Font</label>
+        <link refid="structbackend_1_1_font"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>fontname</edgelabel>
+        </childnode>
+      </node>
+      <node id="133">
+        <label>backend::Text</label>
+        <link refid="structbackend_1_1_text"/>
+        <childnode refid="134" relation="usage">
+          <edgelabel>font</edgelabel>
+        </childnode>
+        <childnode refid="135" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="136">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="135">
+        <label>std::string</label>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="18" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" bodystart="17" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structbackend_1_1_text_1a53fdce3d2442612a60a7b1c2588918e4" prot="public" virt="non-virtual"><scope>backend::Text</scope><name>font</name></member>
+      <member refid="structbackend_1_1_text_1a8adb84c7831209976cf428abc87ff0cc" prot="public" virt="non-virtual"><scope>backend::Text</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

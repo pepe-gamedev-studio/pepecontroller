@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacestorage_1_1models_1_1movie" kind="namespace">
+    <compoundname>storage::models::movie</compoundname>
+    <innerclass refid="structstorage_1_1models_1_1movie_1_1_movie" prot="public">storage::models::movie::Movie</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacestorage_1_1models_1_1movie_1ae9957114abbe038f02ee2e260bf9c988" prot="public" static="no">
+        <type>sqlite_orm::internal::table_t&lt; <ref refid="structstorage_1_1models_1_1movie_1_1_movie" kindref="compound">Movie</ref>, <ref refid="namespacestorage_1aa4575809785e6dabbbade496cc3f2969" kindref="member">Column</ref>&lt; <ref refid="structstorage_1_1models_1_1movie_1_1_movie" kindref="compound">Movie</ref>, decltype(<ref refid="structstorage_1_1models_1_1movie_1_1_movie_1a7e9e2ece5b2ee8cc9a42659d1332c6d8" kindref="member">Movie::id</ref>), sqlite_orm::constraints::primary_key_t&lt;&gt;&gt;, <ref refid="namespacestorage_1aa4575809785e6dabbbade496cc3f2969" kindref="member">Column</ref>&lt; <ref refid="structstorage_1_1models_1_1movie_1_1_movie" kindref="compound">Movie</ref>, decltype(<ref refid="structstorage_1_1models_1_1movie_1_1_movie_1a8646e188d849cf542123e74e9a3317d5" kindref="member">Movie::title</ref>)&gt;&gt;</type>
+        <definition>using storage::models::movie::TableType = typedef sqlite_orm::internal::table_t&lt;Movie, Column&lt;Movie, decltype(Movie::id), sqlite_orm::constraints::primary_key_t&lt;&gt;&gt;, Column&lt;Movie, decltype(Movie::title)&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>TableType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.h" line="17" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacestorage_1_1models_1_1movie_1a10e54382c87f37ce8ea67e8bd1a405c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacestorage_1_1models_1_1movie_1ae9957114abbe038f02ee2e260bf9c988" kindref="member">TableType</ref></type>
+        <definition>TableType storage::models::movie::MakeTable</definition>
+        <argsstring>()</argsstring>
+        <name>MakeTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.cpp" line="6" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.cpp" bodystart="6" bodyend="13"/>
+        <references refid="structstorage_1_1models_1_1movie_1_1_movie_1a7e9e2ece5b2ee8cc9a42659d1332c6d8" compoundref="movie_8h" startline="13">storage::models::movie::Movie::id</references>
+        <references refid="structstorage_1_1models_1_1movie_1_1_movie_1a8646e188d849cf542123e74e9a3317d5" compoundref="movie_8h" startline="14">storage::models::movie::Movie::title</references>
+        <referencedby refid="namespacestorage_1a2b11c7f1bc7ad8b680e0225dfe02dfea" compoundref="sqlite_storage_8cpp" startline="8" endline="20">storage::InitStorage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.cpp" line="4" column="1"/>
+  </compounddef>
+</doxygen>

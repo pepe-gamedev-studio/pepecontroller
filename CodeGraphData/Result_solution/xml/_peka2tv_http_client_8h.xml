@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_peka2tv_http_client_8h" kind="file">
+    <compoundname>Peka2tvHttpClient.h</compoundname>
+    <includes local="no">nlohmann/json.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">type_traits</includes>
+    <includedby refid="command_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/command.h</includedby>
+    <includedby refid="app_api_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/appApi.h</includedby>
+    <includedby refid="ban_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/ban.h</includedby>
+    <includedby refid="unban_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/commands/unban.h</includedby>
+    <includedby refid="app_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/app.h</includedby>
+    <includedby refid="main_8cpp" local="yes">F:/projects/pepecontroller/pepecontroller/src/main.cpp</includedby>
+    <includedby refid="_peka2tv_http_client_8cpp" local="yes">F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvHttpClient.cpp</includedby>
+    <incdepgraph>
+      <node id="2103">
+        <label>string</label>
+      </node>
+      <node id="2104">
+        <label>exception</label>
+      </node>
+      <node id="2101">
+        <label>F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvHttpClient.h</label>
+        <link refid="Peka2tvHttpClient.h"/>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+      </node>
+      <node id="2105">
+        <label>optional</label>
+      </node>
+      <node id="2106">
+        <label>type_traits</label>
+      </node>
+      <node id="2102">
+        <label>nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2121">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.cpp</label>
+        <link refid="vote_phase_8cpp"/>
+      </node>
+      <node id="2126">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.cpp</label>
+        <link refid="skip_phase_8cpp"/>
+      </node>
+      <node id="2146">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+      </node>
+      <node id="2143">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp</label>
+        <link refid="skip_8cpp"/>
+      </node>
+      <node id="2112">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="2113" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2117" relation="include">
+        </childnode>
+        <childnode refid="2134" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2133">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipConstructor.cpp</label>
+        <link refid="skip_constructor_8cpp"/>
+      </node>
+      <node id="2127">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.h</label>
+        <link refid="app_8h"/>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+      </node>
+      <node id="2116">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="2117" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+      </node>
+      <node id="2115">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.h</label>
+        <link refid="phase_8h"/>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2141">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/like.cpp</label>
+        <link refid="like_8cpp"/>
+      </node>
+      <node id="2119">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.h</label>
+        <link refid="vote_8h"/>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+      </node>
+      <node id="2110">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.cpp</label>
+        <link refid="ban_8cpp"/>
+      </node>
+      <node id="2132">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipConstructor.h</label>
+        <link refid="skip_constructor_8h"/>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+      </node>
+      <node id="2138">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.h</label>
+        <link refid="dislike_8h"/>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+      </node>
+      <node id="2120">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.cpp</label>
+        <link refid="vote_8cpp"/>
+      </node>
+      <node id="2124">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp</label>
+        <link refid="phase_8cpp"/>
+      </node>
+      <node id="2131">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.cpp</label>
+        <link refid="unban_constructor_8cpp"/>
+      </node>
+      <node id="2144">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unban.h</label>
+        <link refid="unban_8h"/>
+        <childnode refid="2145" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+      </node>
+      <node id="2139">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.cpp</label>
+        <link refid="dislike_8cpp"/>
+      </node>
+      <node id="2107">
+        <label>F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvHttpClient.h</label>
+        <link refid="Peka2tvHttpClient.h"/>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2146" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2148" relation="include">
+        </childnode>
+      </node>
+      <node id="2142">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.h</label>
+        <link refid="skip_8h"/>
+        <childnode refid="2143" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+      </node>
+      <node id="2140">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/like.h</label>
+        <link refid="like_8h"/>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2134">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.h</label>
+        <link refid="like_constructor_8h"/>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2123">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp</label>
+        <link refid="movie_phase_8cpp"/>
+      </node>
+      <node id="2114">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="2115" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.cpp</label>
+        <link refid="app_8cpp"/>
+      </node>
+      <node id="2125">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.h</label>
+        <link refid="skip_phase_8h"/>
+        <childnode refid="2126" relation="include">
+        </childnode>
+      </node>
+      <node id="2108">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2145">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unban.cpp</label>
+        <link refid="unban_8cpp"/>
+      </node>
+      <node id="2135">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.cpp</label>
+        <link refid="like_constructor_8cpp"/>
+      </node>
+      <node id="2130">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.h</label>
+        <link refid="unban_constructor_8h"/>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+      </node>
+      <node id="2111">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/banConstructor.cpp</label>
+        <link refid="ban_constructor_8cpp"/>
+      </node>
+      <node id="2136">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislikeConstructor.h</label>
+        <link refid="dislike_constructor_8h"/>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+      </node>
+      <node id="2147">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.cpp</label>
+        <link refid="app_api_8cpp"/>
+      </node>
+      <node id="2109">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.h</label>
+        <link refid="ban_8h"/>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+      </node>
+      <node id="2129">
+        <label>F:/projects/pepecontroller/pepecontroller/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2117">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+      </node>
+      <node id="2148">
+        <label>F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvHttpClient.cpp</label>
+        <link refid="_peka2tv_http_client_8cpp"/>
+      </node>
+      <node id="2113">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/banConstructor.h</label>
+        <link refid="ban_constructor_8h"/>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+      </node>
+      <node id="2122">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h</label>
+        <link refid="movie_phase_8h"/>
+        <childnode refid="2123" relation="include">
+        </childnode>
+      </node>
+      <node id="2118">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.cpp</label>
+        <link refid="vote_constructor_8cpp"/>
+      </node>
+      <node id="2137">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislikeConstructor.cpp</label>
+        <link refid="dislike_constructor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpeka2tv_1_1_member_type" prot="public">peka2tv::MemberType</innerclass>
+    <innerclass refid="structpeka2tv_1_1_member_type_3_01_t_01_m_1_1_5_01_4" prot="public">peka2tv::MemberType&lt; T M::* &gt;</innerclass>
+    <innerclass refid="classpeka2tv_1_1_peka2tv_http_client" prot="public">peka2tv::Peka2tvHttpClient</innerclass>
+    <innerclass refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info" prot="public">peka2tv::Peka2tvHttpClient::UserInfo</innerclass>
+    <innernamespace refid="namespacepeka2tv">peka2tv</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;nlohmann/json.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">peka2tv</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/>constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(U<sp/>T::*member)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;((T*)nullptr-&gt;*member)<sp/>-<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="18" refid="structpeka2tv_1_1_member_type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpeka2tv_1_1_member_type" kindref="compound">MemberType</ref><sp/>{};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>M&gt;</highlight></codeline>
+<codeline lineno="21" refid="structpeka2tv_1_1_member_type_3_01_t_01_m_1_1_5_01_4_1a43fa8b8eb31b27394c2fce24949d4aeb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpeka2tv_1_1_member_type" kindref="compound">MemberType</ref>&lt;T<sp/>M::*&gt;<sp/>{<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_member_type_3_01_t_01_m_1_1_5_01_4_1a43fa8b8eb31b27394c2fce24949d4aeb" kindref="member">type</ref><sp/>=<sp/>T;<sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classpeka2tv_1_1_peka2tv_http_client" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpeka2tv_1_1_peka2tv_http_client" kindref="compound">Peka2tvHttpClient</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info" kindref="compound">UserInfo</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a2dc3f9052322437ebe07f71751c2febd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a2dc3f9052322437ebe07f71751c2febd" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="29" refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a92f96c94995c615bfa435e4ca726a979" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a92f96c94995c615bfa435e4ca726a979" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1ab67bbf5a89ed7128f00b795e1baac322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1ab67bbf5a89ed7128f00b795e1baac322" kindref="member">slug</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpeka2tv_1_1_peka2tv_http_client_1a8e1dd79667b3e3ca989c96493d708b37" kindref="member">Peka2tvHttpClient</ref>(std::string<sp/>entry<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;https://sc2tv.ru&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UserInfoMember,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="35" refid="classpeka2tv_1_1_peka2tv_http_client_1aaac6edb177c43ecbbc459d805521d8af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;UserInfo&gt;<sp/><ref refid="classpeka2tv_1_1_peka2tv_http_client_1aaac6edb177c43ecbbc459d805521d8af" kindref="member">FetchUserInfo</ref>(UserInfoMember<sp/>m,<sp/>T<sp/>val)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_assert(std::is_convertible_v&lt;T,<sp/><ref refid="structpeka2tv_1_1_member_type" kindref="compound">MemberType&lt;UserInfoMember&gt;::type</ref>&gt;,<sp/></highlight><highlight class="stringliteral">&quot;Type<sp/>mismatch<sp/>between<sp/>property<sp/>and<sp/>provided<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>resource<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/api/user&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nlohmann::json<sp/>q;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(m)<sp/>==<sp/><ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(&amp;<ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a2dc3f9052322437ebe07f71751c2febd" kindref="member">UserInfo::id</ref>))</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(m)<sp/>==<sp/><ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(&amp;<ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1a92f96c94995c615bfa435e4ca726a979" kindref="member">UserInfo::name</ref>))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(m)<sp/>==<sp/><ref refid="namespacepeka2tv_1a4d9fa4f14426789232ccae1efa1eb4c8" kindref="member">offsetOf</ref>(&amp;<ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info_1ab67bbf5a89ed7128f00b795e1baac322" kindref="member">UserInfo::slug</ref>))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[</highlight><highlight class="stringliteral">&quot;slug&quot;</highlight><highlight class="normal">]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>query&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>nlohmann::json::parse(<ref refid="classpeka2tv_1_1_peka2tv_http_client_1afac5aa60ef03c4e4936ab9aadcc07b4d" kindref="member">Call</ref>(resource,<sp/>q.dump()));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r.find(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">)<sp/>==<sp/>r.end())</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_peka2tv_http_client_1_1_user_info" kindref="compound">UserInfo</ref>{<sp/>r[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">].get&lt;uint64_t&gt;(),<sp/>r[</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">].get&lt;std::string&gt;(),<sp/>r[</highlight><highlight class="stringliteral">&quot;slug&quot;</highlight><highlight class="normal">].get&lt;std::string&gt;()<sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classpeka2tv_1_1_peka2tv_http_client_1afac5aa60ef03c4e4936ab9aadcc07b4d" kindref="member">Call</ref>(std::string<sp/>method,<sp/>std::string<sp/>data);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="classpeka2tv_1_1_peka2tv_http_client_1a2485d43b32d43067a844c556ab763dd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classpeka2tv_1_1_peka2tv_http_client_1a2485d43b32d43067a844c556ab763dd6" kindref="member">host</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classpeka2tv_1_1_peka2tv_http_client_1ab2a213c7fdd4ba86909cba5b153fd4da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classpeka2tv_1_1_peka2tv_http_client_1ab2a213c7fdd4ba86909cba5b153fd4da" kindref="member">port</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/peka2tv/Peka2tvHttpClient.h"/>
+  </compounddef>
+</doxygen>

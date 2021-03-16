@@ -5,7 +5,7 @@ namespace commands
 	{
 		mergeCommands(this->movieCommands);
 	}
-	const Phase::CommandSet& MoviePhase::GetCommands()
+	const CommandSet& MoviePhase::GetCommands()
 	{
 		return this->movieCommands;
 	}

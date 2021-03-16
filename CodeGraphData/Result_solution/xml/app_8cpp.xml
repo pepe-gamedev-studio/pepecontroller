@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="app_8cpp" kind="file">
+    <compoundname>app.cpp</compoundname>
+    <includes refid="app_8h" local="yes">app.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/istream</includes>
+    <includes local="no">boost/log/trivial.hpp</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/exception</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/tuple</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/typeinfo</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xmemory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xstddef</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>list</label>
+      </node>
+      <node id="26">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="19">
+        <label>models/movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>functional</label>
+      </node>
+      <node id="18">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="21">
+        <label>../appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>commands/commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>app.h</label>
+        <link refid="app_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>models/movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>commands/phase.h</label>
+        <link refid="phase_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>boost/signals2.hpp</label>
+      </node>
+      <node id="9">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+        <link refid="_peka2tv_s_i_o_client_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/exception</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>skipConstructor.h</label>
+        <link refid="skip_constructor_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>unordered_set</label>
+      </node>
+      <node id="33">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="6">
+        <label>exception</label>
+      </node>
+      <node id="48">
+        <label>fstream</label>
+      </node>
+      <node id="55">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xstddef</label>
+      </node>
+      <node id="3">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+        <link refid="_peka2tv_http_client_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/typeinfo</label>
+      </node>
+      <node id="31">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h</label>
+      </node>
+      <node id="45">
+        <label>likeConstructor.h</label>
+        <link refid="like_constructor_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xmemory</label>
+      </node>
+      <node id="37">
+        <label>Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.cpp</label>
+        <link refid="app.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/tuple</label>
+      </node>
+      <node id="7">
+        <label>optional</label>
+      </node>
+      <node id="34">
+        <label>../controller/backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="30">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sio_client.h</label>
+      </node>
+      <node id="2">
+        <label>commands/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="49">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/istream</label>
+      </node>
+      <node id="39">
+        <label>unbanConstructor.h</label>
+        <link refid="unban_constructor_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>unordered_map</label>
+      </node>
+      <node id="28">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="46">
+        <label>dislikeConstructor.h</label>
+        <link refid="dislike_constructor_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>type_traits</label>
+      </node>
+      <node id="41">
+        <label>voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="38">
+        <label>banConstructor.h</label>
+        <link refid="ban_constructor_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/xhash</label>
+      </node>
+      <node id="29">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="22">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="app_8h" kindref="compound">app.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/trivial.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_app_1a668121b596b12dc7aee47d798bf167d0" refkind="member"><highlight class="normal"><ref refid="class_app_1a668121b596b12dc7aee47d798bf167d0" kindref="member">App::App</ref>(</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpeka2tv_1_1_peka2tv_s_i_o_client_1af5a6a357823784158c02516fc4a5d28e" kindref="member">peka2tv::Peka2tvSIOClient::EventHubPtr</ref><sp/>msgSource,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestorage_1a0ffb80a91d4790703803d8548f94bd25" kindref="member">storage::Storage</ref>*<sp/>storage,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpeka2tv_1_1_peka2tv_http_client" kindref="compound">peka2tv::Peka2tvHttpClient</ref>*<sp/>httpClient)<sp/>:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>msgSource(msgSource),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>storage(storage),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>httpClient(httpClient),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>userCache(1000),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>appApi(&amp;userCache,<sp/>storage,<sp/>httpClient)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>msgSource-&gt;connect(std::bind(&amp;<ref refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" kindref="member">App::HandleMessage</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" refkind="member"><highlight class="normal"><ref refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" kindref="member">App::~App</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_app_1ab0b2fc13be4d2a0c43d6412c8e8a79c9" kindref="member">msgSource</ref>-&gt;disconnect_all_slots();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" kindref="member">logFile</ref>.close();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" kindref="member">App::HandleMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">peka2tv::Peka2tvSIOClient::ChatMessage</ref>&amp;<sp/>x)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(<ref refid="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" kindref="member">IsCommand</ref>(x.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1ac554bf9609f74e8f3f13bf55ed555e1e" kindref="member">text</ref>)<sp/>&amp;&amp;<sp/><ref refid="class_app_1a143bbdc3436eed6724778b581a87f887" kindref="member">CanExecute</ref>(x)))</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ctr<sp/>=<sp/>this-&gt;<ref refid="class_app_1a19b3ed4d9785816ebe168b46947ba096" kindref="member">phase</ref>-&gt;GetCommands().find(<ref refid="class_app_1ae19ecdc075a50663483758bd38621a10" kindref="member">ExtractCommand</ref>(x.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1ac554bf9609f74e8f3f13bf55ed555e1e" kindref="member">text</ref>));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctr<sp/>!=<sp/>this-&gt;<ref refid="class_app_1a19b3ed4d9785816ebe168b46947ba096" kindref="member">phase</ref>-&gt;GetCommands().end())</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcommands_1_1_context" kindref="compound">commands::Context</ref><sp/>ctx{<sp/>&amp;x,<sp/><ref refid="class_app_1ac96dd943634afd82c41bd3453481fcc4" kindref="member">storage</ref>,<sp/><ref refid="class_app_1a33af10692a0b2c754ee24409cbc44810" kindref="member">httpClient</ref>,<sp/>&amp;<ref refid="class_app_1a9da37495e760367710197b198b4db4e4" kindref="member">appApi</ref><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctr-&gt;second-&gt;Construct(x)-&gt;Execute(&amp;ctx);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepeka2tv_1a15abb4cac0e2dd20bfcc3d225fa1cc59" kindref="member">peka2tv::LogChatCommands</ref>(x,<sp/><ref refid="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" kindref="member">logFile</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_app_1a143bbdc3436eed6724778b581a87f887" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_app_1a143bbdc3436eed6724778b581a87f887" kindref="member">App::CanExecute</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">peka2tv::Peka2tvSIOClient::ChatMessage</ref>&amp;<sp/>x)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">storage::models::user;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;User&gt;<sp/>user;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>found<sp/>=<sp/><ref refid="class_app_1af900a5327bd3a74182e49f0b2db9dd23" kindref="member">userCache</ref>.<ref refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" kindref="member">Get</ref>(x.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a2b4f1d185a77a442d74f20f3627beb37" kindref="member">from</ref>.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" kindref="member">id</ref>))</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>user<sp/>=<sp/>found;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>found<sp/>=<sp/><ref refid="class_app_1ac96dd943634afd82c41bd3453481fcc4" kindref="member">storage</ref>-&gt;get_pointer&lt;<ref refid="structstorage_1_1models_1_1user_1_1_user" kindref="compound">User</ref>&gt;(x.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a2b4f1d185a77a442d74f20f3627beb37" kindref="member">from</ref>.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" kindref="member">id</ref>))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>user<sp/>=<sp/>std::move(found);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_app_1af900a5327bd3a74182e49f0b2db9dd23" kindref="member">userCache</ref>.<ref refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" kindref="member">Insert</ref>(*user);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>!(user<sp/>&amp;&amp;<sp/>user-&gt;group<sp/>==<sp/><ref refid="namespacestorage_1_1models_1_1user_1a396f6d94a2cf70686e48147f79b108ada23a7c310ca1197e698622929e01ca209" kindref="member">UserGroup::Ignored</ref>)<sp/>||<sp/><ref refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" kindref="member">IsOwner</ref>(x);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(debug)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[App::CanExecute]<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>x.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a2b4f1d185a77a442d74f20f3627beb37" kindref="member">from</ref>.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" kindref="member">id</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ret;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>App::SetCommands(const<sp/>CommandSet<sp/>&amp;<sp/>set)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>this-&gt;commands<sp/>=<sp/>set;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" kindref="member">App::IsOwner</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">peka2tv::Peka2tvSIOClient::ChatMessage</ref><sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stream/12345</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::stoi(msg.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a918fe393bf2879d6bff9b14cceb2a125" kindref="member">channel</ref>.substr(7))<sp/>==<sp/>msg.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1a2b4f1d185a77a442d74f20f3627beb37" kindref="member">from</ref>.<ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message_1_1_user_1a6e87aac23c9262fab162b7b888aa81df" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" kindref="member">App::IsCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!msg.empty()<sp/>&amp;&amp;<sp/>msg.front()<sp/>==<sp/></highlight><highlight class="charliteral">&apos;!&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_app_1ae19ecdc075a50663483758bd38621a10" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_app_1ae19ecdc075a50663483758bd38621a10" kindref="member">App::ExtractCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss(msg);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>cmd;<sp/>ss<sp/>&gt;&gt;<sp/>cmd;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(++cmd.begin(),<sp/>cmd.end());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/app.cpp"/>
+  </compounddef>
+</doxygen>

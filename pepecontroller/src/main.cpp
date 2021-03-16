@@ -1,7 +1,6 @@
 #include "peka2tv/peka2tvSIOClient.h"
 #include "peka2tv/peka2tvHttpClient.h"
 #include "storage.h"
-#include "storage/models/user.h"
 #include "app.h"
 #include <iostream>
 #include <string>
@@ -9,9 +8,8 @@
 #include <algorithm>
 #include <memory>
 #include <boost/log/trivial.hpp>
-
 #include <boost/asio.hpp>
-
+#include "commands/votePhase.h"
 int Main(int argc, char * argv[]);
 
 #ifdef _WIN32

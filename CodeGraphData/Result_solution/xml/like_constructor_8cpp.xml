@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="like_constructor_8cpp" kind="file">
+    <compoundname>likeConstructor.cpp</compoundname>
+    <includes refid="like_constructor_8h" local="yes">likeConstructor.h</includes>
+    <includes refid="like_8h" local="yes">like.h</includes>
+    <incdepgraph>
+      <node id="891">
+        <label>models/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>list</label>
+      </node>
+      <node id="901">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="902">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="894">
+        <label>models/movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+      <node id="893">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="896">
+        <label>../appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="876">
+        <label>commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="877" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>models/movieVotes.h</label>
+        <link refid="movie_votes_8h"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+      </node>
+      <node id="879">
+        <label>boost/signals2.hpp</label>
+      </node>
+      <node id="877">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+        <link refid="_peka2tv_s_i_o_client_8h"/>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>string</label>
+      </node>
+      <node id="908">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="888">
+        <label>exception</label>
+      </node>
+      <node id="886">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+        <link refid="_peka2tv_http_client_8h"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="910">
+        <label>like.h</label>
+        <link refid="like_8h"/>
+        <childnode refid="885" relation="include">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>likeConstructor.h</label>
+        <link refid="like_constructor_8h"/>
+        <childnode refid="876" relation="include">
+        </childnode>
+      </node>
+      <node id="884">
+        <label>optional</label>
+      </node>
+      <node id="909">
+        <label>../controller/backend.h</label>
+        <link refid="backend_8h"/>
+        <childnode refid="907" relation="include">
+        </childnode>
+      </node>
+      <node id="881">
+        <label>vector</label>
+      </node>
+      <node id="905">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+      <node id="890">
+        <label>../storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="878">
+        <label>sio_client.h</label>
+      </node>
+      <node id="885">
+        <label>command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.cpp</label>
+        <link refid="likeConstructor.cpp"/>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+      </node>
+      <node id="900">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="907">
+        <label>iostream</label>
+      </node>
+      <node id="882">
+        <label>unordered_map</label>
+      </node>
+      <node id="903">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="899">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="892">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="893" relation="include">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>type_traits</label>
+      </node>
+      <node id="887">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="904">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="897">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="904" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecommands">commands</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="like_constructor_8h" kindref="compound">likeConstructor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="like_8h" kindref="compound">like.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">commands</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="classcommands_1_1_like_constructor_1a8ab65d62d9ca6fc7c28333a48295e8e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Command&gt;<sp/><ref refid="classcommands_1_1_like_constructor_1a8ab65d62d9ca6fc7c28333a48295e8e9" kindref="member">LikeConstructor::Construct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpeka2tv_1_1_peka2tv_s_i_o_client_1_1_chat_message" kindref="compound">peka2tv::Peka2tvSIOClient::ChatMessage</ref>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_unique&lt;Like&gt;();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.cpp"/>
+  </compounddef>
+</doxygen>

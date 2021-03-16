@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcommands_1_1_movie_phase" kind="class" prot="public">
+    <compoundname>commands::MoviePhase</compoundname>
+    <basecompoundref refid="classcommands_1_1_phase" prot="public" virt="non-virtual">commands::Phase</basecompoundref>
+    <includes refid="movie_phase_8h" local="no">moviePhase.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcommands_1_1_movie_phase_1acfacdd34cfdc99ba765dd2dd6a9203e9" prot="private" static="no" mutable="no">
+        <type><ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref></type>
+        <definition>CommandSet commands::MoviePhase::movieCommands</definition>
+        <argsstring></argsstring>
+        <name>movieCommands</name>
+        <initializer>{
+			{&quot;like&quot;, std::make_shared&lt;<ref refid="classcommands_1_1_like_constructor" kindref="compound">commands::LikeConstructor</ref>&gt;() },
+			{&quot;dislike&quot;, std::make_shared&lt;<ref refid="classcommands_1_1_dislike_constructor" kindref="compound">commands::DislikeConstructor</ref>&gt;() },
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h" line="11" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classcommands_1_1_movie_phase_1a7b0cc1db99be03e7fb9f1c4a401ddbcd" compoundref="movie_phase_8cpp" startline="8" endline="11">GetCommands</referencedby>
+        <referencedby refid="classcommands_1_1_movie_phase_1a660d1fbdbb7a20c85753e36567259613" compoundref="movie_phase_8cpp" startline="4" endline="7">MoviePhase</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommands_1_1_movie_phase_1a660d1fbdbb7a20c85753e36567259613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>commands::MoviePhase::MoviePhase</definition>
+        <argsstring>()</argsstring>
+        <name>MoviePhase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h" line="8" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp" bodystart="4" bodyend="7"/>
+        <references refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" compoundref="phase_8cpp" startline="8" endline="11">commands::Phase::mergeCommands</references>
+        <references refid="classcommands_1_1_movie_phase_1acfacdd34cfdc99ba765dd2dd6a9203e9" compoundref="movie_phase_8h" startline="12">movieCommands</references>
+      </memberdef>
+      <memberdef kind="function" id="classcommands_1_1_movie_phase_1a7b0cc1db99be03e7fb9f1c4a401ddbcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref> &amp;</type>
+        <definition>const Phase::CommandSet &amp; commands::MoviePhase::GetCommands</definition>
+        <argsstring>() override</argsstring>
+        <name>GetCommands</name>
+        <reimplements refid="classcommands_1_1_phase_1a0475ec92faf62efd2c785097f5060812">GetCommands</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h" line="9" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp" bodystart="8" bodyend="11"/>
+        <references refid="classcommands_1_1_movie_phase_1acfacdd34cfdc99ba765dd2dd6a9203e9" compoundref="movie_phase_8h" startline="12">movieCommands</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="94">
+        <label>commands::MoviePhase</label>
+        <link refid="classcommands_1_1_movie_phase"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>commands::Phase</label>
+        <link refid="classcommands_1_1_phase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="96">
+        <label>commands::MoviePhase</label>
+        <link refid="classcommands_1_1_movie_phase"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>commands::Phase</label>
+        <link refid="classcommands_1_1_phase"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h" line="6" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h" bodystart="5" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" prot="protected" virt="non-virtual"><scope>commands::MoviePhase</scope><name>basicCommands</name></member>
+      <member refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" prot="public" virt="non-virtual"><scope>commands::MoviePhase</scope><name>CommandSet</name></member>
+      <member refid="classcommands_1_1_movie_phase_1a7b0cc1db99be03e7fb9f1c4a401ddbcd" prot="public" virt="virtual"><scope>commands::MoviePhase</scope><name>GetCommands</name></member>
+      <member refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" prot="protected" virt="non-virtual"><scope>commands::MoviePhase</scope><name>mergeCommands</name></member>
+      <member refid="classcommands_1_1_movie_phase_1acfacdd34cfdc99ba765dd2dd6a9203e9" prot="private" virt="non-virtual"><scope>commands::MoviePhase</scope><name>movieCommands</name></member>
+      <member refid="classcommands_1_1_movie_phase_1a660d1fbdbb7a20c85753e36567259613" prot="public" virt="non-virtual"><scope>commands::MoviePhase</scope><name>MoviePhase</name></member>
+      <member refid="classcommands_1_1_phase_1ad31b1798aa4bbd946d405cf31e7a9880" prot="public" virt="non-virtual"><scope>commands::MoviePhase</scope><name>Phase</name></member>
+      <member refid="classcommands_1_1_phase_1a1b4c4d02e3a1127ef2a3349913acb4df" prot="protected" virt="non-virtual"><scope>commands::MoviePhase</scope><name>SetPhase</name></member>
+      <member refid="classcommands_1_1_phase_1a70a3d9f3986bedbd970c018253c349dc" prot="public" virt="virtual"><scope>commands::MoviePhase</scope><name>~Phase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

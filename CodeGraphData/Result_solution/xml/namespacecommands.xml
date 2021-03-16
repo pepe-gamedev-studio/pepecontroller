@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacecommands" kind="namespace">
+    <compoundname>commands</compoundname>
+    <innerclass refid="classcommands_1_1_ban" prot="public">commands::Ban</innerclass>
+    <innerclass refid="classcommands_1_1_ban_constructor" prot="public">commands::BanConstructor</innerclass>
+    <innerclass refid="structcommands_1_1_context" prot="public">commands::Context</innerclass>
+    <innerclass refid="structcommands_1_1_command" prot="public">commands::Command</innerclass>
+    <innerclass refid="structcommands_1_1_command_constructor" prot="public">commands::CommandConstructor</innerclass>
+    <innerclass refid="classcommands_1_1_dislike" prot="public">commands::Dislike</innerclass>
+    <innerclass refid="classcommands_1_1_dislike_constructor" prot="public">commands::DislikeConstructor</innerclass>
+    <innerclass refid="classcommands_1_1_like" prot="public">commands::Like</innerclass>
+    <innerclass refid="classcommands_1_1_like_constructor" prot="public">commands::LikeConstructor</innerclass>
+    <innerclass refid="classcommands_1_1_movie_phase" prot="public">commands::MoviePhase</innerclass>
+    <innerclass refid="classcommands_1_1_phase" prot="public">commands::Phase</innerclass>
+    <innerclass refid="classcommands_1_1_skip" prot="public">commands::Skip</innerclass>
+    <innerclass refid="classcommands_1_1_skip_constructor" prot="public">commands::SkipConstructor</innerclass>
+    <innerclass refid="classcommands_1_1_skip_phase" prot="public">commands::SkipPhase</innerclass>
+    <innerclass refid="classcommands_1_1_unban" prot="public">commands::Unban</innerclass>
+    <innerclass refid="classcommands_1_1_unban_constructor" prot="public">commands::UnbanConstructor</innerclass>
+    <innerclass refid="classcommands_1_1_vote" prot="public">commands::Vote</innerclass>
+    <innerclass refid="classcommands_1_1_vote_constructor" prot="public">commands::VoteConstructor</innerclass>
+    <innerclass refid="classcommands_1_1_vote_phase" prot="public">commands::VotePhase</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecommands_1a0f0de67ae085c3d33eea93b370978f7f" prot="public" static="no" mutable="no">
+        <type><ref refid="classbackend_1_1_instance" kindref="compound">backend::Instance</ref></type>
+        <definition>backend::Instance commands::Inst</definition>
+        <argsstring></argsstring>
+        <name>Inst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/command.h" line="10" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/command.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" compoundref="skip_8cpp" startline="11" endline="16">commands::Skip::Execute</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/ban.cpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

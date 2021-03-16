@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dislike_8cpp" kind="file">
+    <compoundname>dislike.cpp</compoundname>
+    <includes refid="dislike_8h" local="yes">dislike.h</includes>
+    <includes local="no">boost/log/trivial.hpp</includes>
+    <incdepgraph>
+      <node id="277">
+        <label>../controller/backend.h</label>
+      </node>
+      <node id="274">
+        <label>../peka2tv/peka2tvSIOClient.h</label>
+      </node>
+      <node id="271">
+        <label>dislike.h</label>
+        <link refid="dislike_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="270">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.cpp</label>
+        <link refid="dislike.cpp"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>../appApi.h</label>
+      </node>
+      <node id="273">
+        <label>../peka2tv/peka2tvHttpClient.h</label>
+      </node>
+      <node id="272">
+        <label>command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>../storage/sqliteStorage.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecommands">commands</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dislike_8h" kindref="compound">dislike.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/trivial.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">commands</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classcommands_1_1_dislike_1a82371e6f6373a76ec00d98d96e4e4cc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcommands_1_1_dislike_1a82371e6f6373a76ec00d98d96e4e4cc6" kindref="member">Dislike::Dislike</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classcommands_1_1_dislike_1a35ef5fbcbb5f2189d44a949adb4ec9fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommands_1_1_dislike_1a35ef5fbcbb5f2189d44a949adb4ec9fc" kindref="member">Dislike::Execute</ref>(<ref refid="structcommands_1_1_context" kindref="compound">Context</ref>*<sp/>ctx)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(debug)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[Dislike::Execute]<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/dislike.cpp"/>
+  </compounddef>
+</doxygen>

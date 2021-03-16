@@ -1,12 +1,10 @@
 #pragma once
 #include "commandConstructor.h"
-#include "phase.h"
-
 #include <memory>
 
 namespace commands
 {
-
+	class VotePhase;
 class VoteConstructor : public CommandConstructor
 {
 public:

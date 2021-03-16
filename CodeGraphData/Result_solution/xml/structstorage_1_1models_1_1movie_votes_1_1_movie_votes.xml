@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structstorage_1_1models_1_1movie_votes_1_1_movie_votes" kind="struct" prot="public">
+    <compoundname>storage::models::movieVotes::MovieVotes</compoundname>
+    <includes refid="movie_votes_8h" local="no">movieVotes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a78d48c40bc5a2e3509b3972658e64364" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t storage::models::movieVotes::MovieVotes::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" line="13" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" compoundref="movie_votes_8cpp" startline="6" endline="14">storage::models::movieVotes::MakeTable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a1af1b2f92def5d926c45db9e32aac837" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t storage::models::movieVotes::MovieVotes::userId</definition>
+        <argsstring></argsstring>
+        <name>userId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" line="14" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" compoundref="movie_votes_8cpp" startline="6" endline="14">storage::models::movieVotes::MakeTable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a39b5b786032914449fa2aca4cfafb3d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t storage::models::movieVotes::MovieVotes::vote</definition>
+        <argsstring></argsstring>
+        <name>vote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" line="15" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" compoundref="movie_votes_8cpp" startline="6" endline="14">storage::models::movieVotes::MakeTable</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" line="12" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a78d48c40bc5a2e3509b3972658e64364" prot="public" virt="non-virtual"><scope>storage::models::movieVotes::MovieVotes</scope><name>id</name></member>
+      <member refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a1af1b2f92def5d926c45db9e32aac837" prot="public" virt="non-virtual"><scope>storage::models::movieVotes::MovieVotes</scope><name>userId</name></member>
+      <member refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a39b5b786032914449fa2aca4cfafb3d4" prot="public" virt="non-virtual"><scope>storage::models::movieVotes::MovieVotes</scope><name>vote</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

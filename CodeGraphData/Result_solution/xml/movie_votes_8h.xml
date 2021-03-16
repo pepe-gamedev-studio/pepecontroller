@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="movie_votes_8h" kind="file">
+    <compoundname>movieVotes.h</compoundname>
+    <includes refid="column_8h" local="yes">../column.h</includes>
+    <includes local="no">sqlite_orm/sqlite_orm.h</includes>
+    <includedby refid="sqlite_storage_8h" local="yes">F:/projects/pepecontroller/pepecontroller/src/storage/sqliteStorage.h</includedby>
+    <includedby refid="movie_votes_8cpp" local="yes">F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.cpp</includedby>
+    <incdepgraph>
+      <node id="2380">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="2378">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h</label>
+        <link refid="movieVotes.h"/>
+        <childnode refid="2379" relation="include">
+        </childnode>
+        <childnode refid="2380" relation="include">
+        </childnode>
+      </node>
+      <node id="2379">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="2380" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2396">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.cpp</label>
+        <link refid="vote_phase_8cpp"/>
+      </node>
+      <node id="2401">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.cpp</label>
+        <link refid="skip_phase_8cpp"/>
+      </node>
+      <node id="2422">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="2383" relation="include">
+        </childnode>
+        <childnode refid="2402" relation="include">
+        </childnode>
+        <childnode refid="2423" relation="include">
+        </childnode>
+      </node>
+      <node id="2418">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp</label>
+        <link refid="skip_8cpp"/>
+      </node>
+      <node id="2387">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/commandConstructor.h</label>
+        <link refid="command_constructor_8h"/>
+        <childnode refid="2388" relation="include">
+        </childnode>
+        <childnode refid="2405" relation="include">
+        </childnode>
+        <childnode refid="2407" relation="include">
+        </childnode>
+        <childnode refid="2392" relation="include">
+        </childnode>
+        <childnode refid="2409" relation="include">
+        </childnode>
+        <childnode refid="2411" relation="include">
+        </childnode>
+        <childnode refid="2402" relation="include">
+        </childnode>
+      </node>
+      <node id="2408">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipConstructor.cpp</label>
+        <link refid="skip_constructor_8cpp"/>
+      </node>
+      <node id="2402">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.h</label>
+        <link refid="app_8h"/>
+        <childnode refid="2403" relation="include">
+        </childnode>
+        <childnode refid="2404" relation="include">
+        </childnode>
+      </node>
+      <node id="2381">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h</label>
+        <link refid="movieVotes.h"/>
+        <childnode refid="2382" relation="include">
+        </childnode>
+        <childnode refid="2425" relation="include">
+        </childnode>
+      </node>
+      <node id="2391">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/votePhase.h</label>
+        <link refid="vote_phase_8h"/>
+        <childnode refid="2392" relation="include">
+        </childnode>
+        <childnode refid="2394" relation="include">
+        </childnode>
+        <childnode refid="2396" relation="include">
+        </childnode>
+      </node>
+      <node id="2390">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.h</label>
+        <link refid="phase_8h"/>
+        <childnode refid="2391" relation="include">
+        </childnode>
+        <childnode refid="2397" relation="include">
+        </childnode>
+        <childnode refid="2399" relation="include">
+        </childnode>
+        <childnode refid="2400" relation="include">
+        </childnode>
+        <childnode refid="2402" relation="include">
+        </childnode>
+      </node>
+      <node id="2416">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/like.cpp</label>
+        <link refid="like_8cpp"/>
+      </node>
+      <node id="2394">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.h</label>
+        <link refid="vote_8h"/>
+        <childnode refid="2395" relation="include">
+        </childnode>
+        <childnode refid="2393" relation="include">
+        </childnode>
+      </node>
+      <node id="2385">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.cpp</label>
+        <link refid="ban_8cpp"/>
+      </node>
+      <node id="2407">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipConstructor.h</label>
+        <link refid="skip_constructor_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2408" relation="include">
+        </childnode>
+      </node>
+      <node id="2413">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.h</label>
+        <link refid="dislike_8h"/>
+        <childnode refid="2414" relation="include">
+        </childnode>
+        <childnode refid="2412" relation="include">
+        </childnode>
+      </node>
+      <node id="2395">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/vote.cpp</label>
+        <link refid="vote_8cpp"/>
+      </node>
+      <node id="2399">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp</label>
+        <link refid="phase_8cpp"/>
+      </node>
+      <node id="2406">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.cpp</label>
+        <link refid="unban_constructor_8cpp"/>
+      </node>
+      <node id="2419">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unban.h</label>
+        <link refid="unban_8h"/>
+        <childnode refid="2420" relation="include">
+        </childnode>
+        <childnode refid="2406" relation="include">
+        </childnode>
+      </node>
+      <node id="2414">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislike.cpp</label>
+        <link refid="dislike_8cpp"/>
+      </node>
+      <node id="2417">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skip.h</label>
+        <link refid="skip_8h"/>
+        <childnode refid="2418" relation="include">
+        </childnode>
+        <childnode refid="2408" relation="include">
+        </childnode>
+      </node>
+      <node id="2425">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.cpp</label>
+        <link refid="movie_votes_8cpp"/>
+      </node>
+      <node id="2424">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/sqliteStorage.cpp</label>
+        <link refid="sqlite_storage_8cpp"/>
+      </node>
+      <node id="2415">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/like.h</label>
+        <link refid="like_8h"/>
+        <childnode refid="2416" relation="include">
+        </childnode>
+        <childnode refid="2410" relation="include">
+        </childnode>
+      </node>
+      <node id="2409">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.h</label>
+        <link refid="like_constructor_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2410" relation="include">
+        </childnode>
+      </node>
+      <node id="2398">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.cpp</label>
+        <link refid="movie_phase_8cpp"/>
+      </node>
+      <node id="2389">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/Constructors.h</label>
+        <link refid="_constructors_8h"/>
+        <childnode refid="2390" relation="include">
+        </childnode>
+      </node>
+      <node id="2403">
+        <label>F:/projects/pepecontroller/pepecontroller/src/app.cpp</label>
+        <link refid="app_8cpp"/>
+      </node>
+      <node id="2421">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="2422" relation="include">
+        </childnode>
+        <childnode refid="2404" relation="include">
+        </childnode>
+      </node>
+      <node id="2382">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/sqliteStorage.h</label>
+        <link refid="sqlite_storage_8h"/>
+        <childnode refid="2383" relation="include">
+        </childnode>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2384" relation="include">
+        </childnode>
+        <childnode refid="2419" relation="include">
+        </childnode>
+        <childnode refid="2402" relation="include">
+        </childnode>
+        <childnode refid="2424" relation="include">
+        </childnode>
+      </node>
+      <node id="2400">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/skipPhase.h</label>
+        <link refid="skip_phase_8h"/>
+        <childnode refid="2401" relation="include">
+        </childnode>
+      </node>
+      <node id="2383">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="2384" relation="include">
+        </childnode>
+        <childnode refid="2387" relation="include">
+        </childnode>
+        <childnode refid="2413" relation="include">
+        </childnode>
+        <childnode refid="2415" relation="include">
+        </childnode>
+        <childnode refid="2417" relation="include">
+        </childnode>
+        <childnode refid="2419" relation="include">
+        </childnode>
+        <childnode refid="2394" relation="include">
+        </childnode>
+        <childnode refid="2402" relation="include">
+        </childnode>
+      </node>
+      <node id="2420">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unban.cpp</label>
+        <link refid="unban_8cpp"/>
+      </node>
+      <node id="2410">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.cpp</label>
+        <link refid="like_constructor_8cpp"/>
+      </node>
+      <node id="2405">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/unbanConstructor.h</label>
+        <link refid="unban_constructor_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2406" relation="include">
+        </childnode>
+      </node>
+      <node id="2386">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/banConstructor.cpp</label>
+        <link refid="ban_constructor_8cpp"/>
+      </node>
+      <node id="2411">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislikeConstructor.h</label>
+        <link refid="dislike_constructor_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2412" relation="include">
+        </childnode>
+      </node>
+      <node id="2423">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.cpp</label>
+        <link refid="app_api_8cpp"/>
+      </node>
+      <node id="2384">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/ban.h</label>
+        <link refid="ban_8h"/>
+        <childnode refid="2385" relation="include">
+        </childnode>
+        <childnode refid="2386" relation="include">
+        </childnode>
+      </node>
+      <node id="2404">
+        <label>F:/projects/pepecontroller/pepecontroller/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2392">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.h</label>
+        <link refid="vote_constructor_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2393" relation="include">
+        </childnode>
+      </node>
+      <node id="2388">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/banConstructor.h</label>
+        <link refid="ban_constructor_8h"/>
+        <childnode refid="2386" relation="include">
+        </childnode>
+        <childnode refid="2389" relation="include">
+        </childnode>
+      </node>
+      <node id="2397">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/moviePhase.h</label>
+        <link refid="movie_phase_8h"/>
+        <childnode refid="2398" relation="include">
+        </childnode>
+      </node>
+      <node id="2393">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/voteConstructor.cpp</label>
+        <link refid="vote_constructor_8cpp"/>
+      </node>
+      <node id="2412">
+        <label>F:/projects/pepecontroller/pepecontroller/src/commands/dislikeConstructor.cpp</label>
+        <link refid="dislike_constructor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes" prot="public">storage::models::movieVotes::MovieVotes</innerclass>
+    <innernamespace refid="namespacestorage_1_1models_1_1movie_votes">storage::models::movieVotes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;../column.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite_orm/sqlite_orm.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">storage::models::movieVotes</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaa" kindref="member">VoteType</ref><sp/>{<sp/><ref refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaaac37d934910cc27f04b9403b5a9f86c53" kindref="member">DISLIKE</ref>,<sp/><ref refid="namespacestorage_1_1models_1_1movie_votes_1afa58e9df1a319c239fb4d67eed25bfaaa321c072bade087fbabdb90f5a04a156a" kindref="member">LIKE</ref><sp/>};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes" kindref="compound">MovieVotes</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a78d48c40bc5a2e3509b3972658e64364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a78d48c40bc5a2e3509b3972658e64364" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="14" refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a1af1b2f92def5d926c45db9e32aac837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a1af1b2f92def5d926c45db9e32aac837" kindref="member">userId</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a39b5b786032914449fa2aca4cfafb3d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes_1a39b5b786032914449fa2aca4cfafb3d4" kindref="member">vote</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacestorage_1_1models_1_1movie_votes_1ad885cbaf4caee8c267b0b9471adfbab4" kindref="member">TableType</ref><sp/>=<sp/>sqlite_orm::internal::table_t&lt;<ref refid="structstorage_1_1models_1_1movie_votes_1_1_movie_votes" kindref="compound">MovieVotes</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestorage_1aa4575809785e6dabbbade496cc3f2969" kindref="member">Column&lt;MovieVotes, decltype(MovieVotes::id)&gt;</ref>,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestorage_1aa4575809785e6dabbbade496cc3f2969" kindref="member">Column&lt;MovieVotes, decltype(MovieVotes::userId)&gt;</ref>,</highlight></codeline>
+<codeline lineno="21" refid="namespacestorage_1_1models_1_1movie_votes_1ad885cbaf4caee8c267b0b9471adfbab4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestorage_1aa4575809785e6dabbbade496cc3f2969" kindref="member">Column&lt;MovieVotes, decltype(MovieVotes::vote)&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="namespacestorage_1_1models_1_1movie_votes_1ad885cbaf4caee8c267b0b9471adfbab4" kindref="member">TableType</ref><sp/><ref refid="namespacestorage_1_1models_1_1movie_votes_1a119da6760267dc0aefc447dc55a236a5" kindref="member">MakeTable</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movieVotes.h"/>
+  </compounddef>
+</doxygen>

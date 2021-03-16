@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_app" kind="class" prot="public">
+    <compoundname>App</compoundname>
+    <includes refid="app_8h" local="no">app.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_app_1a6ac75ac38ac822c998746432333e3abe" prot="public" static="no">
+        <type>std::unordered_map&lt; std::string, std::shared_ptr&lt; <ref refid="structcommands_1_1_command_constructor" kindref="compound">commands::CommandConstructor</ref> &gt;&gt;</type>
+        <definition>using App::CommandSet =  std::unordered_map&lt;std::string, std::shared_ptr&lt;commands::CommandConstructor&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>CommandSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="19" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_app_1ab0b2fc13be4d2a0c43d6412c8e8a79c9" prot="private" static="no" mutable="no">
+        <type>peka2tv::Peka2tvSIOClient::EventHubPtr</type>
+        <definition>peka2tv::Peka2tvSIOClient::EventHubPtr App::msgSource</definition>
+        <argsstring></argsstring>
+        <name>msgSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="40" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" compoundref="app_8cpp" startline="19" endline="23">~App</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_1ac96dd943634afd82c41bd3453481fcc4" prot="private" static="no" mutable="no">
+        <type>storage::Storage *</type>
+        <definition>storage::Storage* App::storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="41" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_app_1a143bbdc3436eed6724778b581a87f887" compoundref="app_8cpp" startline="38" endline="59">CanExecute</referencedby>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_1a33af10692a0b2c754ee24409cbc44810" prot="private" static="no" mutable="no">
+        <type>peka2tv::Peka2tvHttpClient *</type>
+        <definition>peka2tv::Peka2tvHttpClient* App::httpClient</definition>
+        <argsstring></argsstring>
+        <name>httpClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="42" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream App::logFile</definition>
+        <argsstring></argsstring>
+        <name>logFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="43" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+        <referencedby refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" compoundref="app_8cpp" startline="19" endline="23">~App</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_1af900a5327bd3a74182e49f0b2db9dd23" prot="private" static="no" mutable="no">
+        <type><ref refid="class_user_cache" kindref="compound">UserCache</ref></type>
+        <definition>UserCache App::userCache</definition>
+        <argsstring></argsstring>
+        <name>userCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="44" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_app_1a143bbdc3436eed6724778b581a87f887" compoundref="app_8cpp" startline="38" endline="59">CanExecute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_1a9da37495e760367710197b198b4db4e4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_app_api" kindref="compound">AppApi</ref></type>
+        <definition>AppApi App::appApi</definition>
+        <argsstring></argsstring>
+        <name>appApi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="45" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_1a19b3ed4d9785816ebe168b46947ba096" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classcommands_1_1_phase" kindref="compound">commands::Phase</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;commands::Phase&gt; App::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="47" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+        <referencedby refid="class_app_1a7aceead54c1c080acc13785cc02f2ec7" compoundref="app_8h" startline="29" endline="32">SetPhase</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_app_1a668121b596b12dc7aee47d798bf167d0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>App::App</definition>
+        <argsstring>(peka2tv::Peka2tvSIOClient::EventHubPtr msgSource, storage::Storage *storage, peka2tv::Peka2tvHttpClient *httpClient)</argsstring>
+        <name>App</name>
+        <param>
+          <type>peka2tv::Peka2tvSIOClient::EventHubPtr</type>
+          <declname>msgSource</declname>
+        </param>
+        <param>
+          <type>storage::Storage *</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>peka2tv::Peka2tvHttpClient *</type>
+          <declname>httpClient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="21" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="6" bodyend="17"/>
+        <references refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>App::~App</definition>
+        <argsstring>()</argsstring>
+        <name>~App</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="25" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="19" bodyend="23"/>
+        <references refid="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" compoundref="app_8h" startline="43">logFile</references>
+        <references refid="class_app_1ab0b2fc13be4d2a0c43d6412c8e8a79c9" compoundref="app_8h" startline="40">msgSource</references>
+      </memberdef>
+      <memberdef kind="function" id="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void App::HandleMessage</definition>
+        <argsstring>(const peka2tv::Peka2tvSIOClient::ChatMessage &amp;x)</argsstring>
+        <name>HandleMessage</name>
+        <param>
+          <type>const peka2tv::Peka2tvSIOClient::ChatMessage &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="27" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="25" bodyend="36"/>
+        <references refid="class_app_1a9da37495e760367710197b198b4db4e4" compoundref="app_8h" startline="45">appApi</references>
+        <references refid="class_app_1a143bbdc3436eed6724778b581a87f887" compoundref="app_8cpp" startline="38" endline="59">CanExecute</references>
+        <references refid="class_app_1ae19ecdc075a50663483758bd38621a10" compoundref="app_8cpp" startline="77" endline="83">ExtractCommand</references>
+        <references refid="class_app_1a33af10692a0b2c754ee24409cbc44810" compoundref="app_8h" startline="42">httpClient</references>
+        <references refid="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" compoundref="app_8cpp" startline="72" endline="75">IsCommand</references>
+        <references refid="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" compoundref="app_8h" startline="43">logFile</references>
+        <references refid="class_app_1a19b3ed4d9785816ebe168b46947ba096" compoundref="app_8h" startline="47">phase</references>
+        <references refid="class_app_1ac96dd943634afd82c41bd3453481fcc4" compoundref="app_8h" startline="41">storage</references>
+        <referencedby refid="class_app_1a668121b596b12dc7aee47d798bf167d0" compoundref="app_8cpp" startline="6" endline="17">App</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_app_1a7aceead54c1c080acc13785cc02f2ec7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; <ref refid="classcommands_1_1_phase" kindref="compound">commands::Phase</ref>, T &gt;::value, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void App::SetPhase</definition>
+        <argsstring>()</argsstring>
+        <name>SetPhase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="29" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="29" bodyend="32"/>
+        <references refid="class_app_1a19b3ed4d9785816ebe168b46947ba096" compoundref="app_8h" startline="47">phase</references>
+        <referencedby refid="main_8cpp_1abdc885af21a5223701dc216930d3b899" compoundref="main_8cpp" startline="43" endline="71">Main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_app_1a143bbdc3436eed6724778b581a87f887" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool App::CanExecute</definition>
+        <argsstring>(const peka2tv::Peka2tvSIOClient::ChatMessage &amp;x)</argsstring>
+        <name>CanExecute</name>
+        <param>
+          <type>const peka2tv::Peka2tvSIOClient::ChatMessage &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="34" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="38" bodyend="59"/>
+        <references refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" compoundref="user_cache_8cpp" startline="54" endline="69">UserCache::Get</references>
+        <references refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" compoundref="user_cache_8cpp" startline="33" endline="52">UserCache::Insert</references>
+        <references refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" compoundref="app_8cpp" startline="66" endline="70">IsOwner</references>
+        <references refid="class_app_1ac96dd943634afd82c41bd3453481fcc4" compoundref="app_8h" startline="41">storage</references>
+        <references refid="class_app_1af900a5327bd3a74182e49f0b2db9dd23" compoundref="app_8h" startline="44">userCache</references>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_app_1aeb8e1e1804b31fb448094d08506482fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool App::IsOwner</definition>
+        <argsstring>(const peka2tv::Peka2tvSIOClient::ChatMessage &amp;msg)</argsstring>
+        <name>IsOwner</name>
+        <param>
+          <type>const peka2tv::Peka2tvSIOClient::ChatMessage &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="35" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="66" bodyend="70"/>
+        <referencedby refid="class_app_1a143bbdc3436eed6724778b581a87f887" compoundref="app_8cpp" startline="38" endline="59">CanExecute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool App::IsCommand</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>IsCommand</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="36" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="72" bodyend="75"/>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_app_1ae19ecdc075a50663483758bd38621a10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string App::ExtractCommand</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>ExtractCommand</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="37" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.cpp" bodystart="77" bodyend="83"/>
+        <referencedby refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" compoundref="app_8cpp" startline="25" endline="36">HandleMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>AppApi</label>
+        <link refid="class_app_api"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>userCache</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UserCache</label>
+        <link refid="class_user_cache"/>
+      </node>
+      <node id="3">
+        <label>commands::Phase</label>
+        <link refid="classcommands_1_1_phase"/>
+      </node>
+      <node id="7">
+        <label>std::basic_ofstream&lt; char &gt;</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::ofstream</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>App</label>
+        <link refid="class_app"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>phase</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>appApi</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>logFile</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>userCache</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::unique_ptr&lt; commands::Phase &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>std::ios_base</label>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/app.h" line="17" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/app.h" bodystart="16" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_app_1a668121b596b12dc7aee47d798bf167d0" prot="public" virt="non-virtual"><scope>App</scope><name>App</name></member>
+      <member refid="class_app_1a9da37495e760367710197b198b4db4e4" prot="private" virt="non-virtual"><scope>App</scope><name>appApi</name></member>
+      <member refid="class_app_1a143bbdc3436eed6724778b581a87f887" prot="private" virt="non-virtual"><scope>App</scope><name>CanExecute</name></member>
+      <member refid="class_app_1a6ac75ac38ac822c998746432333e3abe" prot="public" virt="non-virtual"><scope>App</scope><name>CommandSet</name></member>
+      <member refid="class_app_1ae19ecdc075a50663483758bd38621a10" prot="private" virt="non-virtual"><scope>App</scope><name>ExtractCommand</name></member>
+      <member refid="class_app_1a78ff404949a20b5d30080d7ccefb9e8f" prot="public" virt="non-virtual"><scope>App</scope><name>HandleMessage</name></member>
+      <member refid="class_app_1a33af10692a0b2c754ee24409cbc44810" prot="private" virt="non-virtual"><scope>App</scope><name>httpClient</name></member>
+      <member refid="class_app_1a17d3e769d3b30cef55c5baffe3ac53bf" prot="private" virt="non-virtual"><scope>App</scope><name>IsCommand</name></member>
+      <member refid="class_app_1aeb8e1e1804b31fb448094d08506482fd" prot="private" virt="non-virtual"><scope>App</scope><name>IsOwner</name></member>
+      <member refid="class_app_1ae7abd6959546ef88dd42a2ab71a2674e" prot="private" virt="non-virtual"><scope>App</scope><name>logFile</name></member>
+      <member refid="class_app_1ab0b2fc13be4d2a0c43d6412c8e8a79c9" prot="private" virt="non-virtual"><scope>App</scope><name>msgSource</name></member>
+      <member refid="class_app_1a19b3ed4d9785816ebe168b46947ba096" prot="private" virt="non-virtual"><scope>App</scope><name>phase</name></member>
+      <member refid="class_app_1a7aceead54c1c080acc13785cc02f2ec7" prot="public" virt="non-virtual"><scope>App</scope><name>SetPhase</name></member>
+      <member refid="class_app_1ac96dd943634afd82c41bd3453481fcc4" prot="private" virt="non-virtual"><scope>App</scope><name>storage</name></member>
+      <member refid="class_app_1af900a5327bd3a74182e49f0b2db9dd23" prot="private" virt="non-virtual"><scope>App</scope><name>userCache</name></member>
+      <member refid="class_app_1a34f1f253b1cef5f4ecbac66eaf6964ec" prot="public" virt="non-virtual"><scope>App</scope><name>~App</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

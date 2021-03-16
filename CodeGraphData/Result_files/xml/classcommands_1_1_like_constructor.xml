@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcommands_1_1_like_constructor" kind="class" prot="public">
+    <compoundname>commands::LikeConstructor</compoundname>
+    <basecompoundref refid="structcommands_1_1_command_constructor" prot="public" virt="non-virtual">commands::CommandConstructor</basecompoundref>
+    <includes refid="like_constructor_8h" local="no">likeConstructor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommands_1_1_like_constructor_1a8ab65d62d9ca6fc7c28333a48295e8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::unique_ptr&lt; <ref refid="structcommands_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; Command &gt; commands::LikeConstructor::Construct</definition>
+        <argsstring>(const peka2tv::Peka2tvSIOClient::ChatMessage &amp;msg) override</argsstring>
+        <name>Construct</name>
+        <reimplements refid="structcommands_1_1_command_constructor_1a3c99c8e4132a16619554dcea18cc6d81">Construct</reimplements>
+        <param>
+          <type>const peka2tv::Peka2tvSIOClient::ChatMessage &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.h" line="8" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>commands::CommandConstructor</label>
+        <link refid="structcommands_1_1_command_constructor"/>
+      </node>
+      <node id="40">
+        <label>commands::LikeConstructor</label>
+        <link refid="classcommands_1_1_like_constructor"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>commands::CommandConstructor</label>
+        <link refid="structcommands_1_1_command_constructor"/>
+      </node>
+      <node id="42">
+        <label>commands::LikeConstructor</label>
+        <link refid="classcommands_1_1_like_constructor"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.h" line="6" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/likeConstructor.h" bodystart="5" bodyend="9"/>
+    <listofallmembers>
+      <member refid="classcommands_1_1_like_constructor_1a8ab65d62d9ca6fc7c28333a48295e8e9" prot="public" virt="virtual"><scope>commands::LikeConstructor</scope><name>Construct</name></member>
+      <member refid="structcommands_1_1_command_constructor_1a49fa2e650c1d65fb74eb4fb5a857f869" prot="public" virt="virtual"><scope>commands::LikeConstructor</scope><name>~CommandConstructor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

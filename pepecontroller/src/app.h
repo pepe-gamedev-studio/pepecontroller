@@ -2,13 +2,9 @@
 #include "commands/command.h"
 #include "commands/commandConstructor.h"
 #include "commands/phase.h"
-#include "storage/models/user.h"
-#include "storage/sqliteStorage.h"
 #include "peka2tv/peka2tvHttpClient.h"
 #include "peka2tv/peka2tvSIOClient.h"
-#include "userCache.h"
 #include "appApi.h"
-#include "commands/phase.h"
 #include <memory>
 #include <string>
 #include <unordered_map>
@@ -16,7 +12,7 @@
 class App
 {
 public:
-	using CommandSet = std::unordered_map<std::string, std::shared_ptr<commands::CommandConstructor>>;
+	//using CommandSet = std::unordered_map<std::string, std::shared_ptr<commands::CommandConstructor>>;
 public:
 	explicit App(
 		peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,

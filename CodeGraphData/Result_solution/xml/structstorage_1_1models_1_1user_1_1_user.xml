@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structstorage_1_1models_1_1user_1_1_user" kind="struct" prot="public">
+    <compoundname>storage::models::user::User</compoundname>
+    <includes refid="user_8h" local="no">user.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstorage_1_1models_1_1user_1_1_user_1a5ad4ea26e0da403edaf17afe311a5838" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t storage::models::user::User::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" line="14" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" compoundref="app_api_8h" startline="18" endline="56">AppApi::FindUser</referencedby>
+        <referencedby refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" compoundref="user_cache_8cpp" startline="33" endline="52">UserCache::Insert</referencedby>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" compoundref="user_8cpp" startline="6" endline="15">storage::models::user::MakeTable</referencedby>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" compoundref="helper_8cpp" startline="8" endline="11">storage::models::user::operator&lt;&lt;</referencedby>
+        <referencedby refid="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" compoundref="app_api_8h" startline="57" endline="73">AppApi::UpdateUser</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstorage_1_1models_1_1user_1_1_user_1a538fe98bffaaa412799dc64d2f57335b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string storage::models::user::User::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" line="15" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" compoundref="user_8cpp" startline="6" endline="15">storage::models::user::MakeTable</referencedby>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" compoundref="helper_8cpp" startline="8" endline="11">storage::models::user::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstorage_1_1models_1_1user_1_1_user_1a11a235b44cf2d19ad1c9b9fb375d4035" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t storage::models::user::User::voteWeight</definition>
+        <argsstring></argsstring>
+        <name>voteWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" line="16" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" compoundref="user_8cpp" startline="6" endline="15">storage::models::user::MakeTable</referencedby>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" compoundref="helper_8cpp" startline="8" endline="11">storage::models::user::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstorage_1_1models_1_1user_1_1_user_1a480a497b32d53cd2ff18798c8638b671" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t storage::models::user::User::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" line="17" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1a9629d46cc1f18b1fe74703e3ebcf7c7b" compoundref="user_8cpp" startline="6" endline="15">storage::models::user::MakeTable</referencedby>
+        <referencedby refid="namespacestorage_1_1models_1_1user_1ad28631233f34925906a995720a7735af" compoundref="helper_8cpp" startline="8" endline="11">storage::models::user::operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="158">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="156">
+        <label>storage::models::user::User</label>
+        <link refid="structstorage_1_1models_1_1user_1_1_user"/>
+        <childnode refid="157" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="157">
+        <label>std::string</label>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" line="13" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/storage/models/user.h" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structstorage_1_1models_1_1user_1_1_user_1a480a497b32d53cd2ff18798c8638b671" prot="public" virt="non-virtual"><scope>storage::models::user::User</scope><name>group</name></member>
+      <member refid="structstorage_1_1models_1_1user_1_1_user_1a5ad4ea26e0da403edaf17afe311a5838" prot="public" virt="non-virtual"><scope>storage::models::user::User</scope><name>id</name></member>
+      <member refid="structstorage_1_1models_1_1user_1_1_user_1a538fe98bffaaa412799dc64d2f57335b" prot="public" virt="non-virtual"><scope>storage::models::user::User</scope><name>name</name></member>
+      <member refid="structstorage_1_1models_1_1user_1_1_user_1a11a235b44cf2d19ad1c9b9fb375d4035" prot="public" virt="non-virtual"><scope>storage::models::user::User</scope><name>voteWeight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

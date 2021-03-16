@@ -1,5 +1,8 @@
 #pragma once
 #include "phase.h"
+#include "likeConstructor.h"
+#include "dislikeConstructor.h"
+#include "skipConstructor.h"
 namespace commands
 {
 	class SkipPhase : public Phase

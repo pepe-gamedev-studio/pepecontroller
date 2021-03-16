@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcommands_1_1_skip" kind="class" prot="public">
+    <compoundname>commands::Skip</compoundname>
+    <basecompoundref refid="structcommands_1_1_command" prot="public" virt="non-virtual">commands::Command</basecompoundref>
+    <includes refid="skip_8h" local="no">skip.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommands_1_1_skip_1ac287c4d8eaaa7b7b37e6ccacbf25bf0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>commands::Skip::Skip</definition>
+        <argsstring>()</argsstring>
+        <name>Skip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/skip.h" line="10" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void commands::Skip::Execute</definition>
+        <argsstring>(Context *ctx) override</argsstring>
+        <name>Execute</name>
+        <reimplements refid="structcommands_1_1_command_1a8a39fceff7fb297cad37fa99d415dc29">Execute</reimplements>
+        <param>
+          <type><ref refid="structcommands_1_1_context" kindref="compound">Context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/skip.h" line="11" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/skip.cpp" bodystart="11" bodyend="16"/>
+        <references refid="namespacecommands_1a0f0de67ae085c3d33eea93b370978f7f" compoundref="command_8h" startline="10">commands::Inst</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="53">
+        <label>commands::Skip</label>
+        <link refid="classcommands_1_1_skip"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>commands::Command</label>
+        <link refid="structcommands_1_1_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="55">
+        <label>commands::Skip</label>
+        <link refid="classcommands_1_1_skip"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>commands::Command</label>
+        <link refid="structcommands_1_1_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/skip.h" line="8" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/skip.h" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" prot="public" virt="virtual"><scope>commands::Skip</scope><name>Execute</name></member>
+      <member refid="classcommands_1_1_skip_1ac287c4d8eaaa7b7b37e6ccacbf25bf0d" prot="public" virt="non-virtual"><scope>commands::Skip</scope><name>Skip</name></member>
+      <member refid="structcommands_1_1_command_1a24f4be511cc5724fefd8e2b320ffbcf8" prot="public" virt="virtual"><scope>commands::Skip</scope><name>~Command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

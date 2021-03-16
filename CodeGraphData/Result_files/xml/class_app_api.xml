@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_app_api" kind="class" prot="public">
+    <compoundname>AppApi</compoundname>
+    <includes refid="app_api_8h" local="no">appApi.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_app_api_1afb097a3ce985ffe94c636e8c4e80ccf8" prot="private" static="no">
+        <type>storage::models::user::User</type>
+        <definition>using AppApi::User =  storage::models::user::User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="13" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_app_api_1a6429adbc5ae5b1cd2bca345bacb00da2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_user_cache" kindref="compound">UserCache</ref> *</type>
+        <definition>UserCache* AppApi::userCache</definition>
+        <argsstring></argsstring>
+        <name>userCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="75" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" compoundref="app_api_8h" startline="18" endline="56">FindUser</referencedby>
+        <referencedby refid="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" compoundref="app_api_8h" startline="57" endline="73">UpdateUser</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_api_1a92adc27fb8acd40e9d910e9e4b63cc3e" prot="private" static="no" mutable="no">
+        <type>storage::Storage *</type>
+        <definition>storage::Storage* AppApi::storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="76" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" compoundref="app_api_8h" startline="18" endline="56">FindUser</referencedby>
+        <referencedby refid="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" compoundref="app_api_8h" startline="57" endline="73">UpdateUser</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_app_api_1a0174efe7bc3d24dfb8eab0ad970158a2" prot="private" static="no" mutable="no">
+        <type>peka2tv::Peka2tvHttpClient *</type>
+        <definition>peka2tv::Peka2tvHttpClient* AppApi::httpClient</definition>
+        <argsstring></argsstring>
+        <name>httpClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="77" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" compoundref="app_api_8h" startline="18" endline="56">FindUser</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_app_api_1a12f62a9aa4f33dffe6524d662d5b6130" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AppApi::AppApi</definition>
+        <argsstring>(UserCache *userCache, storage::Storage *storage, peka2tv::Peka2tvHttpClient *httpClient)</argsstring>
+        <name>AppApi</name>
+        <param>
+          <type><ref refid="class_user_cache" kindref="compound">UserCache</ref> *</type>
+          <declname>userCache</declname>
+        </param>
+        <param>
+          <type>storage::Storage *</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>peka2tv::Peka2tvHttpClient *</type>
+          <declname>httpClient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="15" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UserInfoMember</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; <ref refid="class_app_api_1afb097a3ce985ffe94c636e8c4e80ccf8" kindref="member">User</ref> &gt;</type>
+        <definition>std::optional&lt;User&gt; AppApi::FindUser</definition>
+        <argsstring>(UserInfoMember m, T val)</argsstring>
+        <name>FindUser</name>
+        <param>
+          <type>UserInfoMember</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="18" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="18" bodyend="56"/>
+        <references refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" compoundref="user_cache_8cpp" startline="54" endline="69">UserCache::Get</references>
+        <references refid="class_app_api_1a0174efe7bc3d24dfb8eab0ad970158a2" compoundref="app_api_8h" startline="77">httpClient</references>
+        <references refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" compoundref="user_cache_8cpp" startline="33" endline="52">UserCache::Insert</references>
+        <references refid="class_app_api_1a92adc27fb8acd40e9d910e9e4b63cc3e" compoundref="app_api_8h" startline="76">storage</references>
+        <references refid="class_app_api_1a6429adbc5ae5b1cd2bca345bacb00da2" compoundref="app_api_8h" startline="75">userCache</references>
+        <referencedby refid="classcommands_1_1_unban_1a756423ed0f77abb233c7e7549632f41a" compoundref="unban_8cpp" startline="9" endline="20">commands::Unban::Execute</referencedby>
+        <referencedby refid="classcommands_1_1_ban_1ab07ebdd9c88c782fd35cf25dd5d2fc18" compoundref="ban_8cpp" startline="10" endline="21">commands::Ban::Execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AppApi::UpdateUser</definition>
+        <argsstring>(const User &amp;u)</argsstring>
+        <name>UpdateUser</name>
+        <param>
+          <type>const <ref refid="class_app_api_1afb097a3ce985ffe94c636e8c4e80ccf8" kindref="member">User</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="57" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="57" bodyend="73"/>
+        <references refid="class_user_cache_1a8a4dcfbd2d50404bd6643e7825dde818" compoundref="user_cache_8cpp" startline="54" endline="69">UserCache::Get</references>
+        <references refid="class_user_cache_1af2a35049ccbf135413f3704286e93e7a" compoundref="user_cache_8cpp" startline="33" endline="52">UserCache::Insert</references>
+        <references refid="class_app_api_1a92adc27fb8acd40e9d910e9e4b63cc3e" compoundref="app_api_8h" startline="76">storage</references>
+        <references refid="class_app_api_1a6429adbc5ae5b1cd2bca345bacb00da2" compoundref="app_api_8h" startline="75">userCache</references>
+        <referencedby refid="classcommands_1_1_unban_1a756423ed0f77abb233c7e7549632f41a" compoundref="unban_8cpp" startline="9" endline="20">commands::Unban::Execute</referencedby>
+        <referencedby refid="classcommands_1_1_ban_1ab07ebdd9c88c782fd35cf25dd5d2fc18" compoundref="ban_8cpp" startline="10" endline="21">commands::Ban::Execute</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>AppApi</label>
+        <link refid="class_app_api"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>userCache</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>UserCache</label>
+        <link refid="class_user_cache"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.h" line="12" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/appApi.h" bodystart="11" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_app_api_1a12f62a9aa4f33dffe6524d662d5b6130" prot="public" virt="non-virtual"><scope>AppApi</scope><name>AppApi</name></member>
+      <member refid="class_app_api_1abd78cdc9b8d81c1ca9e1de9c9f82167a" prot="public" virt="non-virtual"><scope>AppApi</scope><name>FindUser</name></member>
+      <member refid="class_app_api_1a0174efe7bc3d24dfb8eab0ad970158a2" prot="private" virt="non-virtual"><scope>AppApi</scope><name>httpClient</name></member>
+      <member refid="class_app_api_1a92adc27fb8acd40e9d910e9e4b63cc3e" prot="private" virt="non-virtual"><scope>AppApi</scope><name>storage</name></member>
+      <member refid="class_app_api_1ab99fa8c035a79841d9f3417c6214394f" prot="public" virt="non-virtual"><scope>AppApi</scope><name>UpdateUser</name></member>
+      <member refid="class_app_api_1afb097a3ce985ffe94c636e8c4e80ccf8" prot="private" virt="non-virtual"><scope>AppApi</scope><name>User</name></member>
+      <member refid="class_app_api_1a6429adbc5ae5b1cd2bca345bacb00da2" prot="private" virt="non-virtual"><scope>AppApi</scope><name>userCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

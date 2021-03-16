@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="app_api_8cpp" kind="file">
+    <compoundname>appApi.cpp</compoundname>
+    <includes refid="app_api_8h" local="yes">appApi.h</includes>
+    <incdepgraph>
+      <node id="171">
+        <label>list</label>
+      </node>
+      <node id="176">
+        <label>boost/multi_index/ordered_index.hpp</label>
+      </node>
+      <node id="177">
+        <label>boost/multi_index/identity.hpp</label>
+      </node>
+      <node id="168">
+        <label>appApi.h</label>
+        <link refid="app_api_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>string</label>
+      </node>
+      <node id="185">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="181">
+        <label>storage/sqliteStorage.h</label>
+      </node>
+      <node id="182">
+        <label>peka2tv/peka2tvHttpClient.h</label>
+      </node>
+      <node id="183">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>optional</label>
+      </node>
+      <node id="180">
+        <label>storage.h</label>
+        <link refid="storage_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>storage/models/user.h</label>
+      </node>
+      <node id="175">
+        <label>boost/multi_index/hashed_index.hpp</label>
+      </node>
+      <node id="184">
+        <label>iostream</label>
+      </node>
+      <node id="178">
+        <label>boost/multi_index/member.hpp</label>
+      </node>
+      <node id="174">
+        <label>boost/multi_index_container.hpp</label>
+      </node>
+      <node id="167">
+        <label>F:/projects/pepecontroller/pepecontroller/src/appApi.cpp</label>
+        <link refid="appApi.cpp"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>boost/multi_index/mem_fun.hpp</label>
+      </node>
+      <node id="169">
+        <label>userCache.h</label>
+        <link refid="user_cache_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="app_api_8h" kindref="compound">appApi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_app_api_1a12f62a9aa4f33dffe6524d662d5b6130" refkind="member"><highlight class="normal"><ref refid="class_app_api_1a12f62a9aa4f33dffe6524d662d5b6130" kindref="member">AppApi::AppApi</ref>(<ref refid="class_user_cache" kindref="compound">UserCache</ref>*<sp/>userCache,<sp/>storage::Storage*<sp/>storage,<sp/>peka2tv::Peka2tvHttpClient*<sp/>httpClient)<sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>userCache(userCache),</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>storage(storage),</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>httpClient(httpClient)<sp/>{}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/appApi.cpp"/>
+  </compounddef>
+</doxygen>

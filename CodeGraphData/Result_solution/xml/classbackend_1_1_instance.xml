@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classbackend_1_1_instance" kind="class" prot="public">
+    <compoundname>backend::Instance</compoundname>
+    <includes refid="backend_8h" local="no">backend.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbackend_1_1_instance_1a57a24862dbe8d058dc5851e23f2f586b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend::Instance::Instance</definition>
+        <argsstring>()</argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="25" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1abf228d5f379d37c5211443631bab5d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend::Instance::~Instance</definition>
+        <argsstring>()</argsstring>
+        <name>~Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="26" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1aeb0ab763aabe5ece10dc21f747acdfcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::Play</definition>
+        <argsstring>(uint16_t id)</argsstring>
+        <name>Play</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="27" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1a11a5dc3f5270f7deded0f7dae31698e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::Play</definition>
+        <argsstring>(std::string &amp;name)</argsstring>
+        <name>Play</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="28" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1a91b52590823413210b0c29a2cea77b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::Volume</definition>
+        <argsstring>(uint8_t n)</argsstring>
+        <name>Volume</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="29" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1ad3be49a5999dd35aed3041fc099b138e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="30" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="33" bodyend="35"/>
+        <referencedby refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" compoundref="skip_8cpp" startline="11" endline="16">commands::Skip::Execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1a6ded13456365b24c1a23ea1224abd9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::callOverlay</definition>
+        <argsstring>()</argsstring>
+        <name>callOverlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="31" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="36" bodyend="38"/>
+        <referencedby refid="classcommands_1_1_skip_1aa73aa6718874deaef3fa686ae9f3fb28" compoundref="skip_8cpp" startline="11" endline="16">commands::Skip::Execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1af7718f20d1c7fb09f64df9319ceabb07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structbackend_1_1_text" kindref="compound">Text</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Text &gt; backend::Instance::DrawText</definition>
+        <argsstring>(uint16_t x, uint16_t y, const Text &amp;text)</argsstring>
+        <name>DrawText</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structbackend_1_1_text" kindref="compound">Text</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="32" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1a796914017a9fdfdee37a71dece7d4282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::Connect</definition>
+        <argsstring>(URI &amp;StreamURL)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type><ref refid="structbackend_1_1_u_r_i" kindref="compound">URI</ref> &amp;</type>
+          <declname>StreamURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="33" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1ab5caf1734298286b9673c083c5dc3469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backend::Instance::Disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>Disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="34" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1_instance_1a4233e50a03a7fff80eb67eca24bd5288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structbackend_1_1_image" kindref="compound">Image</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Image &gt; backend::Instance::DrawImage</definition>
+        <argsstring>(uint16_t x, uint16_t y, const Image &amp;image)</argsstring>
+        <name>DrawImage</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structbackend_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="35" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" line="23" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/controller/backend.h" bodystart="22" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classbackend_1_1_instance_1a6ded13456365b24c1a23ea1224abd9d0" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>callOverlay</name></member>
+      <member refid="classbackend_1_1_instance_1a796914017a9fdfdee37a71dece7d4282" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Connect</name></member>
+      <member refid="classbackend_1_1_instance_1ab5caf1734298286b9673c083c5dc3469" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Disconnect</name></member>
+      <member refid="classbackend_1_1_instance_1a4233e50a03a7fff80eb67eca24bd5288" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>DrawImage</name></member>
+      <member refid="classbackend_1_1_instance_1af7718f20d1c7fb09f64df9319ceabb07" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>DrawText</name></member>
+      <member refid="classbackend_1_1_instance_1a57a24862dbe8d058dc5851e23f2f586b" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Instance</name></member>
+      <member refid="classbackend_1_1_instance_1aeb0ab763aabe5ece10dc21f747acdfcb" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Play</name></member>
+      <member refid="classbackend_1_1_instance_1a11a5dc3f5270f7deded0f7dae31698e9" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Play</name></member>
+      <member refid="classbackend_1_1_instance_1ad3be49a5999dd35aed3041fc099b138e" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Stop</name></member>
+      <member refid="classbackend_1_1_instance_1a91b52590823413210b0c29a2cea77b3b" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>Volume</name></member>
+      <member refid="classbackend_1_1_instance_1abf228d5f379d37c5211443631bab5d7e" prot="public" virt="non-virtual"><scope>backend::Instance</scope><name>~Instance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

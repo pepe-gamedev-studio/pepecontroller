@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="movie_8cpp" kind="file">
+    <compoundname>movie.cpp</compoundname>
+    <includes refid="movie_8h" local="yes">movie.h</includes>
+    <incdepgraph>
+      <node id="2319">
+        <label>movie.h</label>
+        <link refid="movie_8h"/>
+        <childnode refid="2320" relation="include">
+        </childnode>
+        <childnode refid="2321" relation="include">
+        </childnode>
+        <childnode refid="2322" relation="include">
+        </childnode>
+      </node>
+      <node id="2321">
+        <label>sqlite_orm/sqlite_orm.h</label>
+      </node>
+      <node id="2322">
+        <label>string</label>
+      </node>
+      <node id="2318">
+        <label>F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.cpp</label>
+        <link refid="movie.cpp"/>
+        <childnode refid="2319" relation="include">
+        </childnode>
+      </node>
+      <node id="2320">
+        <label>../column.h</label>
+        <link refid="column_8h"/>
+        <childnode refid="2321" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestorage_1_1models_1_1movie">storage::models::movie</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="movie_8h" kindref="compound">movie.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespacestorage_1_1models_1_1movie" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">storage::models::movie</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacestorage_1_1models_1_1movie_1a10e54382c87f37ce8ea67e8bd1a405c3" refkind="member"><highlight class="normal"><ref refid="namespacestorage_1_1models_1_1movie_1ae9957114abbe038f02ee2e260bf9c988" kindref="member">TableType</ref><sp/><ref refid="namespacestorage_1_1models_1_1movie_1a10e54382c87f37ce8ea67e8bd1a405c3" kindref="member">MakeTable</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">sqlite_orm;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_table(</highlight><highlight class="stringliteral">&quot;movie&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1movie_1_1_movie_1a7e9e2ece5b2ee8cc9a42659d1332c6d8" kindref="member">Movie::id</ref>,<sp/>primary_key()),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_column(</highlight><highlight class="stringliteral">&quot;title&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structstorage_1_1models_1_1movie_1_1_movie_1a8646e188d849cf542123e74e9a3317d5" kindref="member">Movie::title</ref>));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/storage/models/movie.cpp"/>
+  </compounddef>
+</doxygen>

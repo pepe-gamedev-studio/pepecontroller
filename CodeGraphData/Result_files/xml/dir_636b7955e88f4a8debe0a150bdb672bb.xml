@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_636b7955e88f4a8debe0a150bdb672bb" kind="dir">
+    <compoundname>F:/projects/pepecontroller/pepecontroller/src</compoundname>
+    <innerdir refid="dir_36508a952b047b15ffa124412f7a6d5d">F:/projects/pepecontroller/pepecontroller/src/commands</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/"/>
+  </compounddef>
+</doxygen>

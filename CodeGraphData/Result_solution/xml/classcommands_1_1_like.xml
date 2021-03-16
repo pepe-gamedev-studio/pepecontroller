@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcommands_1_1_like" kind="class" prot="public">
+    <compoundname>commands::Like</compoundname>
+    <basecompoundref refid="structcommands_1_1_command" prot="public" virt="non-virtual">commands::Command</basecompoundref>
+    <includes refid="like_8h" local="no">like.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommands_1_1_like_1af22842cdfd9f723eeeb8019f4ecab39e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>commands::Like::Like</definition>
+        <argsstring>()</argsstring>
+        <name>Like</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/like.h" line="10" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/like.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classcommands_1_1_like_1a92d291c1ce8c9cd07148e79bf884cf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void commands::Like::Execute</definition>
+        <argsstring>(Context *ctx) override</argsstring>
+        <name>Execute</name>
+        <reimplements refid="structcommands_1_1_command_1a8a39fceff7fb297cad37fa99d415dc29">Execute</reimplements>
+        <param>
+          <type><ref refid="structcommands_1_1_context" kindref="compound">Context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/like.h" line="11" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/like.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>commands::Like</label>
+        <link refid="classcommands_1_1_like"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>commands::Command</label>
+        <link refid="structcommands_1_1_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="80">
+        <label>commands::Like</label>
+        <link refid="classcommands_1_1_like"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>commands::Command</label>
+        <link refid="structcommands_1_1_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/like.h" line="8" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/like.h" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classcommands_1_1_like_1a92d291c1ce8c9cd07148e79bf884cf31" prot="public" virt="virtual"><scope>commands::Like</scope><name>Execute</name></member>
+      <member refid="classcommands_1_1_like_1af22842cdfd9f723eeeb8019f4ecab39e" prot="public" virt="non-virtual"><scope>commands::Like</scope><name>Like</name></member>
+      <member refid="structcommands_1_1_command_1a24f4be511cc5724fefd8e2b320ffbcf8" prot="public" virt="virtual"><scope>commands::Like</scope><name>~Command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

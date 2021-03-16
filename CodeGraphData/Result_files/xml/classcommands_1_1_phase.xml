@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcommands_1_1_phase" kind="class" prot="public" abstract="yes">
+    <compoundname>commands::Phase</compoundname>
+    <derivedcompoundref refid="classcommands_1_1_movie_phase" prot="public" virt="non-virtual">commands::MoviePhase</derivedcompoundref>
+    <derivedcompoundref refid="classcommands_1_1_skip_phase" prot="public" virt="non-virtual">commands::SkipPhase</derivedcompoundref>
+    <derivedcompoundref refid="classcommands_1_1_vote_phase" prot="public" virt="non-virtual">commands::VotePhase</derivedcompoundref>
+    <includes refid="phase_8h" local="no">phase.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" prot="public" static="no">
+        <type>std::unordered_map&lt; std::string, std::shared_ptr&lt; <ref refid="structcommands_1_1_command_constructor" kindref="compound">commands::CommandConstructor</ref> &gt;&gt;</type>
+        <definition>using commands::Phase::CommandSet =  std::unordered_map&lt;std::string, std::shared_ptr&lt;commands::CommandConstructor&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>CommandSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="17" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref></type>
+        <definition>CommandSet commands::Phase::basicCommands</definition>
+        <argsstring></argsstring>
+        <name>basicCommands</name>
+        <initializer>{
+		{&quot;ban&quot;, std::make_shared&lt;<ref refid="classcommands_1_1_ban_constructor" kindref="compound">commands::BanConstructor</ref>&gt;() },
+		{&quot;unban&quot;, std::make_shared&lt;<ref refid="classcommands_1_1_unban_constructor" kindref="compound">commands::UnbanConstructor</ref>&gt;() },
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="20" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" compoundref="phase_8cpp" startline="8" endline="11">mergeCommands</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommands_1_1_phase_1ad31b1798aa4bbd946d405cf31e7a9880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>commands::Phase::Phase</definition>
+        <argsstring>()</argsstring>
+        <name>Phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="15" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classcommands_1_1_phase_1a70a3d9f3986bedbd970c018253c349dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual commands::Phase::~Phase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcommands_1_1_phase_1a0475ec92faf62efd2c785097f5060812" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref> &amp;</type>
+        <definition>virtual const CommandSet&amp; commands::Phase::GetCommands</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetCommands</name>
+        <reimplementedby refid="classcommands_1_1_vote_phase_1a3c2d2b903067f38df5918edcfe067def">GetCommands</reimplementedby>
+        <reimplementedby refid="classcommands_1_1_skip_phase_1aed8319d835e8195df1c7829cab40618a">GetCommands</reimplementedby>
+        <reimplementedby refid="classcommands_1_1_movie_phase_1a7b0cc1db99be03e7fb9f1c4a401ddbcd">GetCommands</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="18" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void commands::Phase::mergeCommands</definition>
+        <argsstring>(CommandSet &amp;cs)</argsstring>
+        <name>mergeCommands</name>
+        <param>
+          <type><ref refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" kindref="member">CommandSet</ref> &amp;</type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="24" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/phase.cpp" bodystart="8" bodyend="11"/>
+        <references refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" compoundref="phase_8h" startline="20">basicCommands</references>
+        <referencedby refid="classcommands_1_1_movie_phase_1a660d1fbdbb7a20c85753e36567259613" compoundref="movie_phase_8cpp" startline="4" endline="7">commands::MoviePhase::MoviePhase</referencedby>
+        <referencedby refid="classcommands_1_1_skip_phase_1a1de5dc1953129813289c23e09b9ba2f0" compoundref="skip_phase_8cpp" startline="4" endline="7">commands::SkipPhase::SkipPhase</referencedby>
+        <referencedby refid="classcommands_1_1_vote_phase_1ad3cb579a4d909ae4ced79c26ceb0b495" compoundref="vote_phase_8cpp" startline="4" endline="7">commands::VotePhase::VotePhase</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcommands_1_1_phase_1a1b4c4d02e3a1127ef2a3349913acb4df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; <ref refid="classcommands_1_1_phase" kindref="compound">Phase</ref>, T &gt;::value, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void commands::Phase::SetPhase</definition>
+        <argsstring>()</argsstring>
+        <name>SetPhase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>commands::MoviePhase</label>
+        <link refid="classcommands_1_1_movie_phase"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>commands::Phase</label>
+        <link refid="classcommands_1_1_phase"/>
+      </node>
+      <node id="51">
+        <label>commands::VotePhase</label>
+        <link refid="classcommands_1_1_vote_phase"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>commands::SkipPhase</label>
+        <link refid="classcommands_1_1_skip_phase"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" line="13" column="1" bodyfile="F:/projects/pepecontroller/pepecontroller/src/commands/phase.h" bodystart="12" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classcommands_1_1_phase_1ac6bc2fb5c3e0a230ebce542fd517e2ac" prot="protected" virt="non-virtual"><scope>commands::Phase</scope><name>basicCommands</name></member>
+      <member refid="classcommands_1_1_phase_1a18dfe976b7c3bee6f2fb1c06881f2539" prot="public" virt="non-virtual"><scope>commands::Phase</scope><name>CommandSet</name></member>
+      <member refid="classcommands_1_1_phase_1a0475ec92faf62efd2c785097f5060812" prot="public" virt="pure-virtual"><scope>commands::Phase</scope><name>GetCommands</name></member>
+      <member refid="classcommands_1_1_phase_1aa16ca6a66ee789a2a37382e27eab11da" prot="protected" virt="non-virtual"><scope>commands::Phase</scope><name>mergeCommands</name></member>
+      <member refid="classcommands_1_1_phase_1ad31b1798aa4bbd946d405cf31e7a9880" prot="public" virt="non-virtual"><scope>commands::Phase</scope><name>Phase</name></member>
+      <member refid="classcommands_1_1_phase_1a1b4c4d02e3a1127ef2a3349913acb4df" prot="protected" virt="non-virtual"><scope>commands::Phase</scope><name>SetPhase</name></member>
+      <member refid="classcommands_1_1_phase_1a70a3d9f3986bedbd970c018253c349dc" prot="public" virt="virtual"><scope>commands::Phase</scope><name>~Phase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
