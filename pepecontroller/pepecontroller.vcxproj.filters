@@ -99,6 +99,12 @@
     <ClCompile Include="src\commands\skipPhase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\commands\unvoteConstructor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\unvote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\peka2tv\Peka2tvSIOClient.h">
@@ -185,9 +191,6 @@
     <ClInclude Include="src\commands\phase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\commands\Constructors.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\commands\votePhase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -195,6 +198,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\commands\skipPhase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\unvoteConstructor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commands\unvote.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

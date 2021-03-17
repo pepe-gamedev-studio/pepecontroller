@@ -1,6 +1,4 @@
 #pragma once
-#include "commands/command.h"
-#include "commands/commandConstructor.h"
 #include "commands/phase.h"
 #include "peka2tv/peka2tvHttpClient.h"
 #include "peka2tv/peka2tvSIOClient.h"

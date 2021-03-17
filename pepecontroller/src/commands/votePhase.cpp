@@ -14,11 +14,22 @@ namespace commands
 	}
 	bool VotePhase::Vote(user_id user, uint32_t num)
 	{
-		auto it = std::find(this->VoteCache.begin(), this->VoteCache.end(), user);
+		auto it = this->VoteCache.find(user);
 		if (num < this->counter_size && it == this->VoteCache.end())
 		{
 			++this->VotesCounter[num];
-			VoteCache.insert(user);
+			VoteCache.insert({ user, num });
+			return true;
+		}
+		else return false;
+	}
+	bool VotePhase::Unvote(user_id user)
+	{
+		auto it = this->VoteCache.find(user);
+		if (it != this->VoteCache.end())
+		{
+			--this->VotesCounter[this->VoteCache[user]];
+			VoteCache.erase(user);
 			return true;
 		}
 		else return false;

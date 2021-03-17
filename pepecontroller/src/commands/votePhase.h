@@ -1,24 +1,28 @@
 #pragma once
 #include "phase.h"
 #include "voteConstructor.h"
+#include "unvoteConstructor.h"
+#include <unordered_map>
 namespace commands 
 {
 	class VoteConstructor;
+	class UnvoteConstructor;
 	class VotePhase : public Phase
 	{
 	public:
 		VotePhase();
 		const CommandSet& GetCommands() override;
 		bool Vote(user_id user, uint32_t num);
-		//uint8_t result();
+		bool Unvote(user_id user);
 	private:
 		CommandSet voteCommands
 		{
 			{"vote", std::make_shared<VoteConstructor>(this) },
+			{"unvote", std::make_shared<UnvoteConstructor>(this) },
 		};
-		std::unordered_set<user_id> VoteCache;
 		const uint32_t counter_size = 10;
-		std::vector<uint8_t> VotesCounter;
+		std::vector<uint32_t> VotesCounter;
+		std::unordered_map<user_id, uint32_t> VoteCache;
 	};
 
 }

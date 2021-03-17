@@ -6,7 +6,7 @@
 #include <iostream>
 #include <unordered_set>
 
-typedef uint64_t user_id;
+using user_id = uint64_t;
 
 namespace commands 
 {

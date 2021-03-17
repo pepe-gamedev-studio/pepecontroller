@@ -141,6 +141,8 @@
     <ClCompile Include="src\commands\skipPhase.cpp" />
     <ClCompile Include="src\commands\unban.cpp" />
     <ClCompile Include="src\commands\unbanConstructor.cpp" />
+    <ClCompile Include="src\commands\unvote.cpp" />
+    <ClCompile Include="src\commands\unvoteConstructor.cpp" />
     <ClCompile Include="src\commands\votePhase.cpp" />
     <ClCompile Include="src\controller\backend.cpp" />
     <ClCompile Include="src\helper.cpp" />
@@ -162,7 +164,6 @@
     <ClCompile Include="src\commands\voteConstructor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\commands\Constructors.h" />
     <ClInclude Include="src\commands\dislike.h" />
     <ClInclude Include="src\commands\dislikeConstructor.h" />
     <ClInclude Include="src\commands\like.h" />
@@ -172,6 +173,8 @@
     <ClInclude Include="src\commands\skipPhase.h" />
     <ClInclude Include="src\commands\unban.h" />
     <ClInclude Include="src\commands\unbanConstructor.h" />
+    <ClInclude Include="src\commands\unvote.h" />
+    <ClInclude Include="src\commands\unvoteConstructor.h" />
     <ClInclude Include="src\commands\votePhase.h" />
     <ClInclude Include="src\controller\backend.h" />
     <ClInclude Include="src\helper.h" />
