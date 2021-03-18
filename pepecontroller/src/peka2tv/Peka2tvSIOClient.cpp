@@ -21,7 +21,6 @@ Peka2tvSIOClient::EventHubPtr Peka2tvSIOClient::Join(std::string channel)
 	std::dynamic_pointer_cast<sio::object_message>(args)->insert("channel", channel);
 
 	client.socket()->emit("/chat/join", args);
-
 	if (!isChatListen)
 	{
 		client.socket()->on("/chat/message", std::bind(&Peka2tvSIOClient::OnMessage, this, std::placeholders::_1));

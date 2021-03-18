@@ -10,10 +10,12 @@
 #include <boost/log/trivial.hpp>
 #include <boost/asio.hpp>
 #include "commands/votePhase.h"
+#include "commands/skipPhase.h"
 int Main(int argc, char * argv[]);
 
 #ifdef _WIN32
 #include <Windows.h>
+
 int wmain(int argc, wchar_t * argv[])
 {
 	SetConsoleOutputCP(CP_UTF8);
@@ -60,7 +62,6 @@ int Main(int argc, char * argv[])
 	sioClient.Connect();
 
 	App app(sioClient.Join("stream/"s + argv[1]), &storage, &httpClient);
-	
 
 	app.SetPhase<commands::VotePhase>();
 

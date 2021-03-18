@@ -19,7 +19,7 @@ struct User
 
 using TableType = sqlite_orm::internal::table_t<User,
 	Column<User, decltype(User::id), sqlite_orm::constraints::primary_key_t<>>,
-	Column<User, decltype(User::name)>,
+	Column<User, decltype(User::name), sqlite_orm::constraints::collate_t>,
 	Column<User, decltype(User::voteWeight)>,
 	Column<User, decltype(User::group)>>;
 

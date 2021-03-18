@@ -7,8 +7,8 @@ namespace commands
 	void Like::Execute(Context* ctx)
 	{
 		//Movie.GetId();
-		storage::models::movieVotes::MovieVotes x { 0, ctx->message->from.id, 1};
-		auto inserted = ctx->storage->insert(x);
+		//storage::models::movieVotes::MovieVotes x { 0, ctx->message->from.id, storage::models::movieVotes::LIKE};
+		//auto inserted = ctx->storage->insert(x);
 		BOOST_LOG_TRIVIAL(debug) << "[Like::Execute] ";
 	}
 

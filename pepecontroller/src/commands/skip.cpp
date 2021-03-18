@@ -4,15 +4,18 @@
 namespace commands
 {
 
-Skip::Skip()
+Skip::Skip(SkipPhase* ph) : phase(ph)
 {
 }
 
 void Skip::Execute(Context* ctx)
 {
-	Inst.Stop();
-	Inst.callOverlay();
-	BOOST_LOG_TRIVIAL(debug) << "[Skip::Execute] ";
+	//Inst.Stop();
+	//Inst.callOverlay();
+	if(this->phase->Skip(ctx->message->from.id))
+		BOOST_LOG_TRIVIAL(debug) << "[Skip::Execute] ";
+	else
+		BOOST_LOG_TRIVIAL(debug) << "[Skip::Execute] " << "wrong";
 }
 
 }
