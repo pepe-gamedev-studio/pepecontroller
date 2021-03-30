@@ -1,5 +1,9 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <set>
+#include "../storage/models/movie.h"
+#include "../helper.h"
 namespace backend
 {
 	struct URI
@@ -33,6 +37,19 @@ namespace backend
 		void Connect(URI& StreamURL);
 		void Disconnect();
 		std::shared_ptr<Image> DrawImage(uint16_t x, uint16_t y, const Image& image);
+		storage::models::movie::Movie getMovie();
+		template <typename T, typename C = std::decay_t<decltype(*begin(std::declval<T>()))>,
+		typename = std::enable_if_t<std::is_convertible_v<C, storage::models::movie::Movie>>>
+		auto getAllMovies()
+		{
+			T res;
+			std::transform(_movies.begin(), _movies.end(), std::inserter(res, res.begin()), storage::models::movie::str_to_mv);
+			return res;
+		}
+		
 	private:
+		const std::string _moviesPath;
+		std::set<std::string> _movies;
+
 	};
 }

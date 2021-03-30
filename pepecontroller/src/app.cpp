@@ -6,12 +6,13 @@
 App::App(
 	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,
 	storage::Storage* storage,
+	backend::Instance* inst,
 	peka2tv::Peka2tvHttpClient* httpClient) :
 	msgSource(msgSource),
 	storage(storage),
 	httpClient(httpClient),
 	userCache(1000),
-	appApi(&userCache, storage, httpClient)
+	appApi(&userCache, storage, httpClient, inst)
 {
 	msgSource->connect(std::bind(&App::HandleMessage, this, std::placeholders::_1));
 }
@@ -29,7 +30,7 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 	auto ctr = this->phase->GetCommands().find(ExtractCommand(x.text));
 	if (ctr != this->phase->GetCommands().end())
 	{
-		commands::Context ctx{ &x, storage, httpClient, &appApi };
+		commands::Context ctx{ &x, storage,  httpClient, &appApi };
 		ctr->second->Construct(x)->Execute(&ctx);
 		peka2tv::LogChatCommands(x, logFile);
 	}

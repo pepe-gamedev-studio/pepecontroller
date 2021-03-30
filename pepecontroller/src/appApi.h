@@ -3,7 +3,7 @@
 #include "storage.h"
 #include "peka2tv/peka2tvHttpClient.h"
 #include "helper.h"
-
+#include "controller/backend.h"
 #include <boost/log/trivial.hpp>
 
 #include <optional>
@@ -11,8 +11,9 @@
 class AppApi
 {
 	using User = storage::models::user::User;
+	using Movie = storage::models::movie::Movie;
 public:
-	explicit AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tvHttpClient* httpClient);
+	explicit AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tvHttpClient* httpClient, backend::Instance* inst);
 
 	template<typename UserInfoMember, typename T>
 	std::optional<User> FindUser(UserInfoMember m, T val)
@@ -71,9 +72,29 @@ public:
 
 		storage->replace(u);
 	}
+
+	void InitMovies()
+	{
+		auto mvs = inst->getAllMovies<std::vector<Movie>>();
+		//auto db = storage->get_all<Movie>();
+		for (auto& it : mvs)
+		{
+			try
+			{
+				storage->insert(it);
+			}
+			catch (const std::exception&)
+			{
+
+			}
+		}
+		BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateMovie] ";
+		using namespace sqlite_orm;
+	}
 private:
 	UserCache* userCache;
 	storage::Storage* storage;
 	peka2tv::Peka2tvHttpClient* httpClient;
+	backend::Instance* inst;
 };
 

@@ -3,24 +3,27 @@
 #include "peka2tv/peka2tvHttpClient.h"
 #include "peka2tv/peka2tvSIOClient.h"
 #include "appApi.h"
+#include "controller/backend.h"
 #include <memory>
 #include <string>
 #include <unordered_map>
 #include <fstream>
 class App
 {
+	
 public:
 	//using CommandSet = std::unordered_map<std::string, std::shared_ptr<commands::CommandConstructor>>;
 public:
 	explicit App(
 		peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,
 		storage::Storage* storage,
+		backend::Instance* inst,
 		peka2tv::Peka2tvHttpClient* httpClient);
 	~App();
 public:
 	void HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x);
 	/*void SetCommands(const CommandSet& set);*/
-	template <typename T, typename std::enable_if<std::is_base_of<commands::Phase, T>::value, bool>::type = true> void SetPhase()
+	template <typename T, typename std::enable_if_t<std::is_base_of_v<commands::Phase, T>, bool> = true> void SetPhase()
 	{
 		this->phase = std::make_unique<T>();
 	}
@@ -34,6 +37,7 @@ private:
 	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource;
 	storage::Storage* storage;
 	peka2tv::Peka2tvHttpClient* httpClient;
+	backend::Instance* inst;
 	std::ofstream logFile;
 	UserCache userCache;
 	AppApi appApi;

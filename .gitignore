@@ -2,5 +2,8 @@
 /x64
 /pepecontroller/x64
 /pepecontroller/Debug
+/pepecontroller/gcp.json
+/pepecontroller/movies
+/pepecontroller/log.txt
 *.user
 *.sqlite3

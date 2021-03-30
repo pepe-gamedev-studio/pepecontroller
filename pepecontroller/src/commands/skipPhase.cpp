@@ -1,7 +1,14 @@
 #include "skipPhase.h"
+#include "likeConstructor.h"
+#include "dislikeConstructor.h"
+#include "skipConstructor.h"
 namespace commands
 {
-	SkipPhase::SkipPhase()
+	SkipPhase::SkipPhase() : skipCommands({
+			{"skip", std::make_shared<commands::SkipConstructor>(this) },
+			{"like", std::make_shared<commands::LikeConstructor>() },
+			{"dislike", std::make_shared<commands::DislikeConstructor>() },
+		})
 	{
 		mergeCommands(this->skipCommands);
 	}

@@ -10,10 +10,6 @@ namespace commands
 		MoviePhase();
 		const CommandSet& GetCommands() override;
 	private:
-		CommandSet movieCommands
-		{
-			{"like", std::make_shared<commands::LikeConstructor>() },
-			{"dislike", std::make_shared<commands::DislikeConstructor>() },
-		};
+		CommandSet movieCommands;
 	};
 }

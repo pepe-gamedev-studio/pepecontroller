@@ -4,7 +4,6 @@
 
 namespace commands
 {
-
 Ban::Ban(const std::string& name) : name(name) {}
 
 void Ban::Execute(Context* ctx)

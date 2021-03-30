@@ -11,6 +11,7 @@
 #include <boost/asio.hpp>
 #include "commands/votePhase.h"
 #include "commands/skipPhase.h"
+
 int Main(int argc, char * argv[]);
 
 #ifdef _WIN32
@@ -58,12 +59,12 @@ int Main(int argc, char * argv[])
 	auto storage = storage::InitStorage();
 	peka2tv::Peka2tvHttpClient httpClient;
 	peka2tv::Peka2tvSIOClient sioClient;
-
+	backend::Instance inst;
 	sioClient.Connect();
 
-	App app(sioClient.Join("stream/"s + argv[1]), &storage, &httpClient);
+	App app(sioClient.Join("stream/"s + argv[1]), &storage, &inst, &httpClient);
 
-	app.SetPhase<commands::VotePhase>();
+	app.SetPhase<commands::SkipPhase>();
 
 	io.run();
 	return 0;

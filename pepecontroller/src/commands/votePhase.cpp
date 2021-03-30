@@ -1,10 +1,13 @@
 #include "votePhase.h"
-
-#include "vote.h"
+#include "voteConstructor.h"
+#include "unvoteConstructor.h"
 
 namespace commands 
 {
-	VotePhase::VotePhase() : VotesCounter(counter_size, 0)
+	VotePhase::VotePhase() : VotesCounter(counter_size, 0),
+		voteCommands(
+			{ {"vote", std::make_shared<VoteConstructor>(this) },
+			{ "unvote", std::make_shared<UnvoteConstructor>(this) }, })
 	{
 		mergeCommands(this->voteCommands);
 	}

@@ -8,7 +8,6 @@ namespace commands
 	{
 		//Movie.GetId();
 		//storage::models::movieVotes::MovieVotes x { 0, ctx->message->from.id, storage::models::movieVotes::LIKE};
-		//auto inserted = ctx->storage->insert(x);
 		BOOST_LOG_TRIVIAL(debug) << "[Like::Execute] ";
 	}
 

@@ -1,8 +1,13 @@
 #include "backend.h"
+#include <filesystem>
 namespace backend
 {
-	Instance::Instance()
+
+
+	Instance::Instance() : _moviesPath("./movies")
 	{
+		for (const auto& entry : std::filesystem::directory_iterator(_moviesPath))
+			_movies.insert(entry.path().filename().u8string());
 	}
 	Instance::~Instance()
 	{
@@ -21,6 +26,10 @@ namespace backend
 	{
 		return std::make_shared<Image>(image);
 	}
+	storage::models::movie::Movie Instance::getMovie()
+	{
+		return storage::models::movie::Movie();
+	}
 	void Instance::Play(uint16_t id)
 	{
 	}
@@ -36,4 +45,5 @@ namespace backend
 	void Instance::callOverlay()
 	{
 	}
+	
 }
