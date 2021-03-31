@@ -73,23 +73,18 @@ public:
 		storage->replace(u);
 	}
 
-	void InitMovies()
+	void UpdateMovies()
 	{
 		auto mvs = inst->getAllMovies<std::vector<Movie>>();
-		//auto db = storage->get_all<Movie>();
 		for (auto& it : mvs)
 		{
 			try
 			{
 				storage->insert(it);
 			}
-			catch (const std::exception&)
-			{
-
-			}
+			catch (const std::exception&) {}
 		}
-		BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateMovie] ";
-		using namespace sqlite_orm;
+		BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateMovies] ";
 	}
 private:
 	UserCache* userCache;

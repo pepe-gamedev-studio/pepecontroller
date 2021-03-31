@@ -6,6 +6,6 @@ AppApi::AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tv
 	httpClient(httpClient),
 	inst(inst)
 	{
-		InitMovies();
+		UpdateMovies();
 	}
 	

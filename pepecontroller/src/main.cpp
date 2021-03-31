@@ -9,8 +9,8 @@
 #include <memory>
 #include <boost/log/trivial.hpp>
 #include <boost/asio.hpp>
-#include "commands/votePhase.h"
-#include "commands/skipPhase.h"
+#include "phase/votePhase.h"
+#include "phase/skipPhase.h"
 
 int Main(int argc, char * argv[]);
 
@@ -64,7 +64,7 @@ int Main(int argc, char * argv[])
 
 	App app(sioClient.Join("stream/"s + argv[1]), &storage, &inst, &httpClient);
 
-	app.SetPhase<commands::SkipPhase>();
+	app.SetPhase<phase::SkipPhase>();
 
 	io.run();
 	return 0;
