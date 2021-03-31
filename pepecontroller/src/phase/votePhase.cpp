@@ -4,10 +4,15 @@
 
 namespace phase 
 {
+	using namespace storage::models::user;
 	VotePhase::VotePhase() : VotesCounter(counter_size, 0),
 		voteCommands(
-			{ {"vote", std::make_shared<commands::VoteConstructor>(this) },
-			{ "unvote", std::make_shared<commands::UnvoteConstructor>(this) }, })
+		{ 
+			{"vote", 
+			{std::make_shared<commands::VoteConstructor>(this), UserGroup::Viewer }},
+			{"unvote",
+			{std::make_shared<commands::UnvoteConstructor>(this), UserGroup::Viewer}}
+		})
 	{
 		mergeCommands(this->voteCommands);
 	}

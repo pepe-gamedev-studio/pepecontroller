@@ -1,5 +1,6 @@
 #include "ban.h"
-
+#include "../../storage/SqliteStorage.h"
+#include "../../peka2tv/peka2tvHttpClient.h"
 #include <boost/log/trivial.hpp>
 
 namespace commands
@@ -11,7 +12,7 @@ void Ban::Execute(Context* ctx)
 	using namespace storage::models::user;
 
 	auto u = ctx->api->FindUser(&User::name, name);
-	if (u && u->group != UserGroup::Ignored)
+	if (u && (u->group != UserGroup::Ignored))
 	{
 		ctx->api->UpdateUser({ u->id, u->name, u->voteWeight, UserGroup::Ignored });
 	}

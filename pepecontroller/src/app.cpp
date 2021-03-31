@@ -10,6 +10,7 @@ App::App(
 	peka2tv::Peka2tvHttpClient* httpClient) :
 	msgSource(msgSource),
 	storage(storage),
+	inst(inst),
 	httpClient(httpClient),
 	userCache(1000),
 	appApi(&userCache, storage, httpClient, inst)
@@ -25,13 +26,22 @@ App::~App()
 
 void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 {
+	using namespace storage::models::user;
+	auto u = appApi.FindUser(&User::id, x.from.id);
+	if (IsOwner(x)) 
+	{
+		User OWNER({ u->id, u->name, u->voteWeight, UserGroup::Admin });
+		if((*u) != OWNER)
+			appApi.UpdateUser(OWNER);
+	}
 	if (!(IsCommand(x.text) && CanExecute(x)))
 		return;
 	auto ctr = this->phase->GetCommands().find(ExtractCommand(x.text));
 	if (ctr != this->phase->GetCommands().end())
 	{
 		commands::Context ctx{ &x, storage,  httpClient, &appApi };
-		ctr->second->Construct(x)->Execute(&ctx);
+		if (u->group >= ctr->second.cmdGroup)
+			ctr->second.cmdConst->Construct(x)->Execute(&ctx);
 		peka2tv::LogChatCommands(x, logFile);
 	}
 }
@@ -58,11 +68,6 @@ bool App::CanExecute(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 
 	return ret;
 }
-
-//void App::SetCommands(const CommandSet & set)
-//{
-//	this->commands = set;
-//}
 
 bool App::IsOwner(const peka2tv::Peka2tvSIOClient::ChatMessage & msg)
 {

@@ -11,6 +11,14 @@ namespace storage::models::user
 	{
 		return os << x.id << " " << x.name << " " << x.voteWeight << " " << groups[x.group];
 	}
+	bool operator==(const User& a, const User& b)
+	{
+		return (a.id == b.id) && (a.name == b.name) && (a.group == b.group) && (a.voteWeight == b.voteWeight);
+	}
+	bool operator!=(const User& a, const User& b)
+	{
+		return !(a == b);
+	}
 }
 
 namespace storage::models::movie

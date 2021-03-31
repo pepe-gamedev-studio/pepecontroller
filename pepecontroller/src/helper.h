@@ -7,6 +7,8 @@ namespace storage::models::user
 {
 
 	std::ostream& operator<<(std::ostream& os, const storage::models::user::User& x);
+	bool operator==(const User& a, const User& b);
+	bool operator!=(const User& a, const User& b);
 }
 namespace storage::models::movie
 {

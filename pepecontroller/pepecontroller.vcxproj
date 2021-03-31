@@ -138,6 +138,7 @@
     <ClCompile Include="src\commands\command\skip.cpp" />
     <ClCompile Include="src\commands\command\unban.cpp" />
     <ClCompile Include="src\commands\command\unvote.cpp" />
+    <ClCompile Include="src\commands\command\update.cpp" />
     <ClCompile Include="src\commands\command\vote.cpp" />
     <ClCompile Include="src\commands\constructor\banConstructor.cpp" />
     <ClCompile Include="src\commands\constructor\dislikeConstructor.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="src\commands\constructor\skipConstructor.cpp" />
     <ClCompile Include="src\commands\constructor\unbanConstructor.cpp" />
     <ClCompile Include="src\commands\constructor\unvoteConstructor.cpp" />
+    <ClCompile Include="src\commands\constructor\updateConstructor.cpp" />
     <ClCompile Include="src\commands\constructor\voteConstructor.cpp" />
     <ClCompile Include="src\controller\backend.cpp" />
     <ClCompile Include="src\helper.cpp" />
@@ -170,6 +172,7 @@
     <ClInclude Include="src\commands\command\skip.h" />
     <ClInclude Include="src\commands\command\unban.h" />
     <ClInclude Include="src\commands\command\unvote.h" />
+    <ClInclude Include="src\commands\command\update.h" />
     <ClInclude Include="src\commands\command\vote.h" />
     <ClInclude Include="src\commands\constructor\banConstructor.h" />
     <ClInclude Include="src\commands\constructor\dislikeConstructor.h" />
@@ -177,6 +180,7 @@
     <ClInclude Include="src\commands\constructor\skipConstructor.h" />
     <ClInclude Include="src\commands\constructor\unbanConstructor.h" />
     <ClInclude Include="src\commands\constructor\unvoteConstructor.h" />
+    <ClInclude Include="src\commands\constructor\updateConstructor.h" />
     <ClInclude Include="src\commands\constructor\voteConstructor.h" />
     <ClInclude Include="src\controller\backend.h" />
     <ClInclude Include="src\helper.h" />

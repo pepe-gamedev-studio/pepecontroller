@@ -9,7 +9,13 @@ using user_id = uint64_t;
 
 namespace phase
 {
-	using CommandSet = std::unordered_map<std::string, std::shared_ptr<commands::CommandConstructor>>;
+	struct CmdConstructor
+	{
+		std::shared_ptr<commands::CommandConstructor> cmdConst;
+		uint8_t cmdGroup; // required userGroup to do the command
+	};
+
+	using CommandSet = std::unordered_map<std::string, CmdConstructor>;
 	class Phase
 	{
 	public:

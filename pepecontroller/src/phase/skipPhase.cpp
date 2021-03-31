@@ -4,10 +4,15 @@
 #include "../commands/constructor/skipConstructor.h"
 namespace phase
 {
-	SkipPhase::SkipPhase() : skipCommands({
-			{"skip", std::make_shared<commands::SkipConstructor>(this) },
-			{"like", std::make_shared<commands::LikeConstructor>() },
-			{"dislike", std::make_shared<commands::DislikeConstructor>() },
+	using namespace storage::models::user;
+	SkipPhase::SkipPhase() : skipCommands(
+		{
+			{"skip", 
+			{std::make_shared<commands::SkipConstructor>(this), UserGroup::Viewer} },
+			{"like", 
+			{std::make_shared<commands::LikeConstructor>(), UserGroup::Viewer} },
+			{"dislike", 
+			{std::make_shared<commands::DislikeConstructor>(), UserGroup::Viewer} },
 		})
 	{
 		mergeCommands(this->skipCommands);
