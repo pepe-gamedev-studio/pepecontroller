@@ -12,6 +12,9 @@ namespace backend
 	Instance::~Instance()
 	{
 	}
+	//void Instance::Play(int64_t id)
+	//{
+	//}
 	void Instance::Connect(URI& StreamURL)
 	{
 	}
@@ -26,24 +29,31 @@ namespace backend
 	{
 		return std::make_shared<Image>(image);
 	}
-	storage::models::movie::Movie Instance::getMovie()
+	std::string Instance::CurrentMovieFilename()
 	{
-		return storage::models::movie::Movie();
-	}
-	void Instance::Play(uint16_t id)
-	{
+		return _currentMovieFilename;
 	}
 	void Instance::Play(std::string& name)
 	{
+		_currentMovieFilename = name;
+		// play filename
 	}
-	void Instance::Volume(uint8_t n)
-	{
-	}
+	//void Instance::Play(storage::models::movie::Movie* mv)
+	//{
+	//	_currentMovie = mv;
+	//	if (_currentMovie != nullptr)
+	//	{
+	//		//play mv
+	//	}
+	//}
+	//void Instance::Volume(uint8_t n)
+	//{
+	//}
 	void Instance::Stop()
 	{
 	}
-	void Instance::callOverlay()
-	{
-	}
+	//void Instance::callOverlay()
+	//{
+	//}
 	
 }

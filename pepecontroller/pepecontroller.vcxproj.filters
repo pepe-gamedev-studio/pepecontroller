@@ -51,13 +51,10 @@
     <ClCompile Include="src\controller\backend.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\phase\moviePhase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\phase\phase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\phase\skipPhase.cpp">
+    <ClCompile Include="src\phase\moviePhase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\phase\votePhase.cpp">
@@ -200,13 +197,10 @@
     <ClInclude Include="src\commands\constructor\voteConstructor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\phase\moviePhase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\phase\phase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\phase\skipPhase.h">
+    <ClInclude Include="src\phase\moviePhase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\phase\votePhase.h">

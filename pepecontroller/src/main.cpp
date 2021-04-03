@@ -10,7 +10,7 @@
 #include <boost/log/trivial.hpp>
 #include <boost/asio.hpp>
 #include "phase/votePhase.h"
-#include "phase/skipPhase.h"
+#include "phase/moviePhase.h"
 
 int Main(int argc, char * argv[]);
 
@@ -64,7 +64,7 @@ int Main(int argc, char * argv[])
 
 	App app(sioClient.Join("stream/"s + argv[1]), &storage, &inst, &httpClient);
 
-	app.SetPhase<phase::SkipPhase>();
+	app.SetPhase<phase::MoviePhase>();
 
 	io.run();
 	return 0;

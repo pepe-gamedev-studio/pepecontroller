@@ -152,9 +152,8 @@
     <ClCompile Include="src\helper.cpp" />
     <ClCompile Include="src\appApi.cpp" />
     <ClCompile Include="src\app.cpp" />
-    <ClCompile Include="src\phase\moviePhase.cpp" />
     <ClCompile Include="src\phase\phase.cpp" />
-    <ClCompile Include="src\phase\skipPhase.cpp" />
+    <ClCompile Include="src\phase\moviePhase.cpp" />
     <ClCompile Include="src\phase\votePhase.cpp" />
     <ClCompile Include="src\storage\models\movie.cpp" />
     <ClCompile Include="src\storage\models\movieVotes.cpp" />
@@ -188,9 +187,8 @@
     <ClInclude Include="src\commands\commandConstructor.h" />
     <ClInclude Include="src\commands\command.h" />
     <ClInclude Include="src\app.h" />
-    <ClInclude Include="src\phase\moviePhase.h" />
     <ClInclude Include="src\phase\phase.h" />
-    <ClInclude Include="src\phase\skipPhase.h" />
+    <ClInclude Include="src\phase\moviePhase.h" />
     <ClInclude Include="src\phase\votePhase.h" />
     <ClInclude Include="src\storage\column.h" />
     <ClInclude Include="src\storage\models\movie.h" />

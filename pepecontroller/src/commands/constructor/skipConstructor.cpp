@@ -3,7 +3,7 @@
 namespace commands
 {
 
-SkipConstructor::SkipConstructor(phase::SkipPhase* ph) : phase(ph) {};
+SkipConstructor::SkipConstructor(phase::MoviePhase* ph) : phase(ph) {};
 
 std::unique_ptr<Command> SkipConstructor::Construct(const peka2tv::Peka2tvSIOClient::ChatMessage& msg)
 {

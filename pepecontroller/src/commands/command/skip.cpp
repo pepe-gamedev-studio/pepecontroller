@@ -4,7 +4,7 @@
 namespace commands
 {
 
-Skip::Skip(phase::SkipPhase* ph) : phase(ph)
+Skip::Skip(phase::MoviePhase* ph) : phase(ph)
 {
 }
 

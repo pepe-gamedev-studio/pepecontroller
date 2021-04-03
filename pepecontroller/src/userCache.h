@@ -34,13 +34,13 @@ public:
 		std::shared_ptr<User> data;
 		mutable LRU::iterator it;
 
-		uint64_t Id() const { return data->id; }
+		int64_t Id() const { return data->id; }
 		std::string Name() const { return data->name; }
 	};
 public:
 	explicit UserCache(size_t capacity);
 	void Insert(const User& val);
-	UserPtr Get(uint64_t id);
+	UserPtr Get(int64_t id);
 	UserPtr Get(std::string name);
 private:
 	size_t capacity;
@@ -48,7 +48,7 @@ private:
 	boost::multi_index_container <
 		UserInfoIndex,
 		boost::multi_index::indexed_by<
-		boost::multi_index::hashed_unique<boost::multi_index::const_mem_fun<UserInfoIndex, uint64_t, &UserInfoIndex::Id>>,
+		boost::multi_index::hashed_unique<boost::multi_index::const_mem_fun<UserInfoIndex, int64_t, &UserInfoIndex::Id>>,
 		boost::multi_index::hashed_unique<boost::multi_index::const_mem_fun<UserInfoIndex, std::string, &UserInfoIndex::Name>, NameHash, NameComp>>> index;
 
 	LRU lru;

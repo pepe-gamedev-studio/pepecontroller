@@ -5,7 +5,6 @@
 #include "helper.h"
 #include "controller/backend.h"
 #include <boost/log/trivial.hpp>
-
 #include <optional>
 
 class AppApi
@@ -75,7 +74,7 @@ public:
 
 	void UpdateMovies()
 	{
-		auto mvs = inst->getAllMovies<std::vector<Movie>>();
+		auto mvs = inst->AllMoviesFilenames<std::vector<Movie>>();
 		for (auto& it : mvs)
 		{
 			try
@@ -86,6 +85,24 @@ public:
 		}
 		BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateMovies] ";
 	}
+	
+	int64_t GetCurrentMovieId() 
+	{
+		using namespace storage::models::movie;
+
+		auto mv = storage->get_pointer<Movie>(this->inst->CurrentMovieFilename());
+		if (mv)
+		{
+			return mv->id;
+		}
+		else
+		{
+			BOOST_LOG_TRIVIAL(debug) << "Cannot get current movie ID now" << std::endl;
+			return -1;
+		}
+	}
+
+
 private:
 	UserCache* userCache;
 	storage::Storage* storage;

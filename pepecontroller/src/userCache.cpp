@@ -51,7 +51,7 @@ void UserCache::Insert(const UserCache::User& val)
 	BOOST_LOG_TRIVIAL(debug) << "[UserCache::Insert] " << val;
 }
 
-UserCache::UserPtr UserCache::Get(uint64_t id)
+UserCache::UserPtr UserCache::Get(int64_t id)
 {
 	decltype(index)::nth_index<0>::type::iterator found = index.get<0>().find(id);
 

@@ -5,7 +5,7 @@
 #include <unordered_set>
 #include "../commands/commandConstructor.h"
 
-using user_id = uint64_t;
+using user_id = int64_t;
 
 namespace phase
 {

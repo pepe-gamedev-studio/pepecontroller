@@ -25,7 +25,7 @@ class Peka2tvHttpClient
 public:
 	struct UserInfo
 	{
-		uint64_t id;
+		int64_t id;
 		std::string name;
 		std::string slug;
 	};
@@ -52,7 +52,7 @@ public:
 		if (r.find("id") == r.end())
 			return {};
 
-		return UserInfo{ r["id"].get<uint64_t>(), r["name"].get<std::string>(), r["slug"].get<std::string>() };
+		return UserInfo{ r["id"].get<int64_t>(), r["name"].get<std::string>(), r["slug"].get<std::string>() };
 	}
 protected:
 	std::string Call(std::string method, std::string data);

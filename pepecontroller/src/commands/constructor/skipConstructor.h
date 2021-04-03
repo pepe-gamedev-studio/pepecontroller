@@ -4,17 +4,17 @@
 #include <memory>
 namespace phase
 {
-	class SkipPhase;
+	class MoviePhase;
 }
 namespace commands
 {
 class SkipConstructor : public CommandConstructor // inheritance from base class
 {
 public:
-	SkipConstructor(phase::SkipPhase* ph);
+	SkipConstructor(phase::MoviePhase* ph);
 	std::unique_ptr<Command> Construct(const peka2tv::Peka2tvSIOClient::ChatMessage& msg) override;
 private:
-	phase::SkipPhase* phase;
+	phase::MoviePhase* phase;
 };
 
 }
