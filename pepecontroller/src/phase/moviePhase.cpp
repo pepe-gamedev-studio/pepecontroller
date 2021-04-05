@@ -5,29 +5,27 @@
 namespace phase
 {
 	using namespace storage::models::user;
-	MoviePhase::MoviePhase() : Commands(
+	MoviePhase::MoviePhase() : movieCommands(
 		{
 			{"skip", 
-			{std::make_shared<commands::SkipConstructor>(this), UserGroup::Viewer} },
-			{"like", 
-			{std::make_shared<commands::LikeConstructor>(), UserGroup::Viewer} },
-			{"dislike", 
-			{std::make_shared<commands::DislikeConstructor>(), UserGroup::Viewer} },
+			{std::make_shared<commands::SkipConstructor>(this), UserGroup::Viewer} 
+			},
+
 		})
 	{
-		mergeCommands(this->Commands);
+		mergeCommands(this->movieCommands);
 	}
 	const CommandSet& MoviePhase::GetCommands()
 	{
-		return this->Commands;
+		return this->movieCommands;
 	}
 	bool MoviePhase::Skip(user_id user)
 	{
-		auto it = this->SkipCache.find(user);
-		if (it == this->SkipCache.end())
+		auto it = this->skipCache.find(user);
+		if (it == this->skipCache.end())
 		{
 			++this->skipCounter;
-			this->SkipCache.insert(user);
+			this->skipCache.insert(user);
 			return true;
 		}
 		else return false;

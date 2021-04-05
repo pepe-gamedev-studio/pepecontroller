@@ -19,10 +19,10 @@ struct Movie
 
 using TableType = sqlite_orm::internal::table_t<Movie,
 	Column<Movie, decltype(Movie::id), sqlite_orm::constraints::primary_key_t<>, sqlite_orm::constraints::autoincrement_t>,
-	Column<Movie, decltype(Movie::title), sqlite_orm::constraints::unique_t<>>,
+	Column<Movie, decltype(Movie::title)>,
 	Column<Movie, decltype(Movie::length)>,
 	Column<Movie, decltype(Movie::year)>,
-	Column<Movie, decltype(Movie::filename)>
+	Column<Movie, decltype(Movie::filename), sqlite_orm::constraints::unique_t<>>
 >;
 
 TableType MakeTable();

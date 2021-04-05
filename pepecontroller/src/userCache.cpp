@@ -1,6 +1,5 @@
 #include "UserCache.h"
 #include "helper.h"
-
 #include <boost/log/trivial.hpp>
 #include <algorithm>
 

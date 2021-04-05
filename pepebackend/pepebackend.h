@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <set>
-
-namespace backend
+#include <filesystem>
+namespace pepebackend
 {
 	struct URI
 	{
@@ -25,31 +25,28 @@ namespace backend
 	class Instance
 	{
 	public:
-		Instance();
+		Instance(const std::filesystem::path& playlistPath);
 		~Instance();
-		//void Play(int64_t id);
-		void Play(std::string& name);
-	/*	void Play(storage::models::movie::Movie* mv);*/
-		//void Volume(uint8_t n);
+		void Play(const std::filesystem::path& name);
 		void Stop();
-		//void callOverlay();
 		std::shared_ptr<Text> DrawText(uint16_t x, uint16_t y, const Text& text);
-		void Connect(URI& StreamURL);
+		void Connect(const URI& StreamURL);
 		void Disconnect();
 		std::shared_ptr<Image> DrawImage(uint16_t x, uint16_t y, const Image& image);
-		std::string CurrentMovieFilename();
-		template <typename T, typename C = std::decay_t<decltype(*begin(std::declval<T>()))>,
+		std::filesystem::path PlayingFilename();
+		std::set<std::filesystem::path> GetPlaylist();
+		/*template <typename T, typename C = std::decay_t<decltype(*begin(std::declval<T>()))>,
 		typename = std::enable_if_t<std::is_convertible_v<C, storage::models::movie::Movie>>>
 		auto AllMoviesFilenames()
 		{
 			T res;
 			std::transform(movies.begin(), movies.end(), std::inserter(res, res.begin()), storage::models::movie::str_to_mv);
 			return res;
-		}
+		}*/
 		
 	private:
-		std::string moviesPath;
-		std::set<std::string> movies;
-		std::string currentMovieFilename;
+		std::filesystem::path playlistPath;
+		std::set<std::filesystem::path> playlist;
+		std::filesystem::path playingFilename;
 	};
 }

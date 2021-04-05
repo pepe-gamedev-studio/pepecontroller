@@ -59,7 +59,7 @@ int Main(int argc, char * argv[])
 	auto storage = storage::InitStorage();
 	peka2tv::Peka2tvHttpClient httpClient;
 	peka2tv::Peka2tvSIOClient sioClient;
-	backend::Instance inst;
+	pepebackend::Instance inst("./movies");
 	sioClient.Connect();
 
 	App app(sioClient.Join("stream/"s + argv[1]), &storage, &inst, &httpClient);

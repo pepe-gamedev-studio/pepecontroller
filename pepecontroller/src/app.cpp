@@ -1,12 +1,11 @@
 #include "app.h"
 #include <boost/log/trivial.hpp>
-
 #include <functional>
 
 App::App(
 	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,
 	storage::Storage* storage,
-	backend::Instance* inst,
+	pepebackend::Instance* inst,
 	peka2tv::Peka2tvHttpClient* httpClient) :
 	msgSource(msgSource),
 	storage(storage),

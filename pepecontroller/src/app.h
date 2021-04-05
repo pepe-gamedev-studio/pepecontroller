@@ -3,7 +3,7 @@
 #include "peka2tv/peka2tvHttpClient.h"
 #include "peka2tv/peka2tvSIOClient.h"
 #include "appApi.h"
-#include "controller/backend.h"
+#include <pepebackend.h>
 #include <memory>
 #include <string>
 #include <unordered_map>
@@ -17,7 +17,7 @@ public:
 	explicit App(
 		peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,
 		storage::Storage* storage,
-		backend::Instance* inst,
+		pepebackend::Instance* inst,
 		peka2tv::Peka2tvHttpClient* httpClient);
 	~App();
 public:
@@ -37,7 +37,7 @@ private:
 	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource;
 	storage::Storage* storage;
 	peka2tv::Peka2tvHttpClient* httpClient;
-	backend::Instance* inst;
+	pepebackend::Instance* inst;
 	std::ofstream logFile;
 	UserCache userCache;
 	AppApi appApi;

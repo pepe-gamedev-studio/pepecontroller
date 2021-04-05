@@ -1,6 +1,5 @@
 #pragma once
 #include "phase.h"
-
 #include <unordered_map>
 namespace phase 
 {
@@ -15,8 +14,8 @@ namespace phase
 	private:
 		CommandSet voteCommands;
 		const uint32_t counter_size = 10;
-		std::vector<uint32_t> VotesCounter;
-		std::unordered_map<user_id, uint32_t> VoteCache;
+		std::vector<uint32_t> votesCounter;
+		std::unordered_map<user_id, uint32_t> voteCache;
 		
 	};
 

@@ -3,7 +3,7 @@
 #include "storage.h"
 #include "peka2tv/peka2tvHttpClient.h"
 #include "helper.h"
-#include "controller/backend.h"
+#include <pepebackend.h>
 #include <boost/log/trivial.hpp>
 #include <optional>
 
@@ -12,7 +12,7 @@ class AppApi
 	using User = storage::models::user::User;
 	using Movie = storage::models::movie::Movie;
 public:
-	explicit AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tvHttpClient* httpClient, backend::Instance* inst);
+	explicit AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tvHttpClient* httpClient, pepebackend::Instance* inst);
 
 	template<typename UserInfoMember, typename T>
 	std::optional<User> FindUser(UserInfoMember m, T val)
@@ -74,12 +74,13 @@ public:
 
 	void UpdateMovies()
 	{
-		auto mvs = inst->AllMoviesFilenames<std::vector<Movie>>();
-		for (auto& it : mvs)
+		using namespace storage::models::movie;
+		auto strMovieSet = inst->GetPlaylist();
+		for (auto& it : strMovieSet)
 		{
 			try
 			{
-				storage->insert(it);
+				storage->insert(str_to_mv(it.string()));
 			}
 			catch (const std::exception&) {}
 		}
@@ -90,7 +91,7 @@ public:
 	{
 		using namespace storage::models::movie;
 
-		auto mv = storage->get_pointer<Movie>(this->inst->CurrentMovieFilename());
+		auto mv = storage->get_pointer<Movie>(this->inst->PlayingFilename().string());
 		if (mv)
 		{
 			return mv->id;
@@ -107,6 +108,6 @@ private:
 	UserCache* userCache;
 	storage::Storage* storage;
 	peka2tv::Peka2tvHttpClient* httpClient;
-	backend::Instance* inst;
+	pepebackend::Instance* inst;
 };
 

@@ -48,9 +48,6 @@
     <ClCompile Include="src\helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\controller\backend.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\phase\phase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -150,9 +147,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\helper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\controller\backend.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\commands\command\ban.h">

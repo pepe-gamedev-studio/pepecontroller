@@ -4,10 +4,10 @@ namespace backend
 {
 
 
-	Instance::Instance() : _moviesPath("./movies")
+	Instance::Instance() : moviesPath("./movies")
 	{
-		for (const auto& entry : std::filesystem::directory_iterator(_moviesPath))
-			_movies.insert(entry.path().filename().u8string());
+		for (const auto& entry : std::filesystem::directory_iterator(moviesPath))
+			movies.insert(entry.path().filename().u8string());
 	}
 	Instance::~Instance()
 	{
@@ -31,11 +31,11 @@ namespace backend
 	}
 	std::string Instance::CurrentMovieFilename()
 	{
-		return _currentMovieFilename;
+		return currentMovieFilename;
 	}
 	void Instance::Play(std::string& name)
 	{
-		_currentMovieFilename = name;
+		currentMovieFilename = name;
 		// play filename
 	}
 	//void Instance::Play(storage::models::movie::Movie* mv)
