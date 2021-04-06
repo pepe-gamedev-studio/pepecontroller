@@ -241,6 +241,7 @@
     <ClInclude Include="src\commands\commandConstructor.h" />
     <ClInclude Include="src\commands\command.h" />
     <ClInclude Include="src\app.h" />
+    <ClInclude Include="src\pepecontroller.h" />
     <ClInclude Include="src\phase\phase.h" />
     <ClInclude Include="src\phase\moviePhase.h" />
     <ClInclude Include="src\phase\votePhase.h" />

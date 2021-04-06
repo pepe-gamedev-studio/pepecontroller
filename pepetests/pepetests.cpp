@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include <filesystem>
-#include <pepebackend.h>
+#include <pepecontroller.h>
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace pepetests
@@ -12,9 +12,9 @@ namespace pepetests
 		
 		TEST_METHOD(TestMethod1)
 		{
-			std::filesystem::path p(L".");
+			std::filesystem::path p("./movies");
 			pepebackend::Instance inst(p);
-
+			Assert::IsNotNull(&inst);
 		}
 	};
 }
