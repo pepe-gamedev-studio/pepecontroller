@@ -39,7 +39,7 @@ namespace pepebackend
 	{
 		return playlist;
 	}
-	void Instance::Play(const std::filesystem::path& name)
+	void Instance::Play(const std::string& name)
 	{
 		playingFilename = name;
 		// play filename

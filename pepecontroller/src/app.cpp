@@ -38,7 +38,7 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 	auto ctr = this->phase->GetCommands().find(ExtractCommand(x.text));
 	if (ctr != this->phase->GetCommands().end())
 	{
-		commands::Context ctx{ &x, storage,  httpClient, &appApi };
+		commands::Context ctx{ &x, &appApi };
 		if (u->group >= ctr->second.cmdGroup)
 			ctr->second.cmdConst->Construct(x)->Execute(&ctx);
 		peka2tv::LogChatCommands(x, logFile);

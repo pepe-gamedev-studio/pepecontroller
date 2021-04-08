@@ -27,7 +27,7 @@ namespace pepebackend
 	public:
 		Instance(const std::filesystem::path& playlistPath);
 		~Instance();
-		void Play(const std::filesystem::path& name);
+		void Play(const std::string& name);
 		void Stop();
 		std::shared_ptr<Text> DrawText(uint16_t x, uint16_t y, const Text& text);
 		void Connect(const URI& StreamURL);
@@ -47,6 +47,6 @@ namespace pepebackend
 	private:
 		std::filesystem::path playlistPath;
 		std::set<std::filesystem::path> playlist;
-		std::filesystem::path playingFilename;
+		std::string playingFilename;
 	};
 }

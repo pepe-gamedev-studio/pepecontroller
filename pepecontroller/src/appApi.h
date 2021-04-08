@@ -11,6 +11,7 @@ class AppApi
 {
 	using User = storage::models::user::User;
 	using Movie = storage::models::movie::Movie;
+	using MovieVotes = storage::models::movieVotes::MovieVotes;
 public:
 	explicit AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tvHttpClient* httpClient, pepebackend::Instance* inst);
 
@@ -91,15 +92,30 @@ public:
 	{
 		using namespace storage::models::movie;
 
-		auto mv = storage->get_pointer<Movie>(this->inst->PlayingFilename().string());
-		if (mv)
+		auto m = storage->get_pointer<Movie>(this->inst->PlayingFilename().string());
+		if (m)
 		{
-			return mv->id;
+			return m->id;
 		}
 		else
 		{
 			BOOST_LOG_TRIVIAL(debug) << "Cannot get current movie ID now" << std::endl;
 			return -1;
+		}
+	}
+	bool UpdateVotes(const MovieVotes& mv)
+	{
+		using namespace storage::models::movieVotes;
+		try
+		{
+			storage->replace(mv);
+			BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateVotes] " << mv.movieId;
+			return true;
+		}
+		catch (const std::exception&)
+		{
+			BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateVotes] " << mv.movieId << " does not exist ";
+			return false;
 		}
 	}
 

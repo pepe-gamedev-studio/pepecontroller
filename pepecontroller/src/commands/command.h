@@ -11,8 +11,6 @@ namespace commands
 struct Context
 {
 	const peka2tv::Peka2tvSIOClient::ChatMessage* message;
-	storage::Storage* storage;
-	peka2tv::Peka2tvHttpClient* httpClient;
 	AppApi* api;
 };
 

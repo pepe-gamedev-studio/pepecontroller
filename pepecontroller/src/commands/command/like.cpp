@@ -26,15 +26,8 @@ namespace commands
 			}	
 			x = { *movieID,  ctx->message->from.id, LIKE };
 		}
-		try
-		{
-			ctx->storage->replace(x);
+		if (ctx->api->UpdateVotes(x))
 			BOOST_LOG_TRIVIAL(debug) << "[Like::Execute] " << *movieID << " Liked by " << ctx->message->from.name;
-		}
-		catch (const std::exception&)
-		{
-			BOOST_LOG_TRIVIAL(debug) << "[Like::Execute] " << *movieID << " does not exist ";
-		}
 	}
 
 }

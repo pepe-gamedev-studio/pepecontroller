@@ -26,15 +26,8 @@ namespace commands
 			}
 			x = { *movieID,  ctx->message->from.id, DISLIKE };
 		}
-		try
-		{
-			ctx->storage->replace(x);
+		if(ctx->api->UpdateVotes(x))
 			BOOST_LOG_TRIVIAL(debug) << "[Dislike::Execute] " << *movieID << " Disliked by " << ctx->message->from.name;
-		}
-		catch (const std::exception&)
-		{
-			BOOST_LOG_TRIVIAL(debug) << "[Dislike::Execute] " << *movieID << " does not exist ";
-		}
 	}
 
 }
