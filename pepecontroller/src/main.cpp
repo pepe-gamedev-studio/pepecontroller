@@ -12,23 +12,23 @@
 #include "phase/votePhase.h"
 #include "phase/moviePhase.h"
 
-int Main(int argc, char * argv[]);
+int Main(int argc, char* argv[]);
 
 #ifdef _WIN32
 #include <Windows.h>
 
-int wmain(int argc, wchar_t * argv[])
+int wmain(int argc, wchar_t* argv[])
 {
 	SetConsoleOutputCP(CP_UTF8);
 
-	char** u8argv = new char*[argc];
+	auto u8argv = new char*[argc];
 	for (int argn = 0; argn < argc; ++argn)
 	{
-		int size = WideCharToMultiByte(CP_UTF8, 0, argv[argn], -1, NULL, 0, NULL, NULL);
+		int size = WideCharToMultiByte(CP_UTF8, 0, argv[argn], -1, nullptr, 0, nullptr, nullptr);
 
 		u8argv[argn] = new char[size];
 
-		WideCharToMultiByte(CP_UTF8, 0, argv[argn], -1, u8argv[argn], size, NULL, NULL);
+		WideCharToMultiByte(CP_UTF8, 0, argv[argn], -1, u8argv[argn], size, nullptr, nullptr);
 	}
 
 	Main(argc, u8argv);
@@ -41,7 +41,7 @@ int main(int argc, char * argv[])
 #endif
 
 
-int Main(int argc, char * argv[])
+int Main(int argc, char* argv[])
 {
 	using namespace std::string_literals;
 
@@ -53,11 +53,15 @@ int Main(int argc, char * argv[])
 
 	BOOST_LOG_TRIVIAL(debug) << "[main] channel " << argv[1];
 
-	boost::asio::io_context io;
-	boost::asio::executor_work_guard<decltype(io.get_executor())> work{ io.get_executor() };
+	boost::asio::io_context ioc;
+	boost::asio::executor_work_guard<decltype(ioc.get_executor())> work{
+		ioc.get_executor()
+	};
 
 	auto storage = storage::InitStorage();
-	peka2tv::Peka2tvHttpClient httpClient;
+	peka2tv::Peka2tvHttpClient httpClient(boost::asio::make_strand(ioc), "https://sc2tv.ru");
+	/*std::make_shared<peka2tv::Peka2tvHttpClient>(
+	    boost::asio::make_strand(ioc));*/
 	peka2tv::Peka2tvSIOClient sioClient;
 	pepebackend::Instance inst("./movies");
 	sioClient.Connect();
@@ -66,6 +70,6 @@ int Main(int argc, char * argv[])
 
 	app.SetPhase<phase::MoviePhase>();
 
-	io.run();
+	ioc.run();
 	return 0;
 }
