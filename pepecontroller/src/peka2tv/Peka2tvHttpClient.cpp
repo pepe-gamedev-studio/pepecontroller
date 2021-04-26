@@ -1,17 +1,5 @@
 #include "Peka2tvHttpClient.h"
 
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
-#include <boost/beast/version.hpp>
-#include <boost/asio/connect.hpp>
-#include <boost/asio/ip/tcp.hpp>
-#include <boost/asio/ssl/error.hpp>
-#include <boost/asio/ssl/stream.hpp>
-#include <boost/asio/buffer.hpp>
-#include <boost/network/uri.hpp>
-#include <cstdlib>
-#include <string_view>
-
 namespace peka2tv
 {
 	namespace beast = boost::beast; // from <boost/beast.hpp>
@@ -21,17 +9,19 @@ namespace peka2tv
 	using tcp = boost::asio::ip::tcp;
 
 	Peka2tvHttpClient::Peka2tvHttpClient(
-            net::any_io_executor& ex, std::string entry)
+            boost::asio::io_context *ioc, std::string entry)
 	{
 		boost::network::uri::uri uri(entry);
 		host = uri.host();
 		port = uri.port().empty()
 			       ? (uri.scheme() == std::string_view("http") ? "80" : "443")
 			       : uri.port();
+		this->ioc = ioc;
+                this->ctx.set_verify_mode(ssl::verify_none);
 	}
 
-	std::string Peka2tvHttpClient::Call(std::string method,
-	                                    std::string data)
+	std::string Peka2tvHttpClient::Call(std::string method, std::string data,
+                                std::function<void(nlohmann::json)>)
 	{
 		using tcp = boost::asio::ip::tcp;
 		namespace ssl = boost::asio::ssl;
@@ -40,7 +30,6 @@ namespace peka2tv
 
 		boost::asio::io_context ioc;
 
-		ssl::context ctx{ssl::context::sslv23_client};
 
 		ctx.set_verify_mode(ssl::verify_peer);
 
@@ -79,38 +68,52 @@ namespace peka2tv
 		beast::flat_buffer buffer;
 		http::response<http::string_body> res;
 
-		read(stream, buffer, res);
+		http::read(stream, buffer, res);
 
 		return res.body();
 	}
+
+	Peka2tvHttpClient::UserInfo Peka2tvHttpClient::JsonToUserInfo(const nlohmann::json& j)
+	{
+		return UserInfo{
+			j["id"].get<int64_t>(), j["name"].get<std::string>(),
+			j["slug"].get<std::string>()
+		};
+	}
+
 }
 
 namespace peka2tv
 {
-	void session::fail(beast::error_code ec, const char* what)
+	void session::fail(beast::error_code ec, std::string what)
 	{
 		std::cerr << what << ": " << ec.message() << "\n";
 	}
 
-	void session::run(const char* host, const char* port, const char* target,
+	void session::run(std::string host, std::string port,
+	                  std::string target, std::string data,
 	                  int version)
 	{
-		if (!SSL_set_tlsext_host_name(stream_.native_handle(), host))
+        
+		
+		if (!SSL_set_tlsext_host_name(stream_.native_handle(), host.c_str()))
 		{
 			beast::error_code ec{
 				static_cast<int>(ERR_get_error()),
 				net::error::get_ssl_category()
 			};
-			std::cerr << ec.message() << "\n";
-			return;
+            throw boost::system::system_error{ec};
 		}
 
-		// Set up an HTTP GET request message
+		// Set up an HTTP POST request message
 		req_.version(version);
-		req_.method(http::verb::get);
+		req_.method(http::verb::post);
 		req_.target(target);
 		req_.set(http::field::host, host);
 		req_.set(http::field::user_agent, BOOST_BEAST_VERSION_STRING);
+		req_.set(http::field::content_type, "application/json");
+		req_.body() = data;
+		req_.prepare_payload();
 
 		// Look up the domain name
 		resolver_.async_resolve(
@@ -180,8 +183,8 @@ namespace peka2tv
 			return fail(ec, "read");
 
 		// Write the message to standard out
-		std::cout << res_ << std::endl;
-
+		//std::cout << res_ << std::endl;
+        on_result(nlohmann::json::parse(res_.body()));
 		// Set a timeout on the operation
 		get_lowest_layer(stream_).expires_after(std::chrono::seconds(30));
 

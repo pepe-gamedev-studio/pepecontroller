@@ -12,21 +12,23 @@ class AppApi
 	using User = storage::models::user::User;
 	using Movie = storage::models::movie::Movie;
 	using MovieVotes = storage::models::movieVotes::MovieVotes;
+	using UserInfo = peka2tv::Peka2tvHttpClient::UserInfo;
 public:
 	explicit AppApi(UserCache* userCache, storage::Storage* storage, peka2tv::Peka2tvHttpClient* httpClient, pepebackend::Instance* inst);
 
-	template<typename UserInfoMember, typename T>
-	std::optional<User> FindUser(UserInfoMember m, T val)
+	template <typename UserInfoMember, typename T>
+	void FindUser(UserInfoMember m, T val, std::function<void(std::optional<User>)> callback)
 	{
 		using namespace sqlite_orm;
-		using UserInfo = peka2tv::Peka2tvHttpClient::UserInfo;
 		using UserGroup = storage::models::user::UserGroup;
 
 		if (auto cached = userCache->Get(val))
 		{
-			BOOST_LOG_TRIVIAL(debug) << "[AppApi::FindUser] cache " << *cached;
+			BOOST_LOG_TRIVIAL(debug)
+                        << "[AppApi::FindUser] cache " << *cached;
 
-			return *cached;
+			callback(*cached);
+			return;
 		}
 
 		auto stored = storage->get_all<User>(where(c(m) == val));
@@ -35,25 +37,37 @@ public:
 			User& u = stored.front();
 			userCache->Insert(u);
 
-			BOOST_LOG_TRIVIAL(debug) << "[AppApi::FindUser] storage " << u;
+			BOOST_LOG_TRIVIAL(debug)
+                        << "[AppApi::FindUser] storage " << u;
 
-			return u;
+			callback(u);
+			return;
 		}
 
-		if (auto fetched = httpClient->FetchUserInfo(m, val))
-		{
-			User u{ fetched->id, fetched->name, 1, UserGroup::Viewer };
-			storage->replace(u);
-			userCache->Insert(u);
+		httpClient->FetchUserInfo(
+			m, val, [&](std::optional<UserInfo> info)
+			{
+				if (info)
+				{
+					User u{
+						info->id, info->name, 1,
+						UserGroup::Viewer
+					};
+					storage->replace(u);
+					userCache->Insert(u);
 
-			BOOST_LOG_TRIVIAL(debug) << "[AppApi::FindUser] http " << u;
+					BOOST_LOG_TRIVIAL(debug)
+                                << "[AppApi::FindUser] http " << u;
 
-			return u;
-		}
-
-		BOOST_LOG_TRIVIAL(debug) << "[AppApi::FindUser] not found " << val;
-
-		return {};
+					callback(u);
+				}
+				else
+				{
+					BOOST_LOG_TRIVIAL(debug)
+                                << "[AppApi::FindUser] not found " << val;
+					callback({});
+				}
+			});
 	}
 	void UpdateUser(const User& u)
 	{
@@ -119,11 +133,10 @@ public:
 		}
 	}
 
-
 private:
 	UserCache* userCache;
 	storage::Storage* storage;
 	peka2tv::Peka2tvHttpClient* httpClient;
 	pepebackend::Instance* inst;
-};
+	};
 

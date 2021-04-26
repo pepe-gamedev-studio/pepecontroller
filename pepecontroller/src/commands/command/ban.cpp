@@ -11,13 +11,18 @@ void Ban::Execute(Context* ctx)
 {
 	using namespace storage::models::user;
 
-	auto u = ctx->api->FindUser(&User::name, name);
-	if (u && (u->group != UserGroup::Ignored))
+	ctx->api->FindUser(&User::name, name, [&](std::optional<User> u)
 	{
-		ctx->api->UpdateUser({ u->id, u->name, u->voteWeight, UserGroup::Ignored });
-	}
+		if (u && (u->group != Ignored))
+		{
+			ctx->api->UpdateUser(
+				{u->id, u->name, u->voteWeight, Ignored});
+		}
 
-	BOOST_LOG_TRIVIAL(debug) << "[Ban::Execute] " << name << " " << (u ? "FOUND" : "UNKNOWN");
+		BOOST_LOG_TRIVIAL(debug)
+              << "[Ban::Execute] " << name << " " << (u ? "FOUND" : "UNKNOWN");
+	});
+	
 }
 
 }

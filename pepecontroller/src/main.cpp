@@ -57,11 +57,8 @@ int Main(int argc, char* argv[])
 	boost::asio::executor_work_guard<decltype(ioc.get_executor())> work{
 		ioc.get_executor()
 	};
-
 	auto storage = storage::InitStorage();
-	peka2tv::Peka2tvHttpClient httpClient(boost::asio::make_strand(ioc), "https://sc2tv.ru");
-	/*std::make_shared<peka2tv::Peka2tvHttpClient>(
-	    boost::asio::make_strand(ioc));*/
+	peka2tv::Peka2tvHttpClient httpClient(&ioc);
 	peka2tv::Peka2tvSIOClient sioClient;
 	pepebackend::Instance inst("./movies");
 	sioClient.Connect();
