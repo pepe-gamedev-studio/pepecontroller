@@ -84,7 +84,7 @@ public:
 		const int version = 11;
 		
 		auto Session = std::make_shared<session>(make_strand(*ioc), ctx);
-		Session->on_result = [&](nlohmann::json j)
+		Session->on_result = [=](nlohmann::json j)
 		{
 			if (j.find("id") == j.end())
 				callback({});

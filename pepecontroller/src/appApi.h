@@ -45,7 +45,7 @@ public:
 		}
 
 		httpClient->FetchUserInfo(
-			m, val, [&](std::optional<UserInfo> info)
+			m, val, [=](std::optional<UserInfo> info)
 			{
 				if (info)
 				{

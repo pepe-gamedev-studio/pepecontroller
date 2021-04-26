@@ -26,7 +26,7 @@ App::~App()
 void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 {
 	using namespace storage::models::user;
-	appApi.FindUser(&User::id, x.from.id, [&](std::optional<User> u)
+	appApi.FindUser(&User::id, x.from.id, [=](std::optional<User> u)
 	{
 		if (IsOwner(x))
 		{

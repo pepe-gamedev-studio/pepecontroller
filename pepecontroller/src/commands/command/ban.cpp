@@ -11,7 +11,7 @@ void Ban::Execute(Context* ctx)
 {
 	using namespace storage::models::user;
 
-	ctx->api->FindUser(&User::name, name, [&](std::optional<User> u)
+	ctx->api->FindUser(&User::name, name, [=](std::optional<User> u)
 	{
 		if (u && (u->group != Ignored))
 		{
