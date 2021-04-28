@@ -69,6 +69,8 @@ public:
 				}
 			});
 	}
+
+	
 	void UpdateUser(const User& u)
 	{
 		BOOST_LOG_TRIVIAL(debug) << "[AppApi::UpdateUser] " << u;

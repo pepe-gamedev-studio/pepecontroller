@@ -1,8 +1,6 @@
 #pragma once
 #include <sio_client.h>
-
-#include <boost/signals2.hpp>
-
+#include <boost/signals2/signal.hpp>
 #include <string>
 #include <vector>
 #include <unordered_map>

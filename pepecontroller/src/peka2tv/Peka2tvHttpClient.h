@@ -4,7 +4,6 @@
 #include <boost/beast/http.hpp>
 #include <boost/beast/ssl.hpp>
 #include <boost/network/uri/uri.hpp>
-#include <boost/beast/version.hpp>
 #include <boost/asio/strand.hpp>
 #include <memory>
 #include <string>
@@ -105,6 +104,7 @@ public:
 		
 		Session->run(host, port, resource, q.dump(), version);
 	}
+	
 
       protected:
         std::string Call(std::string method, std::string data,

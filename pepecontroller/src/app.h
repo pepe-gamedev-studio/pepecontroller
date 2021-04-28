@@ -8,6 +8,14 @@
 #include <string>
 #include <unordered_map>
 #include <fstream>
+
+struct WebClients
+{
+	std::optional<std::string> twitch;
+	std::optional<std::string> sc2tv;
+	std::optional<std::string> goodgame;
+};
+
 class App
 {
 	
@@ -15,10 +23,12 @@ public:
 	//using CommandSet = std::unordered_map<std::string, std::shared_ptr<commands::CommandConstructor>>;
 public:
 	explicit App(
-		peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,
+		/*peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,*/
 		storage::Storage* storage,
 		pepebackend::Instance* inst,
-		peka2tv::Peka2tvHttpClient* httpClient);
+		peka2tv::Peka2tvHttpClient* httpClient,
+		peka2tv::Peka2tvSIOClient* sioClient,
+		WebClients* w);
 	~App();
 public:
 	void HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x);
@@ -27,7 +37,10 @@ public:
 	{
 		this->phase = std::make_unique<T>();
 	}
+
 private:
+	void NametoId(std::string name,
+	              std::function<void(int64_t)> callback);
 	bool CanExecute(const peka2tv::Peka2tvSIOClient::ChatMessage & x);
 	bool IsOwner(const peka2tv::Peka2tvSIOClient::ChatMessage & msg);
 	bool IsCommand(const std::string& msg);
@@ -36,7 +49,8 @@ private:
 private:
 	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource;
 	storage::Storage* storage;
-	peka2tv::Peka2tvHttpClient* httpClient;
+	//peka2tv::Peka2tvHttpClient* httpClient;
+	WebClients* webclients;
 	pepebackend::Instance* inst;
 	std::ofstream logFile;
 	UserCache userCache;

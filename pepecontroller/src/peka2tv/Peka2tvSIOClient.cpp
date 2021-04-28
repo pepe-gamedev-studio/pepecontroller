@@ -1,6 +1,4 @@
 #include "Peka2tvSIOClient.h"
-
-#include <iostream>
 #include <functional>
 #include <nlohmann/json.hpp>
 #include <fstream>

@@ -3,18 +3,30 @@
 #include <functional>
 
 App::App(
-	peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,
+	/*peka2tv::Peka2tvSIOClient::EventHubPtr msgSource,*/
 	storage::Storage* storage,
 	pepebackend::Instance* inst,
-	peka2tv::Peka2tvHttpClient* httpClient) :
-	msgSource(msgSource),
+	peka2tv::Peka2tvHttpClient* httpClient,
+	peka2tv::Peka2tvSIOClient* sioClient,
+	WebClients* w) :
 	storage(storage),
 	inst(inst),
-	httpClient(httpClient),
+	webclients(w),
+	//httpClient(httpClient),
 	userCache(1000),
 	appApi(&userCache, storage, httpClient, inst)
 {
-	msgSource->connect(std::bind(&App::HandleMessage, this, std::placeholders::_1));
+	using namespace storage::models::user;
+	sioClient->Connect();
+	appApi.FindUser(&User::name, *webclients->sc2tv,
+	                [=](std::optional<User> u)
+	                {
+		                User Owner = {u->id, u->name, u->voteWeight, Admin};
+		                appApi.UpdateUser(Owner);
+		                msgSource = sioClient->Join("stream/" + std::to_string(u->id));
+		                msgSource->connect(
+			                std::bind(&App::HandleMessage, this, std::placeholders::_1));
+	                });
 }
 
 App::~App()
@@ -28,12 +40,6 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 	using namespace storage::models::user;
 	appApi.FindUser(&User::id, x.from.id, [=](std::optional<User> u)
 	{
-		if (IsOwner(x))
-		{
-			User OWNER({u->id, u->name, u->voteWeight, Admin});
-			if ((*u) != OWNER)
-				appApi.UpdateUser(OWNER);
-		}
 		if (!(IsCommand(x.text) && CanExecute(x)))
 			return;
 		auto ctr = this->phase->GetCommands().find(ExtractCommand(x.text));
@@ -44,6 +50,15 @@ void App::HandleMessage(const peka2tv::Peka2tvSIOClient::ChatMessage& x)
 				ctr->second.cmdConst->Construct(x)->Execute(&ctx);
 			LogChatCommands(x, logFile);
 		}
+	});
+}
+
+void App::NametoId(std::string name, std::function<void(int64_t)> callback)
+{
+	using namespace storage::models::user;
+	appApi.FindUser(&User::name, name, [=](std::optional<User> u)
+	{
+		callback(u->id);
 	});
 }
 

@@ -1,7 +1,5 @@
 #include "sqliteStorage.h"
 
-#include <utility>
-
 namespace storage
 {
 

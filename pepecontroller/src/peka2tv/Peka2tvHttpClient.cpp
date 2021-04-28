@@ -1,3 +1,4 @@
+#include <boost/beast/version.hpp>
 #include "Peka2tvHttpClient.h"
 
 namespace peka2tv

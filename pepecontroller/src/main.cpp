@@ -1,14 +1,10 @@
 #include "peka2tv/peka2tvSIOClient.h"
 #include "peka2tv/peka2tvHttpClient.h"
-#include "storage.h"
 #include "app.h"
 #include <iostream>
-#include <string>
-#include <cctype>
-#include <algorithm>
-#include <memory>
 #include <boost/log/trivial.hpp>
-#include <boost/asio.hpp>
+#include <boost/asio/io_context.hpp>
+#include <boost/asio/executor_work_guard.hpp>
 #include "phase/votePhase.h"
 #include "phase/moviePhase.h"
 
@@ -60,10 +56,10 @@ int Main(int argc, char* argv[])
 	auto storage = storage::InitStorage();
 	peka2tv::Peka2tvHttpClient httpClient(&ioc);
 	peka2tv::Peka2tvSIOClient sioClient;
+	WebClients webclients{"dobiktv", "zeratoo", "zeratoo70"};
 	pepebackend::Instance inst("./movies");
-	sioClient.Connect();
 
-	App app(sioClient.Join("stream/"s + argv[1]), &storage, &inst, &httpClient);
+	App app(&storage, &inst, &httpClient, &sioClient, &webclients);
 
 	app.SetPhase<phase::MoviePhase>();
 

@@ -1,7 +1,6 @@
 #pragma once
 #include "../column.h"
 #include "movie.h"
-#include "user.h"
 #include <sqlite_orm/sqlite_orm.h>
 
 namespace storage::models::movieVotes
