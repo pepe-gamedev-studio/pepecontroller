@@ -14,7 +14,7 @@ namespace commands
 			if (u && u->group == Ignored)
 			{
 				ctx->api->UpdateUser(
-					{u->id, u->name, u->voteWeight, Viewer});
+					{u->id, u->platform, u->name, u->voteWeight, Viewer});
 			}
 
 			BOOST_LOG_TRIVIAL(debug)

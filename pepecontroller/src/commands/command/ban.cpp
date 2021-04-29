@@ -16,7 +16,7 @@ void Ban::Execute(Context* ctx)
 		if (u && (u->group != Ignored))
 		{
 			ctx->api->UpdateUser(
-				{u->id, u->name, u->voteWeight, Ignored});
+				{u->id, u->platform, u->name, u->voteWeight, Ignored});
 		}
 
 		BOOST_LOG_TRIVIAL(debug)

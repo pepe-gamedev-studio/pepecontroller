@@ -21,59 +21,6 @@ namespace peka2tv
                 this->ctx.set_verify_mode(ssl::verify_none);
 	}
 
-	std::string Peka2tvHttpClient::Call(std::string method, std::string data,
-                                std::function<void(nlohmann::json)>)
-	{
-		using tcp = boost::asio::ip::tcp;
-		namespace ssl = boost::asio::ssl;
-		namespace http = beast::http;
-		int version = 11;
-
-		boost::asio::io_context ioc;
-
-
-		ctx.set_verify_mode(ssl::verify_peer);
-
-		tcp::resolver resolver{ioc};
-		ssl::stream<tcp::socket> stream{ioc, ctx};
-		stream.set_verify_mode(ssl::verify_none);
-
-		if (!SSL_set_tlsext_host_name(stream.native_handle(), host.c_str()))
-		{
-			boost::system::error_code ec{
-				static_cast<int>(ERR_get_error()),
-				boost::asio::error::get_ssl_category()
-			};
-			throw boost::system::system_error{ec};
-		}
-
-		const auto results = resolver.resolve(host.c_str(), port);
-
-		boost::asio::connect(stream.next_layer(), results.begin(),
-		                     results.end());
-
-		stream.handshake(ssl::stream_base::client);
-
-		http::request<http::string_body> req{
-			http::verb::post, method,
-			version
-		};
-		req.set(http::field::host, host);
-		req.set(http::field::user_agent, BOOST_BEAST_VERSION_STRING);
-		req.set(http::field::content_type, "application/json");
-		req.body() = data;
-		req.prepare_payload();
-
-		http::write(stream, req);
-
-		beast::flat_buffer buffer;
-		http::response<http::string_body> res;
-
-		http::read(stream, buffer, res);
-
-		return res.body();
-	}
-
 	Peka2tvHttpClient::UserInfo Peka2tvHttpClient::JsonToUserInfo(const nlohmann::json& j)
 	{
 		return UserInfo{

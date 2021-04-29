@@ -9,11 +9,11 @@ namespace storage::models::user
 
 	std::ostream& operator<<(std::ostream& os, const storage::models::user::User& x)
 	{
-		return os << x.id << " " << x.name << " " << x.voteWeight << " " << groups[x.group];
+		return os << x.id << " " << x.platform << " " << x.name << " " << x.voteWeight << " " << groups[x.group];
 	}
 	bool operator==(const User& a, const User& b)
 	{
-		return (a.id == b.id) && (a.name == b.name) && (a.group == b.group) && (a.voteWeight == b.voteWeight);
+		return (a.id == b.id) && (a.platform == b.platform) && (a.name == b.name) && (a.group == b.group) && (a.voteWeight == b.voteWeight);
 	}
 	bool operator!=(const User& a, const User& b)
 	{

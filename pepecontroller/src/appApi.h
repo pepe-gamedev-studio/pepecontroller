@@ -21,6 +21,7 @@ public:
 	{
 		using namespace sqlite_orm;
 		using UserGroup = storage::models::user::UserGroup;
+		using Platform = storage::models::user::Pltaform;
 
 		if (auto cached = userCache->Get(val))
 		{
@@ -50,7 +51,7 @@ public:
 				if (info)
 				{
 					User u{
-						info->id, info->name, 1,
+						info->id, Platform::Sc2tv, info->name, 1,
 						UserGroup::Viewer
 					};
 					storage->replace(u);

@@ -107,8 +107,6 @@ public:
 	
 
       protected:
-        std::string Call(std::string method, std::string data,
-                         std::function<void(nlohmann::json)> callback);
         UserInfo JsonToUserInfo(const nlohmann::json& j);
 
 
@@ -117,12 +115,6 @@ private:
 	std::string port;
     boost::asio::io_context* ioc;
     ssl::context ctx{ssl::context::sslv23_client};
-	//tcp::resolver resolver_;
-	//beast::ssl_stream<beast::tcp_stream> stream_;
-	//beast::flat_buffer buffer_; // (Must persist between reads)
-	//http::request<http::empty_body> req_;
-	//http::response<http::string_body> res_;
-	//ssl::context ctx{ssl::context::tlsv12_client};
 };
 
 }

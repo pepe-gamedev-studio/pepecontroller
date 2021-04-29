@@ -21,7 +21,7 @@ App::App(
 	appApi.FindUser(&User::name, *webclients->sc2tv,
 	                [=](std::optional<User> u)
 	                {
-		                User Owner = {u->id, u->name, u->voteWeight, Admin};
+		                User Owner = {u->id, Sc2tv, u->name, u->voteWeight, Admin};
 		                appApi.UpdateUser(Owner);
 		                msgSource = sioClient->Join("stream/" + std::to_string(u->id));
 		                msgSource->connect(
